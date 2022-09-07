@@ -1,6 +1,6 @@
 {
 	"include": ["globals.d.ts", "src/**/*", "src/**/*.json", "vite.config.ts"],
-	"exclude": ["src/**/__tests__/*", "./node_modules/**/*", "./dist/**/*"],
+	"exclude": ["src/**/__tests__/*", "./node_modules/**/*", "./dist/**/*", "./**/dev-dist/**/*", "./**/coverage/**/*"],
 	"compilerOptions": {
 		"tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
 		"allowJs": true,
