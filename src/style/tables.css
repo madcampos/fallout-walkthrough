@@ -1,0 +1,54 @@
+.table-wrapper {
+	width: var(--table-wrapper-width);
+	height: var(--table-wrapper-height);
+	margin-inline: auto;
+	overflow: auto;
+	overscroll-behavior: contain;
+	contain: content;
+	content-visibility: auto;
+}
+
+table {
+	border-spacing: var(--table-spacing);
+	width: 100%;
+	text-align: center;
+}
+
+tr:nth-child(odd) {
+	background-color: var(--bg-table-odd);
+}
+
+tr:nth-child(even) {
+	background-color: var(--bg-table-even);
+}
+
+tr > * {
+	padding: var(--table-cell-padding);
+}
+
+thead th {
+	background-color: inherit;
+	position: sticky;
+	top: 0;
+}
+
+:is(th, tr)[data-align='left'] { text-align: left; }
+:is(th, tr)[data-align='right'] { text-align: right; }
+
+th[scope='col']:not([data-no-order])::after {
+	content: ' ⏺';
+}
+
+th[scope='col'][data-order='ascending']::after {
+	content: ' 🔼';
+}
+
+th[scope='col'][data-order='descending']::after {
+	content: ' 🔽';
+}
+
+table img {
+	max-width: var(--table-image-size);
+	max-height: var(--table-image-size);
+	image-rendering: pixelated;
+}

@@ -1,0 +1,87 @@
+text {
+	fill: currentcolor;
+	font-family: inherit;
+	text-anchor: middle;
+	alignment-baseline: hanging;
+}
+
+circle {
+	stroke: currentcolor;
+	stroke-width: 0.2ch;
+	fill: url('#world-map-marker-fill');
+}
+
+.map-wrapper {
+	width: var(--map-wrapper-size);
+	height: var(--map-wrapper-size);
+	overflow: auto;
+	text-align: center;
+	overscroll-behavior: contain;
+	contain: content;
+	content-visibility: auto;
+	margin-inline: auto;
+}
+
+.map-wrapper svg {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+#enclave-map rect {
+	fill: transparent;
+	stroke-width: 0.1rem;
+	stroke: currentcolor;
+}
+
+#enclave-map text {
+	alignment-baseline: middle;
+}
+
+#enclave-map .room-text {
+	font-size: 2rem;
+}
+
+#enclave-map .corridor-text {
+	font-size: 1rem;
+}
+
+#world-map-wrapper svg {
+	width: var(--world-map-size);
+	height: var(--world-map-size);
+	max-width: revert;
+}
+
+#world-map-wrapper a {
+	text-decoration: none;
+	font-family: var(--title-family);
+	color: var(--map-marker-color);
+}
+
+#world-map-wrapper path {
+	stroke: var(--map-route-color);
+	stroke-width: 0.2rem;
+	stroke-linecap: round;
+	stroke-dasharray: 0.4rem;
+}
+
+#world-map-wrapper text {
+	--text-distance: 0.5rem;
+	transform: translateY(var(--text-distance));
+}
+
+#world-map-wrapper .text-above text {
+	--text-distance: -1rem;
+	alignment-baseline: baseline;
+}
+
+#world-map-wraper .medium-marker text { --text-distance: 1.5rem; }
+#world-map-wrapper .big-marker text { --text-distance: 2rem; }
+#world-map-wrapper .text-above.medium-marker text { --text-distance: -1.5rem; }
+#world-map-wrapper .text-above.big-marker text { --text-distance: -2rem; }
+
+#world-map-marker-fill stop { stop-color: var(--map-marker-color); }
+#rp-marker-fill stop { stop-color: var(--title-rp); }
+
+#restoration-project-locations a { color: var(--title-rp); }
+#restoration-project-locations circle { fill: url('#rp-marker-fill'); }

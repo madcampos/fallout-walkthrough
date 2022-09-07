@@ -1,0 +1,35 @@
+aside[class] {
+	color: var(--aside-color);
+	background-color: var(--aside-bg);
+	border: solid thin var(--aside-color);
+	border-radius: var(--rounded-corners);
+	padding: calc(var(--margin-size) / 2);
+	margin: var(--margin-size);
+}
+
+.green {
+	--aside-color: var(--color-green);
+	--aside-bg: var(--bg-green);
+}
+
+.blue {
+	--aside-color: var(--color-blue);
+	--aside-bg: var(--bg-blue);
+}
+
+.yellow {
+	--aside-color: var(--color-yellow);
+	--aside-bg: var(--bg-yellow);
+}
+
+.red {
+	--aside-color: var(--color-red);
+	--aside-bg: var(--bg-red);
+}
+
+.rp {
+	--aside-color: var(--color-rp);
+	--aside-bg: var(--bg-rp);
+
+	color: var(--color-rp);
+}

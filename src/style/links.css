@@ -1,0 +1,27 @@
+a {
+	color: var(--link-color);
+	text-decoration: dotted underline;
+	text-decoration-color: currentcolor;
+
+	transition: all 0.2s ease-in-out;
+}
+
+a:visited { color: var(--link-visited-color); }
+a:hover { color: var(--link-hover-color); }
+a:active { color: var(--link-active-color); }
+
+a:focus {
+	color: var(--link-active-color);
+	outline: none;
+}
+
+.header-link {
+	color: inherit;
+	text-decoration: none;
+	visibility: hidden;
+	font-size: 1ch;
+}
+
+:is(h1, h2, h3, h4, h5, h6):hover .header-link {
+	visibility: visible;
+}

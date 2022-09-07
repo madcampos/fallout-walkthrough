@@ -1,0 +1,124 @@
+:root {
+	/* Fonts */
+	--font-family: 'ChicagoFLF', 'Cascadia Code', 'Fira Code', 'Monaco', monospace;
+	--title-family: 'fallouty', var(--font-family);
+
+	/* Sizes */
+	--font-size: 18px;
+	--margin-size: 2rem;
+
+	--divider-icon-size: 5rem;
+	--divider-size: calc(var(--divider-icon-size) / 10);
+
+	--scrollbar-size: 0.5rem;
+
+	--table-wrapper-height: clamp(15rem, calc(90vh - 4rem), 100rem);
+	--table-wrapper-width: clamp(15rem, calc(90vw - (var(--margin-size) * 4)), 100rem);
+	--table-spacing: 0.1rem;
+	--table-cell-padding: 0.2rem;
+	--table-image-size: clamp(4rem, 10vmin, 6rem);
+
+	--map-wrapper-size: clamp(15rem, calc(90vmin - 4rem), 100rem);
+	--world-map-size: 100%;
+
+	--rounded-corners: 0.4rem;
+	--button-size: 4rem;
+
+	--image-size: clamp(15rem, 50vmin, 60rem);
+
+	--toc-width: clamp(15rem, 100vmin, 30rem);
+
+	/* Colors */
+	--bg-color: lightgray;
+	--font-color: darkslategray;
+
+	--scrollbar-color: rgba(169, 169, 169, 0.5);
+	--scrollbar-bg-color: rgba(169, 169, 169, 0.2);
+
+	--link-color: dodgerblue;
+	--link-visited-color: indigo;
+	--link-hover-color: darkorange;
+	--link-active-color: red;
+
+	--bg-table-even: gainsboro;
+	--bg-table-odd: silver;
+
+	--color-red: orangered;
+	--bg-red: lightsalmon;
+
+	--color-blue: navy;
+	--bg-blue: cornflowerblue;
+
+	--color-green: darkgreen;
+	--bg-green: darkseagreen;
+
+	--color-yellow: darkgoldenrod;
+	--bg-yellow: khaki;
+
+	--title-rp: magenta;
+	--color-rp: purple;
+	--bg-rp: violet;
+
+	--map-marker-color: lime;
+	--map-route-color: darkorange;
+	--map-encounter-color: deepskyblue;
+
+	--completed-quest-color: rgba(211, 211, 211, 0.5);
+
+	--divider-gradient:
+		linear-gradient(
+			to right,
+			transparent,
+			darkgray calc(50% - var(--divider-icon-size) - var(--divider-size)),
+			transparent calc(50% - var(--divider-icon-size) - var(--divider-size)),
+			transparent calc(50% + var(--divider-icon-size) + var(--divider-size)),
+			darkgray calc(50% + var(--divider-icon-size) + var(--divider-size)),
+			transparent
+		);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #141414;
+		--font-color: whitesmoke;
+
+		--link-color: darkslateblue;
+		--link-visited-color: darkorchid;
+		--link-hover-color: orangered;
+		--link-active-color: maroon;
+
+		--bg-table-even: #212c2c;
+		--bg-table-odd: #181a1b;
+
+		--color-red: navajowhite;
+		--bg-red: maroon;
+
+		--color-blue: lightskyblue;
+		--bg-blue: midnightblue;
+
+		--color-green: palegreen;
+		--bg-green: darkgreen;
+
+		--color-yellow: yellow;
+		--bg-yellow: saddlebrown;
+
+		--title-rp: deeppink;
+		--color-rp: peachpuff;
+		--bg-rp: #2b0049;
+	}
+}
+
+@media (max-width: 600px) {
+	:root {
+		--font-size: 14px;
+		--margin-size: 1rem;
+		--divider-icon-size: 3rem;
+		--world-map-size: 200vmax;
+	}
+}
+
+@media (max-width: 1000px) {
+	:root {
+		--world-map-size: 150vmax;
+	}
+}

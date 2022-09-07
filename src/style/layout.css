@@ -1,0 +1,65 @@
+body {
+	background-color: var(--bg-color);
+}
+
+main {
+	overflow: auto;
+	padding-inline: calc(var(--margin-size) * 3);
+	padding-block-end: var(--margin-size);
+	height: 100%;
+}
+
+article > :is(h2, h3, h4) {
+	position: sticky;
+	top: 0;
+	background-color: var(--bg-color);
+	z-index: 1;
+}
+
+picture img {
+	margin-block: var(--margin-size);
+	width: var(--image-size);
+	height: var(--image-size);
+}
+
+.quests h3 {
+	display: inline-block;
+	width: calc(100% - 2rem);
+}
+
+.quests > summary {
+	position: sticky;
+	top: 3.441rem;
+	background-color: var(--bg-color);
+	z-index: 1;
+}
+
+/** TODO: add symmary focus and active styles */
+
+input[type='checkbox']:checked ~ * {
+	text-decoration: line-through;
+	text-decoration-style: solid;
+	text-decoration-thickness: 0.2rem;
+	color: var(--completed-quest-color);
+}
+
+hr {
+	border: none;
+	background: var(--divider-gradient);
+	height: 0.1rem;
+	text-align: center;
+	overflow: visible;
+	margin: calc(var(--divider-icon-size) / 1.5) 0;
+}
+
+hr::before {
+	content: '';
+	display: inline-block;
+	height: var(--divider-icon-size);
+	width: calc(var(--divider-icon-size) * 2);
+	background-image: url('../images/vault-tec.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	transform: translateY(-50%);
+}

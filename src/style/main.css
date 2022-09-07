@@ -1,80 +1,13 @@
+@import url('./vars.css');
 @import url('./font.css');
-
-:root {
-	--bg-color: lightgray;
-	--font-color: darkslategray;
-
-	--scrollbar-color: rgba(169, 169, 169, 0.5);
-	--divider-icon-size: 5rem;
-	--divider-size: calc(var(--divider-icon-size) / 10);
-	--divider-gradient:
-		linear-gradient(
-			to right,
-			transparent,
-			darkgray calc(50% - var(--divider-icon-size) - var(--divider-size)),
-			transparent calc(50% - var(--divider-icon-size) - var(--divider-size)),
-			transparent calc(50% + var(--divider-icon-size) + var(--divider-size)),
-			darkgray calc(50% + var(--divider-icon-size) + var(--divider-size)),
-			transparent
-		);
-
-	--link-color: indigo;
-
-	--bg-table-even: gainsboro;
-	--bg-table-odd: silver;
-
-	--color-red: orangered;
-	--bg-red: lightsalmon;
-
-	--color-blue: navy;
-	--bg-blue: cornflowerblue;
-
-	--color-green: darkgreen;
-	--bg-green: darkseagreen;
-
-	--color-yellow: darkgoldenrod;
-	--bg-yellow: khaki;
-
-	--title-rp: magenta;
-	--color-rp: purple;
-	--bg-rp: violet;
-
-	--map-marker-color: lime;
-	--map-route-color: darkorange;
-	--map-encounter-color: deepskyblue;
-
-	--toc-sidebar-size: clamp(15rem, 35vw, 25rem);
-	--header-height: 5rem;
-
-	--font-family: 'ChicagoFLF', 'Cascadia Code', 'Fira Code', 'Monaco', monospace;
-	--title-family: var(--font-family);
-}
-
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-
-html, body {
-	height: 100%;
-	margin: 0;
-}
-
-body {
-	-webkit-font-smoothing: antialiased;
-	line-height: 1.5;
-	font-size: 16px;
-	font-family: var(--font-family);
-}
-
-img, picture, video, canvas, svg {
-	display: block;
-	max-width: 100%;
-}
-
-input, button, textarea, select {
-	font: inherit;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-	overflow-wrap: break-word;
-}
+@import url('./base.css');
+@import url('./scrollbars.css');
+@import url('./buttons.css');
+@import url('./links.css');
+@import url('./text.css');
+@import url('./lists.css');
+@import url('./tables.css');
+@import url('./nav.css');
+@import url('./maps.css');
+@import url('./notes.css');
+@import url('./layout.css');

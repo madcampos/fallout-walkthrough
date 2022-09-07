@@ -1,0 +1,30 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+	color: var(--font-color);
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+	text-align: center;
+	margin-inline: auto;
+}
+
+input, button { font: inherit; }
+
+*::selection {
+	background-color: var(--font-color);
+	color: var(--bg-color);
+}
