@@ -36,3 +36,5 @@ blockquote cite {
 blockquote cite::before {
 	content: '— ';
 }
+
+small { font-size: 0.7em; }

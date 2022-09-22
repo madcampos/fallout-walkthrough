@@ -9,7 +9,7 @@ main {
 	height: 100%;
 }
 
-article > :is(h2, h3, h4) {
+article > :is(h2, h3, h4), article details > summary {
 	position: sticky;
 	top: 0;
 	background-color: var(--bg-color);
@@ -20,18 +20,6 @@ picture img {
 	margin-block: var(--margin-size);
 	width: var(--image-size);
 	height: var(--image-size);
-}
-
-.quests h3 {
-	display: inline-block;
-	width: calc(100% - 2rem);
-}
-
-.quests > summary {
-	position: sticky;
-	top: 3.441rem;
-	background-color: var(--bg-color);
-	z-index: 1;
 }
 
 /** TODO: add symmary focus and active styles */
