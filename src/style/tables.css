@@ -1,10 +1,9 @@
 .table-wrapper {
 	width: var(--table-wrapper-width);
-	height: var(--table-wrapper-height);
+	max-height: var(--table-wrapper-height);
 	margin-inline: auto;
 	margin-block: var(--margin-size);
 	overflow: auto;
-	overscroll-behavior: contain;
 	contain: content;
 	content-visibility: auto;
 }
