@@ -1,127 +1,83 @@
-/* eslint-disable camelcase */
+/* eslint-disable camelcase, @typescript-eslint/no-magic-numbers */
 // eslint-env node
 import { readFileSync } from 'fs';
 
-import { defineConfig } from 'vitest/config';
-import { loadEnv } from 'vite';
-import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
-import { createHtmlPlugin } from 'vite-plugin-html';
-import { VitePWA as vitePWA } from 'vite-plugin-pwa';
+import { defineConfig, type UserConfig } from 'vitest/config';
+import { type ManifestOptions, VitePWA as vitePWA } from 'vite-plugin-pwa';
+import htmlMinifier from 'vite-plugin-html-minifier';
+import { resolve } from 'path';
+import { externalResources, internalResources } from './src/service-worker';
 
 const sslOptions = {
 	cert: readFileSync('./certs/server.crt'),
 	key: readFileSync('./certs/server.key')
 };
 
-const packageJson: PackageJsonVariables = JSON.parse(readFileSync('./package.json', { encoding: 'utf8' }));
+const manifest: Partial<ManifestOptions> = JSON.parse(readFileSync('./src/manifest.json', { encoding: 'utf8' }));
 
 export default defineConfig(({ mode }) => {
-	const env = {
-		APP_PUBLIC_URL: packageJson.homepage,
+	const baseUrl = mode === 'production' ? 'https://madcampos.dev/projects/fallout-walkthrough' : 'https://localhost:3000/';
 
-		APP_NAME: packageJson.displayName,
-		APP_SHORT_NAME: packageJson.shortName,
-		APP_DESCRIPTION: packageJson.description,
-		APP_KEYWORDS: packageJson.keywords.join(', '),
-		APP_AUTHOR: packageJson.author.name,
-		APP_VERSION: packageJson.version,
-
-		APP_THEME_COLOR: '#ffd700',
-		APP_BACKGROUND_COLOR: '#0f56b3',
-
-		APP_APPLE_ICON: 'icons/maskable/apple-icon-180.png',
-		APP_SMALL_ICON: 'icons/transparent/manifest-icon-192.png',
-		APP_SMALL_ICON_BG: 'icons/maskable/manifest-icon-192.png',
-		APP_LARGE_ICON: 'icons/transparent/manifest-icon-512.png',
-		APP_LARGE_ICON_BG: 'icons/maskable/manifest-icon-512.png',
-		...loadEnv(mode, process.cwd(), 'APP_')
-	};
-
-	return {
+	const config: UserConfig = {
 		plugins: [
-			chunkSplitPlugin({ strategy: 'unbundle' }),
-			createHtmlPlugin({
-				minify: true,
-				inject: {
-					data: env
+			htmlMinifier({
+				minify: {
+					collapseWhitespace: true,
+					keepClosingSlash: false,
+					removeComments: true,
+					removeRedundantAttributes: true,
+					removeScriptTypeAttributes: false,
+					removeStyleLinkTypeAttributes: true,
+					removeEmptyAttributes: true,
+					useShortDoctype: true,
+					minifyCSS: false,
+					minifyJS: false,
+					minifyURLs: false
 				}
 			}),
 			vitePWA({
 				registerType: 'prompt',
 				minify: true,
-				injectRegister: null,
 				includeAssets: ['/icons/favicon.svg'],
-				manifest: {
-					id: '6508c44f-06e6-4471-be84-b70031f9f69d',
-					name: env.APP_NAME,
-					short_name: env.APP_SHORT_NAME,
-					lang: 'en-US',
-					description: env.APP_DESCRIPTION,
-					categories: env.APP_KEYWORDS.split(', '),
-					display: 'standalone',
-					orientation: 'portrait',
-					background_color: env.APP_BACKGROUND_COLOR,
-					theme_color: env.APP_THEME_COLOR,
-					icons: [
-						{
-							src: env.APP_SMALL_ICON,
-							sizes: '192x192',
-							type: 'image/png',
-							purpose: 'any'
-						},
-						{
-							src: env.APP_SMALL_ICON_BG,
-							sizes: '192x192',
-							type: 'image/png',
-							purpose: 'maskable'
-						},
-						{
-							src: env.APP_LARGE_ICON,
-							sizes: '512x512',
-							type: 'image/png',
-							purpose: 'any'
-						},
-						{
-							src: env.APP_LARGE_ICON_BG,
-							sizes: '512x512',
-							type: 'image/png',
-							purpose: 'maskable'
-						}
-					]
-				},
+				manifest,
+				scope: baseUrl,
 				workbox: {
 					cleanupOutdatedCaches: true,
 					clientsClaim: true,
-					navigationPreload: false
+					navigationPreload: false,
+					runtimeCaching: [
+						internalResources,
+						externalResources
+					]
 				},
 				devOptions: {
-					enabled: true
+					enabled: false
 				}
 			})
 		],
+		base: baseUrl,
 		envPrefix: 'APP_',
 		envDir: '../',
 		root: 'src',
 		publicDir: '../public',
-		assetsInclude: ['locales/*.json'],
 		clearScreen: false,
 		server: {
+			host: 'localhost',
 			https: sslOptions,
 			open: false,
 			cors: true,
-			port: 5000
+			port: 3000
 		},
 		build: {
-			minify: true,
 			target: 'esnext',
-			assetsInlineLimit: 0,
 			emptyOutDir: true,
 			outDir: '../dist',
-			// TODO: check for support on removing preload as well
-			polyfillModulePreload: true,
 			rollupOptions: {
+				input: {
+					main: resolve('src/index.html')
+				},
 				output: {
-					generatedCode: 'es5',
+					generatedCode: 'es2015',
 					inlineDynamicImports: false
 				}
 			}
@@ -144,4 +100,6 @@ export default defineConfig(({ mode }) => {
 			}
 		}
 	};
+
+	return config;
 });

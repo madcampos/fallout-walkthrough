@@ -2,74 +2,59 @@
 	"name": "fallout-walkthrough",
 	"private": true,
 	"version": "1.0.0",
-	"displayName": "Fallout 2 Walkthrough",
-	"shortName": "FO2 Walk",
-	"description": "The Nearly Ultimate Fallout 2 Guide",
-	"homepage": "https://madcampos.github.io/fallout/",
-	"keywords": [
-		"game",
-		"fallout",
-		"fallout 2",
-		"walkthrough",
-		"guide",
-		"game guide"
-	],
-	"author": {
-		"name": "madcampos",
-		"email": "madcampos@outlook.com"
-	},
 	"license": "MIT",
-	"browser": "./dist/index.html",
 	"type": "module",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/madcampos/fallout-walkthrough.git"
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"volta": {
+		"node": "18.16.0"
 	},
 	"scripts": {
 		"postinstall": "husky install",
 		"start": "vite",
 		"start:sw": "vite",
 		"typecheck": "tsc --noEmit",
-		"lint": "npm run typecheck && npm run lint:js && npm run lint:css",
 		"lint:js": "eslint src --ext .js,.mjs,.ts,.mts --fix --ignore-path .gitignore",
 		"lint:css": "stylelint **/*.css --fix",
+		"lint": "npm run typecheck && npm run lint:js && npm run lint:css",
 		"lint-staged": "lint-staged",
-		"prebuild:app": "npm run lint",
 		"build:app": "vite build",
-		"build:icons-transparent": "pwa-asset-generator build/logo.html --type png --maskable false --icon-only --scrape false --opaque false --log false public/icons/transparent",
-		"build:icons-maskable": "pwa-asset-generator build/logo.html --type png --maskable false --icon-only --scrape false --dark-mode --log false public/icons/maskable",
-		"build:splash": "pwa-asset-generator build/logo.html --type png --splash-only --dark-mode --log false public/splash",
+		"build:icons-transparent": "pwa-asset-generator build/logo.html --type png --maskable false --icon-only --scrape false --dark-mode --opaque false --log false public/icons/transparent",
+		"build:icons-maskable": "pwa-asset-generator build/logo.html --type png --maskable false --icon-only --log false public/icons/maskable",
+		"build:splash": "pwa-asset-generator build/logo.html --type png --splash-only --log false public/splash",
 		"build:assets": "npm run build:icons-transparent && npm run build:icons-maskable && npm run build:splash",
+		"optimize:svg": "svgo --multipass --eol lf --final-newline --recursive --folder public --output dist",
+		"optimize:png": "oxipng --opt max --strip safe --recursive --alpha --fix --zopfli --dir dist public/**/*.png",
 		"prepreview": "npm run build:app",
 		"preview": "vite preview --port 3000",
 		"test": "vitest",
 		"test:coverage": "vitest run --coverage"
 	},
-	"dependencies": {
-	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.0.3",
-		"@commitlint/config-conventional": "^17.0.3",
-		"@typescript-eslint/eslint-plugin": "^5.33.0",
-		"@typescript-eslint/parser": "^5.33.0",
-		"c8": "^7.12.0",
-		"eslint": "^8.21.0",
-		"husky": "^8.0.1",
-		"lint-staged": "^13.0.3",
-		"pwa-asset-generator": "^6.1.1",
-		"stylelint": "^14.9.1",
-		"typescript": "^4.7.4",
-		"vite": "^3.0.5",
-		"vite-plugin-chunk-split": "^0.2.7",
-		"vite-plugin-html": "^3.2.0",
-		"vite-plugin-pwa": "^0.12.3",
-		"vitest": "^0.21.1"
-	},
-	"engines": {
-		"node": ">=17.0.0"
-	},
-	"volta": {
-		"node": "17.8.0"
+		"@commitlint/cli": "^17.6.6",
+		"@commitlint/config-conventional": "^17.6.6",
+		"@types/marked": "^5.0.0",
+		"@types/node": "^20.3.3",
+		"@typescript-eslint/eslint-plugin": "^5.61.0",
+		"@typescript-eslint/parser": "^5.61.0",
+		"c8": "^8.0.0",
+		"eslint": "^8.44.0",
+		"handlebars": "^4.7.7",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.3",
+		"marked": "^5.1.1",
+		"oxipng-bin": "^1.0.0",
+		"pwa-asset-generator": "^6.3.1",
+		"shiki": "^0.14.3",
+		"stylelint": "^15.10.1",
+		"svgo": "^3.0.2",
+		"typescript": "^5.1.6",
+		"ultramatter": "^0.0.4",
+		"vite": "^4.4.3",
+		"vite-plugin-html-minifier": "^1.0.3",
+		"vite-plugin-pwa": "^0.16.4",
+		"vitest": "^0.33.0"
 	},
 	"lint-staged": {
 		"*.ts": [
