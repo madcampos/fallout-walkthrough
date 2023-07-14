@@ -7,21 +7,21 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1"/>
 
-		<title><%= APP_NAME %></title>
+		<title>Fallout 2 Walkthrough</title>
 
 		<!-- App Metadata -->
-		<link rel="icon" href="/icons/favicon.svg"/>
-		<meta name="theme-color" content="<%= APP_THEME_COLOR %>">
+		<link rel="icon" href="icons/favicon.svg"/>
+		<meta name="theme-color" content="#ffd700">
 
 		<!-- Social metadata -->
-		<meta name="keywords" content="<%= APP_KEYWORDS %>"/>
+		<meta name="keywords" content="game, fallout, fallout 2, walkthrough, guide, game guide"/>
 
-		<meta property="og:title" name="twitter:title" itemprop="name" content="<%= APP_NAME %>"/>
-		<meta property="og:description" name="description" itemprop="description" content="<%= APP_DESCRIPTION %>"/>
-		<meta property="og:image" name="twitter:image" itemprop="image" content="<%= APP_PUBLIC_URL %><%= APP_LARGE_ICON %>"/>
+		<meta property="og:title" name="twitter:title" itemprop="name" content="Fallout 2 Walkthrough"/>
+		<meta property="og:description" name="description" itemprop="description" content="The Nearly Ultimate Fallout 2 Guide"/>
+		<meta property="og:image" name="twitter:image" itemprop="image" content="https://madcampos.dev/projects/fallout-walkthrough/icons/transparent/manifest-icon-512.png"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:locale" content="en_US"/>
-		<meta property="og:url" content="<%= APP_PUBLIC_URL %>" />
+		<meta property="og:url" content="https://madcampos.dev/projects/fallout-walkthrough" />
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:dnt" content="on">
 
@@ -36,37 +36,37 @@
 		<!-- Apple icons -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="apple-touch-icon" href="<%= APP_APPLE_ICON %>">
+		<link rel="apple-touch-icon" href="icons/maskable/apple-icon-180.png">
 
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2048-2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2732-2048.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1668-2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2388-1668.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1536-2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2048-1536.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1668-2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2224-1668.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1620-2160.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2160-1620.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1284-2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2778-1284.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1170-2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2532-1170.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1125-2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2436-1125.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1242-2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2688-1242.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-828-1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1792-828.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1242-2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-2208-1242.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-750-1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1334-750.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-640-1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-		<link rel="apple-touch-startup-image" href="/splash/apple-splash-1136-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2048-2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2732-2048.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1668-2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2388-1668.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1536-2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2048-1536.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1668-2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2224-1668.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1620-2160.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2160-1620.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1284-2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2778-1284.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1170-2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2532-1170.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1125-2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2436-1125.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1242-2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2688-1242.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-828-1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1792-828.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1242-2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-2208-1242.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-750-1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1334-750.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-640-1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="splash/apple-splash-1136-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 
-		<link rel="stylesheet" href="/style/main.css">
-		<script type="module" src="./js/main.ts"></script>
+		<link rel="stylesheet" href="style/main.css">
+		<script type="module" src="js/main.ts"></script>
 	</head>
 
 	<body>
@@ -1715,7 +1715,7 @@
 								<stop offset="0" stop-opacity="0" />
 								<stop offset="100%" stop-opacity="0.5" />
 							</radialGradient>
-							<image id="world-map-img" image-rendering="optimizeSpeed" width="100%" height="100%" xlink:href="./images/map.jpg" />
+							<image id="world-map-img" image-rendering="optimizeSpeed" width="100%" height="100%" xlink:href="images/map.jpg" />
 						</defs>
 					</svg>
 				</figure>
@@ -1730,7 +1730,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/temple-of-trials.jpg">
+					<img width="450" height="450" src="images/backgrounds/temple-of-trials.jpg">
 				</picture>
 
 				<blockquote>
@@ -1802,7 +1802,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/arroyo.jpg">
+					<img width="450" height="450" src="images/backgrounds/arroyo.jpg">
 				</picture>
 
 				<blockquote>
@@ -1944,7 +1944,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/klamath.jpg">
+					<img width="450" height="450" src="images/backgrounds/klamath.jpg">
 				</picture>
 
 				<blockquote>
@@ -2227,7 +2227,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/toxic-caves.jpg">
+					<img width="450" height="450" src="images/backgrounds/toxic-caves.jpg">
 				</picture>
 
 				<blockquote>
@@ -2279,7 +2279,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/den.jpg">
+					<img width="450" height="450" src="images/backgrounds/den.jpg">
 				</picture>
 
 				<blockquote>
@@ -2623,7 +2623,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/slavers.jpg">
+					<img width="450" height="450" src="images/backgrounds/slavers.jpg">
 				</picture>
 
 				<p>This is Metzger's slave camp, where newly arrived slaves are usually kept. <a href="#npcs--sulik">Sulik</a>'s sister Kurisu is one of them. You can get the direction to this location from Metzger or any of his slaves in the Den if you have freed them, but only if you have <a href="#npcs--sulik">Sulik</a>'s quest to find his sister active (see the Umbra Tribe section).</p>
@@ -2648,7 +2648,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/umbra-tribe.jpg">
+					<img width="450" height="450" src="images/backgrounds/umbra-tribe.jpg">
 				</picture>
 
 				<p>If <a href="#npcs--sulik">Sulik</a> is with you when you come here, he will effectively leave the party to stay and talk with his old friends. You will need to wait a day or 2 before talking to him and asking him to travel with you again. Don't leave any important inventory items with him unless you plan on trying to steal or buy them back.</p>
@@ -2731,7 +2731,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/modoc.jpg">
+					<img width="450" height="450" src="images/backgrounds/modoc.jpg">
 				</picture>
 
 				<blockquote>
@@ -2962,7 +2962,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/ghost-farm.jpg">
+					<img width="450" height="450" src="images/backgrounds/ghost-farm.jpg">
 				</picture>
 
 				<blockquote>
@@ -3006,7 +3006,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/vault-city.jpg">
+					<img width="450" height="450" src="images/backgrounds/vault-city.jpg">
 				</picture>
 
 				<blockquote>
@@ -3399,7 +3399,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/village.jpg">
+					<img width="450" height="450" src="images/backgrounds/village.jpg">
 				</picture>
 
 				<details class="quests" open>
@@ -3453,7 +3453,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/gecko.jpg">
+					<img width="450" height="450" src="images/backgrounds/gecko.jpg">
 				</picture>
 
 				<blockquote>
@@ -3633,7 +3633,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/abbey.jpg">
+					<img width="450" height="450" src="images/backgrounds/abbey.jpg">
 				</picture>
 
 				<p>Father Tully in New Reno will tell you about this place and put it on your map. He'll also give you <a href="#quest-abbey5">Inform Brother Thomas and father Tully about the whereabouts of each other</a> below. You can find it just by exploring if you want to get here earlier, but you won't get <a href="#quest-abbey5">Inform Brother Thomas and father Tully about the whereabouts of each other</a> until you talk to Tully.</p>
@@ -3723,7 +3723,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/raiders.jpg">
+					<img width="450" height="450" src="images/backgrounds/raiders.jpg">
 				</picture>
 
 				<blockquote>
@@ -3815,7 +3815,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/broken-hills.jpg">
+					<img width="450" height="450" src="images/backgrounds/broken-hills.jpg">
 				</picture>
 
 				<blockquote>
@@ -4007,7 +4007,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/redding.jpg">
+					<img width="450" height="450" src="images/backgrounds/redding.jpg">
 				</picture>
 
 				<blockquote>
@@ -4204,7 +4204,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/new-reno.jpg">
+					<img width="450" height="450" src="images/backgrounds/new-reno.jpg">
 				</picture>
 
 				<blockquote>
@@ -4890,7 +4890,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/golgotha.jpg">
+					<img width="450" height="450" src="images/backgrounds/golgotha.jpg">
 				</picture>
 
 				<blockquote>
@@ -4961,7 +4961,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/stables.jpg">
+					<img width="450" height="450" src="images/backgrounds/stables.jpg">
 				</picture>
 
 				<blockquote>
@@ -5010,7 +5010,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/sad.jpg">
+					<img width="450" height="450" src="images/backgrounds/sad.jpg">
 				</picture>
 
 				<blockquote>
@@ -5165,7 +5165,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/epa.jpg">
+					<img width="450" height="450" src="images/backgrounds/epa.jpg">
 				</picture>
 
 				<p>There's three ways of getting this location on your map. First is by recruiting <a href="#npcs--myron">Myron</a> and then try to dump him, he will then tell you of this location. The second way is from a random traveler somewhere close to New Reno, and the third way is by doing a quest for Dr. Sheng (See the San Francisco section). You will need a rope here, so don't forget to bring one.</p>
@@ -5406,7 +5406,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/ncr.jpg">
+					<img width="450" height="450" src="images/backgrounds/ncr.jpg">
 				</picture>
 
 				<blockquote>
@@ -5777,7 +5777,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/vault-15.jpg">
+					<img width="450" height="450" src="images/backgrounds/vault-15.jpg">
 				</picture>
 
 				<blockquote>
@@ -5879,7 +5879,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/vault-13.jpg">
+					<img width="450" height="450" src="images/backgrounds/vault-13.jpg">
 				</picture>
 
 				<blockquote>
@@ -5961,7 +5961,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/military-base.jpg">
+					<img width="450" height="450" src="images/backgrounds/military-base.jpg">
 				</picture>
 
 				<blockquote>
@@ -6013,7 +6013,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/san-francisco.jpg">
+					<img width="450" height="450" src="images/backgrounds/san-francisco.jpg">
 				</picture>
 
 				<blockquote>
@@ -6524,7 +6524,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/shi-submarine.jpg">
+					<img width="450" height="450" src="images/backgrounds/shi-submarine.jpg">
 				</picture>
 
 				<p>Once you've got the password from the Emperor or Lao Chou, you can talk to the boat guard and go to the sub as a technician (together with the maintenance crew). If you instead convinced the boat guard to let you go without having a password you'll be going there alone (sub is empty). If you kill the boat guard and steal the boat, your NPCs will come with you (this is the only time they do). <a href="#npcs--myron">Myron</a> or <a href="#npcs--vic">Vic</a> can be useful to bring. You get 500xp for reaching the sub.</p>
@@ -6557,7 +6557,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/navarro.jpg">
+					<img width="450" height="450" src="images/backgrounds/navarro.jpg">
 				</picture>
 
 				<blockquote>
@@ -6679,7 +6679,7 @@
 				</h2>
 
 				<picture>
-					<img width="450" height="450" src="/images/backgrounds/enclave.jpg">
+					<img width="450" height="450" src="images/backgrounds/enclave.jpg">
 				</picture>
 
 				<blockquote>
@@ -6990,7 +6990,7 @@
 					<li>Some combination of the above.</li>
 				</ul>
 
-				<details class="quests">
+				<details class="quests" open>
 					<summary>
 						<h3 id="the-enclave--quests">
 							Quests
@@ -8795,7 +8795,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><img src="/images/items/ROBEINV.png" role="presentation"></td>
+								<td><img src="images/items/ROBEINV.png" role="presentation"></td>
 								<th scope="row">Robes</th>
 								<td>New Reno (Golden Globes)</td>
 								<td>5</td>
@@ -8804,7 +8804,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/MAXINV.png" role="presentation"></td>
+								<td><img src="images/items/MAXINV.png" role="presentation"></td>
 								<th scope="row">Leather Jacket</th>
 								<td>Klamath (<a href="#npcs--sulik">Sulik</a>, Sajag)</td>
 								<td>8</td>
@@ -8813,7 +8813,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/LAMk1.png" role="presentation"></td>
+								<td><img src="images/items/LAMk1.png" role="presentation"></td>
 								<th scope="row">Leather Armor</th>
 								<td>Klamath (Ardin, Sajag)</td>
 								<td>15</td>
@@ -8822,7 +8822,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/LAMk2.png" role="presentation"></td>
+								<td><img src="images/items/LAMk2.png" role="presentation"></td>
 								<th scope="row">Leather Armor Mark II</th>
 								<td>VC (Harry, Randal)</td>
 								<td>20</td>
@@ -8831,7 +8831,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/SPLEATHR.png" role="presentation"></td>
+								<td><img src="images/items/SPLEATHR.png" role="presentation"></td>
 								<th scope="row">Combat Leather Jacket</th>
 								<td>Modoc (Balthas), New Reno</td>
 								<td>18</td>
@@ -8840,7 +8840,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/MetalArmor.png" role="presentation"></td>
+								<td><img src="images/items/MetalArmor.png" role="presentation"></td>
 								<th scope="row">Metal Armor</th>
 								<td>Den (Rebecca), VC</td>
 								<td>10</td>
@@ -8849,7 +8849,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/MetalArmorMkII.png" role="presentation"></td>
+								<td><img src="images/items/MetalArmorMkII.png" role="presentation"></td>
 								<th scope="row">Metal Armor Mark II</th>
 								<td>VC (Randal), Redding (mine)</td>
 								<td>15</td>
@@ -8858,7 +8858,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/ROBEINV.png" role="presentation"></td>
+								<td><img src="images/items/ROBEINV.png" role="presentation"></td>
 								<th scope="row">Bridgekeeper's Robes</th>
 								<td>Bridge</td>
 								<td>20</td>
@@ -8867,7 +8867,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CBTARMOR.png" role="presentation"></td>
+								<td><img src="images/items/CBTARMOR.png" role="presentation"></td>
 								<th scope="row">Combat Armor</th>
 								<td>SAD, NCR (Duppo), Vault 15</td>
 								<td>20</td>
@@ -8876,7 +8876,7 @@
 								<td>20</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/COMBA2A.png" role="presentation"></td>
+								<td><img src="images/items/COMBA2A.png" role="presentation"></td>
 								<th scope="row">Brotherhood Armor</th>
 								<td>SF (Brotherhood)</td>
 								<td>20</td>
@@ -8885,7 +8885,7 @@
 								<td>20</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CBTARMR2.png" role="presentation"></td>
+								<td><img src="images/items/CBTARMR2.png" role="presentation"></td>
 								<th scope="row">Combat Armor Mark II</th>
 								<td>Toxic Caves, SF (R888G)</td>
 								<td>25</td>
@@ -8894,7 +8894,7 @@
 								<td>20</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TeslaArmor.png" role="presentation"></td>
+								<td><img src="images/items/TeslaArmor.png" role="presentation"></td>
 								<th scope="row">Tesla Armor</th>
 								<td>SF (FD8, R888G)</td>
 								<td>15</td>
@@ -8903,7 +8903,7 @@
 								<td>20</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PWRARMOR.png" role="presentation"></td>
+								<td><img src="images/items/PWRARMOR.png" role="presentation"></td>
 								<th scope="row">Power Armor</th>
 								<td>MB, SF</td>
 								<td>25</td>
@@ -8912,7 +8912,7 @@
 								<td>30</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PWRARMOR.png" role="presentation"></td>
+								<td><img src="images/items/PWRARMOR.png" role="presentation"></td>
 								<th scope="row">Hardened Power Armor</th>
 								<td>SF (Crocket)</td>
 								<td>25</td>
@@ -8921,7 +8921,7 @@
 								<td>30</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PARMOR2.png" role="presentation"></td>
+								<td><img src="images/items/PARMOR2.png" role="presentation"></td>
 								<th scope="row">Advanced Power Armor</th>
 								<td>Navarro</td>
 								<td>30</td>
@@ -8930,7 +8930,7 @@
 								<td>60</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PARMOR2.png" role="presentation"></td>
+								<td><img src="images/items/PARMOR2.png" role="presentation"></td>
 								<th scope="row">Adv. Power Armor MKII</th>
 								<td>Enclave</td>
 								<td>35</td>
@@ -8975,7 +8975,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><img src="/images/items/FO1_Rock.png" role="presentation"></td>
+								<td><img src="images/items/FO1_Rock.png" role="presentation"></td>
 								<th scope="row">Rock</th>
 								<td>Klamath</td>
 								<td>1-4</td>
@@ -8985,7 +8985,7 @@
 								<td>Thr/Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/ROCK2.png" role="presentation"></td>
+								<td><img src="images/items/ROCK2.png" role="presentation"></td>
 								<th scope="row">Gold Nugget</th>
 								<td>Golgotha, Caravan encounter</td>
 								<td>3-6</td>
@@ -8995,7 +8995,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/UraniumOre.png" role="presentation"></td>
+								<td><img src="images/items/UraniumOre.png" role="presentation"></td>
 								<th scope="row">Uranium Ore</th>
 								<td>BH (mine), Caravan encounter</td>
 								<td>3-6</td>
@@ -9005,7 +9005,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/UraniumOre.png" role="presentation"></td>
+								<td><img src="images/items/UraniumOre.png" role="presentation"></td>
 								<th scope="row">Refined Uranium Ore</th>
 								<td>BH (refinery)</td>
 								<td>3-6</td>
@@ -9015,7 +9015,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Plant_Spike.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Plant_Spike.png" role="presentation"></td>
 								<th scope="row">Plant Spike</th>
 								<td>Arroyo (plants)</td>
 								<td>1-2</td>
@@ -9025,7 +9025,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/plntspk2.png" role="presentation"></td>
+								<td><img src="images/items/plntspk2.png" role="presentation"></td>
 								<th scope="row">Plant Spike (EPA version)</th>
 								<td>Arroyo (plants)</td>
 								<td>1-2</td>
@@ -9035,7 +9035,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Flare.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Flare.png" role="presentation"></td>
 								<th scope="row">Flare</th>
 								<td>Klamath</td>
 								<td>1-1</td>
@@ -9045,7 +9045,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Throwing_Knife.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Throwing_Knife.png" role="presentation"></td>
 								<th scope="row">Throwing Knife</th>
 								<td>Klamath</td>
 								<td>3-6</td>
@@ -9055,7 +9055,7 @@
 								<td>Thr/Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Spear3.png" role="presentation"></td>
+								<td><img src="images/items/Spear3.png" role="presentation"></td>
 								<th scope="row">Sharpened Pole</th>
 								<td>Temple of Trials</td>
 								<td>2-4</td>
@@ -9065,7 +9065,7 @@
 								<td>Me W/Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Spear.png" role="presentation"></td>
+								<td><img src="images/items/Spear.png" role="presentation"></td>
 								<th scope="row">Spear</th>
 								<td>Arroyo</td>
 								<td>3-10</td>
@@ -9075,7 +9075,7 @@
 								<td>Me W/Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Spear2.png" role="presentation"></td>
+								<td><img src="images/items/Spear2.png" role="presentation"></td>
 								<th scope="row">Sharpened Spear</th>
 								<td>Arroyo (Mynoc)</td>
 								<td>4-12</td>
@@ -9085,7 +9085,7 @@
 								<td>Me W/Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Boxing_Gloves.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Boxing_Gloves.png" role="presentation"></td>
 								<th scope="row">Boxing Gloves</th>
 								<td>New Reno, NCR (Duppo)</td>
 								<td>1-1</td>
@@ -9095,7 +9095,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Plated_Boxing_Gloves.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Plated_Boxing_Gloves.png" role="presentation"></td>
 								<th scope="row">Plated Boxing Gloves</th>
 								<td>New Reno (Bishop's)</td>
 								<td>2-3</td>
@@ -9105,7 +9105,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_brass_knuckles.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_brass_knuckles.png" role="presentation"></td>
 								<th scope="row">Brass Knuckles</th>
 								<td>Klamath</td>
 								<td>2-5</td>
@@ -9115,7 +9115,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_spiked_knuckles.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_spiked_knuckles.png" role="presentation"></td>
 								<th scope="row">Spiked Knuckles</th>
 								<td>Klamath (Duntons)</td>
 								<td>4-10</td>
@@ -9125,7 +9125,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Tangershand.png" role="presentation"></td>
+								<td><img src="images/items/Tangershand.png" role="presentation"></td>
 								<th scope="row">Claw</th>
 								<td>NCR (pastures), V13 (Thearn, Valdis)</td>
 								<td>3-4</td>
@@ -9135,7 +9135,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Tangershand.png" role="presentation"></td>
+								<td><img src="images/items/Tangershand.png" role="presentation"></td>
 								<th scope="row">Claw</th>
 								<td>V13 (Gruthar, Dar), Navarro (Xarn)</td>
 								<td>5-10</td>
@@ -9145,7 +9145,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_power_fist.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_power_fist.png" role="presentation"></td>
 								<th scope="row">Power Fist</th>
 								<td>BH (Francis), NCR (Duppo)</td>
 								<td>12-24</td>
@@ -9155,7 +9155,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Mega_power_fist.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Mega_power_fist.png" role="presentation"></td>
 								<th scope="row">Mega Power Fist</th>
 								<td>Upgrade, SF (R888G, tanker)</td>
 								<td>20-40</td>
@@ -9165,7 +9165,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Robotprt.png" role="presentation"></td>
+								<td><img src="images/items/Robotprt.png" role="presentation"></td>
 								<th scope="row">Robo Melee Weapon 2</th>
 								<td>Enclave</td>
 								<td>15-30</td>
@@ -9175,7 +9175,7 @@
 								<td>Un</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Switchblade.png" role="presentation"></td>
+								<td><img src="images/items/Switchblade.png" role="presentation"></td>
 								<th scope="row">Switchblade</th>
 								<td>New Reno</td>
 								<td>1-5</td>
@@ -9185,7 +9185,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Knife.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Knife.png" role="presentation"></td>
 								<th scope="row">Knife</th>
 								<td>Arroyo</td>
 								<td>1-6</td>
@@ -9195,7 +9195,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Boxing_Gloves.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Boxing_Gloves.png" role="presentation"></td>
 								<th scope="row">Special Boxer Weapon</th>
 								<td>New Reno (boxing ring)</td>
 								<td>1-1</td>
@@ -9205,7 +9205,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Club.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Club.png" role="presentation"></td>
 								<th scope="row">Club</th>
 								<td>Klamath (Sajag), Den</td>
 								<td>1-6</td>
@@ -9215,7 +9215,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Wrench.png" role="presentation"></td>
+								<td><img src="images/items/Wrench.png" role="presentation"></td>
 								<th scope="row">Wrench</th>
 								<td>VC (courtyard), Redding (McGrew's)</td>
 								<td>3-6</td>
@@ -9225,7 +9225,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Crowbar.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Crowbar.png" role="presentation"></td>
 								<th scope="row">Crowbar</th>
 								<td>Klamath</td>
 								<td>3-10</td>
@@ -9235,7 +9235,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_combat_knife.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_combat_knife.png" role="presentation"></td>
 								<th scope="row">Combat Knife</th>
 								<td>Klamath</td>
 								<td>3-10</td>
@@ -9245,7 +9245,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Wknife.png" role="presentation"></td>
+								<td><img src="images/items/Wknife.png" role="presentation"></td>
 								<th scope="row">Wakizashi Blade</th>
 								<td>Yakuza encounter</td>
 								<td>4-12</td>
@@ -9255,7 +9255,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/LittleJesus.png" role="presentation"></td>
+								<td><img src="images/items/LittleJesus.png" role="presentation"></td>
 								<th scope="row">"Little Jesus"</th>
 								<td>New Reno (Little Jesus)</td>
 								<td>5-14</td>
@@ -9265,7 +9265,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Louisville_Slugger.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Louisville_Slugger.png" role="presentation"></td>
 								<th scope="row">Louisville Slugger</th>
 								<td>New Reno (Mrs Wright)</td>
 								<td>12-30</td>
@@ -9275,7 +9275,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Sledgehammer.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Sledgehammer.png" role="presentation"></td>
 								<th scope="row">Sledgehammer</th>
 								<td>Klamath</td>
 								<td>4-9</td>
@@ -9285,7 +9285,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Super_Sledge.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Super_Sledge.png" role="presentation"></td>
 								<th scope="row">Super Sledge</th>
 								<td>NR (Eldridge), SF (R888G)</td>
 								<td>18-36</td>
@@ -9295,7 +9295,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Ripper.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Ripper.png" role="presentation"></td>
 								<th scope="row">Ripper</th>
 								<td>BH (Steve), NCR</td>
 								<td>15-32</td>
@@ -9305,7 +9305,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Cattle_Prod.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Cattle_Prod.png" role="presentation"></td>
 								<th scope="row">Cattle Prod</th>
 								<td>Klamath (bathhouse), Den (slave run)</td>
 								<td>12-20</td>
@@ -9315,7 +9315,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Super_Cattle_Prod.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Super_Cattle_Prod.png" role="presentation"></td>
 								<th scope="row">Super Cattle Prod</th>
 								<td>Upgrade, Enclave</td>
 								<td>20-32</td>
@@ -9325,7 +9325,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/End_Boss_knife.png" role="presentation"></td>
+								<td><img src="images/items/End_Boss_knife.png" role="presentation"></td>
 								<th scope="row">End Boss Knife</th>
 								<td>Enclave (Horrigan)</td>
 								<td>15-30</td>
@@ -9335,7 +9335,7 @@
 								<td>Me W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Molotov_Cocktail.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Molotov_Cocktail.png" role="presentation"></td>
 								<th scope="row">Molotov Cocktail</th>
 								<td>Klamath</td>
 								<td>8-20</td>
@@ -9345,7 +9345,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_frag_grenade.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_frag_grenade.png" role="presentation"></td>
 								<th scope="row">Grenade (Frag)</th>
 								<td>Klamath (child), Modoc (Jo's)</td>
 								<td>20-35</td>
@@ -9355,7 +9355,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_plasma_grenade.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_plasma_grenade.png" role="presentation"></td>
 								<th scope="row">Grenade (Plasma)</th>
 								<td>Den (Becky, Fred), New Reno</td>
 								<td>40-90</td>
@@ -9365,7 +9365,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_pulse_grenade.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_pulse_grenade.png" role="presentation"></td>
 								<th scope="row">Grenade (Pulse)</th>
 								<td>NR (Eldridge's, Mordino's), SAD</td>
 								<td>100-150</td>
@@ -9375,7 +9375,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Holy_Hand_Grenade.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Holy_Hand_Grenade.png" role="presentation"></td>
 								<th scope="row">Holy Hand Grenade</th>
 								<td>Vorpal rat cave (cheat only)</td>
 								<td>300-500</td>
@@ -9385,7 +9385,7 @@
 								<td>Thr</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Jonny's_BB_Gun.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Jonny's_BB_Gun.png" role="presentation"></td>
 								<th scope="row">Jonny's BB Gun</th>
 								<td>Modoc (well)</td>
 								<td>1-3</td>
@@ -9395,7 +9395,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Red_Ryder_BB_Gun.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Red_Ryder_BB_Gun.png" role="presentation"></td>
 								<th scope="row">Red Ryder BB Gun</th>
 								<td>NCR (Buster), trader encounter</td>
 								<td>1-3</td>
@@ -9405,7 +9405,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Red_Ryder_LE_BB_Gun.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Red_Ryder_LE_BB_Gun.png" role="presentation"></td>
 								<th scope="row">Red Ryder LE BB Gun</th>
 								<td>SAD (Dobbs), NCR (Buster)</td>
 								<td>25-25</td>
@@ -9415,7 +9415,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Springun.png" role="presentation"></td>
+								<td><img src="images/items/Springun.png" role="presentation"></td>
 								<th scope="row">Pipe Rifle</th>
 								<td>Klamath</td>
 								<td>5-12</td>
@@ -9425,7 +9425,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_10mm_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_10mm_Pistol.png" role="presentation"></td>
 								<th scope="row">10mm Pistol</th>
 								<td>Klamath (Sajag, rat caves), Den</td>
 								<td>5-12</td>
@@ -9435,7 +9435,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_10mm_SMG.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_10mm_SMG.png" role="presentation"></td>
 								<th scope="row">10mm SMG</th>
 								<td>Den (Tubby)</td>
 								<td>5-12</td>
@@ -9445,7 +9445,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_H&K_P90c.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_H&K_P90c.png" role="presentation"></td>
 								<th scope="row">HK P90c</th>
 								<td>NCR (Duppo, Mira), Vault 15</td>
 								<td>12-16</td>
@@ -9455,7 +9455,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Desert_Eagle.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Desert_Eagle.png" role="presentation"></td>
 								<th scope="row">Desert Eagle .44</th>
 								<td>Den (Tubby, Tyler)</td>
 								<td>10-16</td>
@@ -9465,7 +9465,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Desert_Eagle_Expanded_Mags.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Desert_Eagle_Expanded_Mags.png" role="presentation"></td>
 								<th scope="row">Desert Eagle (Exp. Mag.)</th>
 								<td>Upgrade</td>
 								<td>10-16</td>
@@ -9475,7 +9475,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_.44_Magnum_Revolver.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_.44_Magnum_Revolver.png" role="presentation"></td>
 								<th scope="row">.44 Magnum Revolver</th>
 								<td>Den (Flick), VC (Harry)</td>
 								<td>12-18</td>
@@ -9485,7 +9485,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_.44_Magnum_Speedloader.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_.44_Magnum_Speedloader.png" role="presentation"></td>
 								<th scope="row">.44 Magnum (Speed Load)</th>
 								<td>Upgrade</td>
 								<td>12-18</td>
@@ -9495,7 +9495,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_14mm_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_14mm_Pistol.png" role="presentation"></td>
 								<th scope="row">14mm Pistol</th>
 								<td>Modoc (Jo), VC (Randal)</td>
 								<td>12-22</td>
@@ -9505,7 +9505,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_9mm_Mouser.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_9mm_Mouser.png" role="presentation"></td>
 								<th scope="row">9mm Mauser</th>
 								<td>NR (Eldridge's), trader encounter</td>
 								<td>5-10</td>
@@ -9515,7 +9515,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Needler_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Needler_Pistol.png" role="presentation"></td>
 								<th scope="row">Needler Pistol</th>
 								<td>Stables (Myron), Redding (Marion)</td>
 								<td>12-24</td>
@@ -9525,7 +9525,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Hunting_Rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Hunting_Rifle.png" role="presentation"></td>
 								<th scope="row">Hunting Rifle</th>
 								<td>Den (Flick, slave run)</td>
 								<td>8-20</td>
@@ -9535,7 +9535,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Scoped_Hunting_Rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Scoped_Hunting_Rifle.png" role="presentation"></td>
 								<th scope="row">Scoped Hunting Rifle</th>
 								<td>Upgrade, BH (Marcus)</td>
 								<td>8-20</td>
@@ -9545,7 +9545,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_.223_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_.223_Pistol.png" role="presentation"></td>
 								<th scope="row">.223 Pistol</th>
 								<td>NR (Eldridge), NCR (Buster), V15</td>
 								<td>20-30</td>
@@ -9555,7 +9555,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Sniper_Rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Sniper_Rifle.png" role="presentation"></td>
 								<th scope="row">Sniper Rifle</th>
 								<td>NR (Eldridge), SAD, V15 (Karla)</td>
 								<td>14-34</td>
@@ -9565,7 +9565,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Shotgun.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Shotgun.png" role="presentation"></td>
 								<th scope="row">Shotgun</th>
 								<td>Den (Metzger), Modoc</td>
 								<td>12-22</td>
@@ -9575,7 +9575,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Sawed-Off_Shotgun.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Sawed-Off_Shotgun.png" role="presentation"></td>
 								<th scope="row">Sawed-Off Shotgun</th>
 								<td>VC (Cassidy)</td>
 								<td>12-24</td>
@@ -9585,7 +9585,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Combat_Shotgun.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Combat_Shotgun.png" role="presentation"></td>
 								<th scope="row">Combat Shotgun</th>
 								<td>VC (Randal, guards)</td>
 								<td>15-25</td>
@@ -9595,7 +9595,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_H&K_CAWS.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_H&K_CAWS.png" role="presentation"></td>
 								<th scope="row">H&K CAWS</th>
 								<td>Redding (Ascorti), NR (Eldridge)</td>
 								<td>15-25</td>
@@ -9605,7 +9605,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Pancor_Jackhammer.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Pancor_Jackhammer.png" role="presentation"></td>
 								<th scope="row">Pancor Jackhammer</th>
 								<td>NR (desert transaction), NCR</td>
 								<td>18-29</td>
@@ -9615,7 +9615,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TOMMYGUN.png" role="presentation"></td>
+								<td><img src="images/items/TOMMYGUN.png" role="presentation"></td>
 								<th scope="row">Tommy Gun</th>
 								<td>New Reno</td>
 								<td>3-20</td>
@@ -9625,7 +9625,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Grease_Gun.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Grease_Gun.png" role="presentation"></td>
 								<th scope="row">M3A1 "Grease Gun" SMG</th>
 								<td>New Reno, Stables</td>
 								<td>10-20</td>
@@ -9635,7 +9635,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_assault_rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_assault_rifle.png" role="presentation"></td>
 								<th scope="row">Assault Rifle</th>
 								<td>Ghost Farm (Vegeir)</td>
 								<td>8-16</td>
@@ -9645,7 +9645,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_assault_rifle_Expanded_Mags.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_assault_rifle_Expanded_Mags.png" role="presentation"></td>
 								<th scope="row">Assault Rifle (Exp. Mag.)</th>
 								<td>Upgrade</td>
 								<td>8-16</td>
@@ -9655,7 +9655,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/XL70E3.png" role="presentation"></td>
+								<td><img src="images/items/XL70E3.png" role="presentation"></td>
 								<th scope="row">XL70E3</th>
 								<td>Caravan encounter, SF (tanker)</td>
 								<td>12-19</td>
@@ -9665,7 +9665,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_FN_FAL.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_FN_FAL.png" role="presentation"></td>
 								<th scope="row">FN FAL</th>
 								<td>VC (Randal), Gecko (Percy)</td>
 								<td>9-18</td>
@@ -9675,7 +9675,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_FN_FAL_Low-light.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_FN_FAL_Low-light.png" role="presentation"></td>
 								<th scope="row">FN FAL (Night Sight)</th>
 								<td>Upgrade</td>
 								<td>9-18</td>
@@ -9685,7 +9685,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_FN_FAL_Low-light.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_FN_FAL_Low-light.png" role="presentation"></td>
 								<th scope="row">FN FAL HPFA</th>
 								<td>NCR (Duppo), SF (R888G)</td>
 								<td>11-22</td>
@@ -9695,7 +9695,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_H&K_G11.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_H&K_G11.png" role="presentation"></td>
 								<th scope="row">H&K G11</th>
 								<td>Redding (Morton), NCR (Buster, Felix)</td>
 								<td>10-20</td>
@@ -9705,7 +9705,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_H&K_G11E.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_H&K_G11E.png" role="presentation"></td>
 								<th scope="row">H&K G11E</th>
 								<td>Snake Morton, SF, Mel</td>
 								<td>13-23</td>
@@ -9715,7 +9715,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Gauss_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Gauss_Pistol.png" role="presentation"></td>
 								<th scope="row">PPK12 Gauss Pistol</th>
 								<td>MB, SF (R888G)</td>
 								<td>22-32</td>
@@ -9725,7 +9725,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_M72_Gauss_Rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_M72_Gauss_Rifle.png" role="presentation"></td>
 								<th scope="row">M72 Gauss Rifle</th>
 								<td>NCR (Karl, Dumont), SF</td>
 								<td>32-43</td>
@@ -9735,7 +9735,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fire_gecko_pelt.png" role="presentation"></td>
+								<td><img src="images/items/Fire_gecko_pelt.png" role="presentation"></td>
 								<th scope="row">Flame Breath</th>
 								<td>Fire gecko encounter, MB</td>
 								<td>35-50</td>
@@ -9745,7 +9745,7 @@
 								<td>Sm G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Flamer.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Flamer.png" role="presentation"></td>
 								<th scope="row">Flamer</th>
 								<td>BH (Zaius), NR (Eldridge)</td>
 								<td>45-90</td>
@@ -9755,7 +9755,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Improved_Flamer.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Improved_Flamer.png" role="presentation"></td>
 								<th scope="row">Improved Flamer</th>
 								<td>Upgrade</td>
 								<td>45-90</td>
@@ -9765,7 +9765,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Minigun.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Minigun.png" role="presentation"></td>
 								<th scope="row">Minigun</th>
 								<td>BH (Marcus, jail), NR (Eldridge)</td>
 								<td>7-11</td>
@@ -9775,7 +9775,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Avenger_Minigun.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Avenger_Minigun.png" role="presentation"></td>
 								<th scope="row">Avenger Minigun</th>
 								<td>NCR (Buster), SF (R888G)</td>
 								<td>10-14</td>
@@ -9785,7 +9785,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Vindicator_Minigun.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Vindicator_Minigun.png" role="presentation"></td>
 								<th scope="row">Vindicator Minigun</th>
 								<td>SF (R888G), Enclave</td>
 								<td>14-19</td>
@@ -9795,7 +9795,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_M60.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_M60.png" role="presentation"></td>
 								<th scope="row">M60</th>
 								<td>New Reno (Eldridge), SF (FD8)</td>
 								<td>18-26</td>
@@ -9805,7 +9805,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Light_Support_Weapon.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Light_Support_Weapon.png" role="presentation"></td>
 								<th scope="row">Light Support Weapon</th>
 								<td>NCR (Buster), SF (R888G)</td>
 								<td>20-30</td>
@@ -9815,7 +9815,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Bozar.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Bozar.png" role="presentation"></td>
 								<th scope="row">Bozar</th>
 								<td>NR (Eldridge), Toxic Caves</td>
 								<td>25-35</td>
@@ -9825,7 +9825,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/K9Parts.png" role="presentation"></td>
+								<td><img src="images/items/K9Parts.png" role="presentation"></td>
 								<th scope="row">Robo Rocket Launcher</th>
 								<td>Toxic Caves, SAD</td>
 								<td>10-30</td>
@@ -9835,7 +9835,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Rocket_Launcher.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Rocket_Launcher.png" role="presentation"></td>
 								<th scope="row">Rocket Launcher</th>
 								<td>NR (Eldridge), SAD, MB</td>
 								<td>35-100</td>
@@ -9845,7 +9845,7 @@
 								<td>Big G</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Laser_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Laser_Pistol.png" role="presentation"></td>
 								<th scope="row">Laser Pistol</th>
 								<td>Toxic Caves, NR (Salvatore's)</td>
 								<td>10-22</td>
@@ -9855,7 +9855,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Magneto-Laser_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Magneto-Laser_Pistol.png" role="presentation"></td>
 								<th scope="row">Magneto-Laser Pistol</th>
 								<td>Upgrade, SF (FD8)</td>
 								<td>10-22</td>
@@ -9865,7 +9865,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Plasma_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Plasma_Pistol.png" role="presentation"></td>
 								<th scope="row">Plasma Pistol</th>
 								<td>Toxic Caves</td>
 								<td>15-35</td>
@@ -9875,7 +9875,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Plasma_Pistol_Extended_Capacity.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Plasma_Pistol_Extended_Capacity.png" role="presentation"></td>
 								<th scope="row">Plasma Pistol (Ext. Cap.)</th>
 								<td>Upgrade</td>
 								<td>15-35</td>
@@ -9885,7 +9885,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_YK32_Pulse_Pistol.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_YK32_Pulse_Pistol.png" role="presentation"></td>
 								<th scope="row">YK32 Pulse Pistol</th>
 								<td>SF (Brotherhood), Enclave</td>
 								<td>32-46</td>
@@ -9895,7 +9895,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_alien_blaster.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_alien_blaster.png" role="presentation"></td>
 								<th scope="row">Alien Blaster</th>
 								<td>Trader encounter, Enclave (maze)</td>
 								<td>30-90</td>
@@ -9905,7 +9905,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_laser_rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_laser_rifle.png" role="presentation"></td>
 								<th scope="row">Laser Rifle</th>
 								<td>Military Base, SF (R888G)</td>
 								<td>25-50</td>
@@ -9915,7 +9915,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Laser_Rifle_(Ext._Cap.).png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Laser_Rifle_(Ext._Cap.).png" role="presentation"></td>
 								<th scope="row">Laser Rifle (Ext. Cap.)</th>
 								<td>Upgrade, SF (FD8)</td>
 								<td>25-50</td>
@@ -9925,7 +9925,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Gatling_Laser.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Gatling_Laser.png" role="presentation"></td>
 								<th scope="row">Gatling Laser</th>
 								<td>SF (R888G), Enclave</td>
 								<td>20-40</td>
@@ -9935,7 +9935,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_plasma_rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_plasma_rifle.png" role="presentation"></td>
 								<th scope="row">Plasma Rifle</th>
 								<td>SAD, Military Base, Navarro</td>
 								<td>30-65</td>
@@ -9945,7 +9945,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_turbo_plasma_rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_turbo_plasma_rifle.png" role="presentation"></td>
 								<th scope="row">Turbo Plasma Rifle</th>
 								<td>Upgrade, Enclave (Granite's squad)</td>
 								<td>35-70</td>
@@ -9955,7 +9955,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_YK42B_Pulse_Rifle.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_YK42B_Pulse_Rifle.png" role="presentation"></td>
 								<th scope="row">YK42B Pulse Rifle</th>
 								<td>SF (Brotherhood), Enclave</td>
 								<td>54-78</td>
@@ -9965,7 +9965,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/EndBossPlasmaGun.png" role="presentation"></td>
+								<td><img src="images/items/EndBossPlasmaGun.png" role="presentation"></td>
 								<th scope="row">End Boss Plasma Gun</th>
 								<td>Enclave (Horrigan)</td>
 								<td>30-70</td>
@@ -9975,7 +9975,7 @@
 								<td>En W</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Solar_Scorcher.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Solar_Scorcher.png" role="presentation"></td>
 								<th scope="row">Solar Scorcher</th>
 								<td>Guardian of Forever</td>
 								<td>20-60</td>
@@ -10035,7 +10035,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><img src="/images/items/BBS.png" role="presentation"></td>
+								<td><img src="images/items/BBS.png" role="presentation"></td>
 								<th scope="row">BB's</th>
 								<td></td>
 								<td></td>
@@ -10043,7 +10043,7 @@
 								<td>Red Ryder LE BB Gun</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/10mmap.png" role="presentation"></td>
+								<td><img src="images/items/10mmap.png" role="presentation"></td>
 								<th scope="row">10mm AP</th>
 								<td>1/2</td>
 								<td></td>
@@ -10051,7 +10051,7 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/10mmjhp.png" role="presentation"></td>
+								<td><img src="images/items/10mmjhp.png" role="presentation"></td>
 								<th scope="row">10mm JHP</th>
 								<td>2/1</td>
 								<td></td>
@@ -10059,7 +10059,7 @@
 								<td>HK P90c</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/44fmj.png" role="presentation"></td>
+								<td><img src="images/items/44fmj.png" role="presentation"></td>
 								<th scope="row">.44 magnum FMJ</th>
 								<td></td>
 								<td></td>
@@ -10067,7 +10067,7 @@
 								<td>.44 Magnum (Speed Load)</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/44jhp.png" role="presentation"></td>
+								<td><img src="images/items/44jhp.png" role="presentation"></td>
 								<th scope="row">.44 Magnum JHP</th>
 								<td>2/1</td>
 								<td></td>
@@ -10075,7 +10075,7 @@
 								<td>.44 Magnum (Speed Load)</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/12ga.png" role="presentation"></td>
+								<td><img src="images/items/12ga.png" role="presentation"></td>
 								<th scope="row">12 ga. Shotgun Shells</th>
 								<td></td>
 								<td>-10</td>
@@ -10083,7 +10083,7 @@
 								<td>Pancor Jackhammer</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/14mmap.png" role="presentation"></td>
+								<td><img src="images/items/14mmap.png" role="presentation"></td>
 								<th scope="row">14mm AP</th>
 								<td>1/2</td>
 								<td></td>
@@ -10091,7 +10091,7 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/45CAL.png" role="presentation"></td>
+								<td><img src="images/items/45CAL.png" role="presentation"></td>
 								<th scope="row">.45 Caliber</th>
 								<td></td>
 								<td></td>
@@ -10099,7 +10099,7 @@
 								<td>M3A1 "Grease Gun" SMG</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/762mm.png" role="presentation"></td>
+								<td><img src="images/items/762mm.png" role="presentation"></td>
 								<th scope="row">7.62mm</th>
 								<td></td>
 								<td>-5</td>
@@ -10107,7 +10107,7 @@
 								<td>M60</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/9MM.png" role="presentation"></td>
+								<td><img src="images/items/9MM.png" role="presentation"></td>
 								<th scope="row">9mm</th>
 								<td>1/2</td>
 								<td></td>
@@ -10115,7 +10115,7 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/9mmBall.png" role="presentation"></td>
+								<td><img src="images/items/9mmBall.png" role="presentation"></td>
 								<th scope="row">9mm ball</th>
 								<td></td>
 								<td></td>
@@ -10123,7 +10123,7 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/5mmap.png" role="presentation"></td>
+								<td><img src="images/items/5mmap.png" role="presentation"></td>
 								<th scope="row">5mm AP</th>
 								<td>1/2</td>
 								<td></td>
@@ -10131,7 +10131,7 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/5mmjhp.png" role="presentation"></td>
+								<td><img src="images/items/5mmjhp.png" role="presentation"></td>
 								<th scope="row">5mm JHP</th>
 								<td>2/1</td>
 								<td></td>
@@ -10139,7 +10139,7 @@
 								<td>Avenger Minigun</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/HNNeedlerCartridge.png" role="presentation"></td>
+								<td><img src="images/items/HNNeedlerCartridge.png" role="presentation"></td>
 								<th scope="row">HN Needler Cartridge</th>
 								<td></td>
 								<td>-10</td>
@@ -10147,7 +10147,7 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/HNAPNeedler_Cartridge.png" role="presentation"></td>
+								<td><img src="images/items/HNAPNeedler_Cartridge.png" role="presentation"></td>
 								<th scope="row">HN AP Needler Cartridge</th>
 								<td>2/1</td>
 								<td>-10</td>
@@ -10155,7 +10155,7 @@
 								<td>Needler Pistol</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/223fmj.png" role="presentation"></td>
+								<td><img src="images/items/223fmj.png" role="presentation"></td>
 								<th scope="row">.223 FMJ</th>
 								<td></td>
 								<td>-20</td>
@@ -10163,7 +10163,7 @@
 								<td>.223 Pistol, Sniper Rifle, Bozar</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/4_7MM.png" role="presentation"></td>
+								<td><img src="images/items/4_7MM.png" role="presentation"></td>
 								<th scope="row">4.7mm Caseless</th>
 								<td>3/2</td>
 								<td>-5</td>
@@ -10171,7 +10171,7 @@
 								<td>H&K G11E, Vindicator Minigun</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/2MMEC.png" role="presentation"></td>
+								<td><img src="images/items/2MMEC.png" role="presentation"></td>
 								<th scope="row">2mm EC</th>
 								<td>3/2</td>
 								<td>-30</td>
@@ -10179,7 +10179,7 @@
 								<td>PPK12 Gauss Pistol, M72 Gauss Rifle</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CCELLS.png" role="presentation"></td>
+								<td><img src="images/items/CCELLS.png" role="presentation"></td>
 								<th scope="row">Small Energy Cell</th>
 								<td></td>
 								<td></td>
@@ -10187,7 +10187,7 @@
 								<td>Mega Power Fist, Alien Blaster</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/DCELLS.png" role="presentation"></td>
+								<td><img src="images/items/DCELLS.png" role="presentation"></td>
 								<th scope="row">Micro Fusion Cell</th>
 								<td></td>
 								<td></td>
@@ -10195,7 +10195,7 @@
 								<td>Turbo Plasma Rifle, YK42B Pulse Rifle</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Flamethrowerfuel.png" role="presentation"></td>
+								<td><img src="images/items/Flamethrowerfuel.png" role="presentation"></td>
 								<th scope="row">Flamethrower Fuel</th>
 								<td></td>
 								<td>-20</td>
@@ -10203,7 +10203,7 @@
 								<td>(Improved) Flamer</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FLMFUEL2.png" role="presentation"></td>
+								<td><img src="images/items/FLMFUEL2.png" role="presentation"></td>
 								<th scope="row">Flamethrower Fuel MKII</th>
 								<td></td>
 								<td>-20</td>
@@ -10211,7 +10211,7 @@
 								<td>(Improved) Flamer</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Rocketap.png" role="presentation"></td>
+								<td><img src="images/items/Rocketap.png" role="presentation"></td>
 								<th scope="row">Rocket AP</th>
 								<td></td>
 								<td>-15</td>
@@ -10219,7 +10219,7 @@
 								<td>Rocket Launcher</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Explosiverocket.png" role="presentation"></td>
+								<td><img src="images/items/Explosiverocket.png" role="presentation"></td>
 								<th scope="row">Explosive Rocket</th>
 								<td></td>
 								<td></td>
@@ -10227,7 +10227,7 @@
 								<td>Rocket Launcher</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Rocketap.png" role="presentation"></td>
+								<td><img src="images/items/Rocketap.png" role="presentation"></td>
 								<th scope="row">Robo Rocket Ammo</th>
 								<td></td>
 								<td></td>
@@ -10268,210 +10268,210 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><img src="/images/items/Chem_psycho.png" role="presentation"></td>
+								<td><img src="images/items/Chem_psycho.png" role="presentation"></td>
 								<th scope="row">Psycho</th>
 								<td>Den</td>
 								<td>4+4 hrs</td>
 								<td>AG +3, IN -3, DR +50</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Buffout.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Buffout.png" role="presentation"></td>
 								<th scope="row">Buffout</th>
 								<td>Den (Tubby, grave), Modoc (Balthas')</td>
 								<td>6 hrs</td>
 								<td>ST +2, AG +2, EN +3</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Mentats.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Mentats.png" role="presentation"></td>
 								<th scope="row">Mentats</th>
 								<td>VC (Lynette), BH (Eric, Professor)</td>
 								<td>24 hrs</td>
 								<td>IN +2, PE +2, CH +1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_jet.png" role="presentation"></td>
+								<td><img src="images/items/Chem_jet.png" role="presentation"></td>
 								<th scope="row">Jet</th>
 								<td>Den</td>
 								<td>5 mins</td>
 								<td>AP +2, ST +1, PE +1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Antidote.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Antidote.png" role="presentation"></td>
 								<th scope="row">Antidote</th>
 								<td>Temple of Trials</td>
 								<td></td>
 								<td>Poison Level -75</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_RadAway.png" role="presentation"></td>
+								<td><img src="images/items/Chem_RadAway.png" role="presentation"></td>
 								<th scope="row">RadAway</th>
 								<td>Klamath (Sajag), Toxic Caves</td>
 								<td></td>
 								<td>Radiation Level -150</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Rad-X.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Rad-X.png" role="presentation"></td>
 								<th scope="row">Rad-X</th>
 								<td>Toxic Caves</td>
 								<td>24+24 hrs</td>
 								<td>Radiation Resistance +50</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_fruit.png" role="presentation"></td>
+								<td><img src="images/items/Chem_fruit.png" role="presentation"></td>
 								<th scope="row">Fruit</th>
 								<td>Arroyo</td>
 								<td></td>
 								<td>CHP +(1-4), RL +2, Myron uses</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Powder.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Powder.png" role="presentation"></td>
 								<th scope="row">Healing Powder</th>
 								<td>Temple of Trials</td>
 								<td>6 hrs</td>
 								<td>Current HP +(8-18), PE -1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_stimpak.png" role="presentation"></td>
+								<td><img src="images/items/Chem_stimpak.png" role="presentation"></td>
 								<th scope="row">Stimpak</th>
 								<td>Klamath</td>
 								<td></td>
 								<td>Current HP +(10-20), Myron uses</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_SuperStim.png" role="presentation"></td>
+								<td><img src="images/items/Chem_SuperStim.png" role="presentation"></td>
 								<th scope="row">Super Stimpak</th>
 								<td>VC (Lynette, Troy), Gecko (Harold)</td>
 								<td></td>
 								<td>Current HP +75, then -6, then -3</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_AntiJet.png" role="presentation"></td>
+								<td><img src="images/items/Chem_AntiJet.png" role="presentation"></td>
 								<th scope="row">Jet Antidote</th>
 								<td>VC (Dr Troy), SF (tanker)</td>
 								<td></td>
 								<td>Cures Jet addiction</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Hypo.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Hypo.png" role="presentation"></td>
 								<th scope="row">Hypo</th>
 								<td>Federation Shuttle</td>
 								<td></td>
 								<td>Current HP +(75-100)</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_MToe.png" role="presentation"></td>
+								<td><img src="images/items/Chem_MToe.png" role="presentation"></td>
 								<th scope="row">Mutated Toe</th>
 								<td>VC (Andrew)</td>
 								<td>7 days</td>
 								<td>Maximum HP -3, Poison Level +2</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_MChunk.png" role="presentation"></td>
+								<td><img src="images/items/Chem_MChunk.png" role="presentation"></td>
 								<th scope="row">Monument Chunk</th>
 								<td>Talking Head</td>
 								<td>1 hr</td>
 								<td>ST +3, AG +3, DR +50</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Cookie.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Cookie.png" role="presentation"></td>
 								<th scope="row">Cookie</th>
 								<td>Modoc (Rose, Farrel), SAD</td>
 								<td>15 mins</td>
 								<td>AP +1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/G&A.png" role="presentation"></td>
+								<td><img src="images/items/G&A.png" role="presentation"></td>
 								<th scope="row">Guns and Bullets</th>
 								<td>Klamath</td>
 								<td></td>
 								<td>Raises Small Guns</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/SCOUT.png" role="presentation"></td>
+								<td><img src="images/items/SCOUT.png" role="presentation"></td>
 								<th scope="row">Scout Handbook</th>
 								<td>Klamath (trapper town), VC (vault)</td>
 								<td></td>
 								<td>Raises Outdoorsman</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/SCIENCE.png" role="presentation"></td>
+								<td><img src="images/items/SCIENCE.png" role="presentation"></td>
 								<th scope="row">Big Book of Science</th>
 								<td>VC</td>
 								<td></td>
 								<td>Raises Science</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FRST_BK.png" role="presentation"></td>
+								<td><img src="images/items/FRST_BK.png" role="presentation"></td>
 								<th scope="row">First Aid Book</th>
 								<td>Modoc (Grisham's), VC (Randal, vault)</td>
 								<td></td>
 								<td>Raises First Aid</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/DEANS.png" role="presentation"></td>
+								<td><img src="images/items/DEANS.png" role="presentation"></td>
 								<th scope="row">Deans Electronics</th>
 								<td>Ghost Farm, VC</td>
 								<td></td>
 								<td>Raises Repair</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CATPAW2.png" role="presentation"></td>
+								<td><img src="images/items/CATPAW2.png" role="presentation"></td>
 								<th scope="row">Cat's Paw Issue #5</th>
 								<td>New Reno (Miss Kitty)</td>
 								<td></td>
 								<td>Energy Weapons +10%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Pipmed.png" role="presentation"></td>
+								<td><img src="images/items/Pipmed.png" role="presentation"></td>
 								<th scope="row">Pip Boy Medical Enhancer</th>
 								<td>New Reno (Renesco)</td>
 								<td></td>
 								<td>Doctor +10%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PIPLING.png" role="presentation"></td>
+								<td><img src="images/items/PIPLING.png" role="presentation"></td>
 								<th scope="row">Pip Boy Lingual Enhancer</th>
 								<td>New Reno (Mrs Bishop)</td>
 								<td></td>
 								<td>Speech +10%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_beer.png" role="presentation"></td>
+								<td><img src="images/items/Chem_beer.png" role="presentation"></td>
 								<th scope="row">Beer</th>
 								<td>Klamath</td>
 								<td>30 mins</td>
 								<td>PE -1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Booze.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Booze.png" role="presentation"></td>
 								<th scope="row">Booze</th>
 								<td>Klamath</td>
 								<td>30 mins</td>
 								<td>PE -1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_GGBeer.png" role="presentation"></td>
+								<td><img src="images/items/Chem_GGBeer.png" role="presentation"></td>
 								<th scope="row">Gamma Gulp Beer</th>
 								<td>Den (Ananias), Gecko</td>
 								<td>30 mins</td>
 								<td>PE -1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_RotGut.png" role="presentation"></td>
+								<td><img src="images/items/Chem_RotGut.png" role="presentation"></td>
 								<th scope="row">Rot Gut</th>
 								<td>Raiders</td>
 								<td>30 mins</td>
 								<td>PE -2</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_RRum.png" role="presentation"></td>
+								<td><img src="images/items/Chem_RRum.png" role="presentation"></td>
 								<th scope="row">Roentgen Rum</th>
 								<td>Den (Ananias), Gecko</td>
 								<td>30 mins</td>
 								<td>PE -2</td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/drugs.png" role="presentation"></td>
+								<td><img src="images/items/drugs.png" role="presentation"></td>
 								<th scope="row">Drugs</th>
 								<td>EPA</td>
 								<td>?</td>
@@ -10530,157 +10530,157 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><img src="/images/items/FO2_bag.png" role="presentation"></td>
+								<td><img src="images/items/FO2_bag.png" role="presentation"></td>
 								<th scope="row">Bag</th>
 								<td>Modoc (rat nest)</td>
 								<td>Carry stuff!</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/GEIGER4.png" role="presentation"></td>
+								<td><img src="images/items/GEIGER4.png" role="presentation"></td>
 								<th scope="row">Geiger Counter</th>
 								<td>VC (courtyard, vault)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/F2money.png" role="presentation"></td>
+								<td><img src="images/items/F2money.png" role="presentation"></td>
 								<th scope="row">Money</th>
 								<td>Arroyo</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Sunglass.png" role="presentation"></td>
+								<td><img src="images/items/Sunglass.png" role="presentation"></td>
 								<th scope="row">Mirrored Shades</th>
 								<td>New Reno (Mason), Golgotha</td>
 								<td>CH +1</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Shovel1.png" role="presentation"></td>
+								<td><img src="images/items/Shovel1.png" role="presentation"></td>
 								<th scope="row">Shovel</th>
 								<td>Arroyo (village)</td>
 								<td>Loot graves</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Brocflwr.png" role="presentation"></td>
+								<td><img src="images/items/Brocflwr.png" role="presentation"></td>
 								<th scope="row">Broc Flower</th>
 								<td>Arroyo (wilderness)</td>
 								<td>Myron, Hakunin use</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/HYPO01.png" role="presentation"></td>
+								<td><img src="images/items/HYPO01.png" role="presentation"></td>
 								<th scope="row">Empty Hypodermic</th>
 								<td>VC (Phyllis, Troy, vault), NR</td>
 								<td>Myron uses</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Nuka-Cola.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Nuka-Cola.png" role="presentation"></td>
 								<th scope="row">Nuka-Cola</th>
 								<td>Klamath</td>
 								<td>Myron uses</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/SCORP.png" role="presentation"></td>
+								<td><img src="images/items/SCORP.png" role="presentation"></td>
 								<th scope="row">Scorpion Tail</th>
 								<td>Temple of Trials</td>
 								<td>Myron uses</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Xander.png" role="presentation"></td>
+								<td><img src="images/items/Xander.png" role="presentation"></td>
 								<th scope="row">Xander Root</th>
 								<td>Arroyo (village, wilderness)</td>
 								<td>Myron, Hakunin use</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Dynamite.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Dynamite.png" role="presentation"></td>
 								<th scope="row">Dynamite</th>
 								<td>Klamath (rat caves), Modoc (Jo)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Plastic_Explosives_Armed.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Plastic_Explosives_Armed.png" role="presentation"></td>
 								<th scope="row">Plastic Explosives</th>
 								<td>Temple of Trials</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo_1st_Aid_Kit.png" role="presentation"></td>
+								<td><img src="images/items/Fo_1st_Aid_Kit.png" role="presentation"></td>
 								<th scope="row">First Aid Kit</th>
 								<td>Klamath (Ardin)</td>
 								<td>First Aid +20%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Field_Medic_First_Aid_Kit.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Field_Medic_First_Aid_Kit.png" role="presentation"></td>
 								<th scope="row">Field Medic First Aid Kit</th>
 								<td>SF (FD8)</td>
 								<td>First Aid +40%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_doctors_bag.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_doctors_bag.png" role="presentation"></td>
 								<th scope="row">Doctor's Bag</th>
 								<td>BH (Holliday), Redding (Johnson's)</td>
 								<td>Doctor +20%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Paramedics_Bag.png" role="presentation"></td>
+								<td><img src="images/items/Paramedics_Bag.png" role="presentation"></td>
 								<th scope="row">Paramedics Bag</th>
 								<td>Enclave</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO1_Lockpicks.png" role="presentation"></td>
+								<td><img src="images/items/FO1_Lockpicks.png" role="presentation"></td>
 								<th scope="row">Lockpicks</th>
 								<td>Gecko (Skeeter's)</td>
 								<td>Lockpick +20%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/EXLOCKPK.png" role="presentation"></td>
+								<td><img src="images/items/EXLOCKPK.png" role="presentation"></td>
 								<th scope="row">Expanded Lockpick Set</th>
 								<td>NCR (Buster), SF</td>
 								<td>Lockpick +40%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/ELECPIC.png" role="presentation"></td>
+								<td><img src="images/items/ELECPIC.png" role="presentation"></td>
 								<th scope="row">Electronic Lockpick</th>
 								<td>NR (Eldridge's), SF (FD8)</td>
 								<td>Lockpick +20%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/ELOCKPK2.png" role="presentation"></td>
+								<td><img src="images/items/ELOCKPK2.png" role="presentation"></td>
 								<th scope="row">Electronic Lockpick MKII</th>
 								<td>SF, Navarro</td>
 								<td>Lockpick +40%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/MOTION.png" role="presentation"></td>
+								<td><img src="images/items/MOTION.png" role="presentation"></td>
 								<th scope="row">Motion Sensor</th>
 								<td>VC (Stark, vault)</td>
 								<td>Outdoorsman +20%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_tool.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_tool.png" role="presentation"></td>
 								<th scope="row">Tool</th>
 								<td>Klamath (rat caves), Den (Smitty's)</td>
 								<td>Repair +20%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/SUPRTOOL.png" role="presentation"></td>
+								<td><img src="images/items/SUPRTOOL.png" role="presentation"></td>
 								<th scope="row">Super Tool Kit</th>
 								<td>Den (Smitty), VC (Val)</td>
 								<td>Repair +40%</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/F2hintbk.png" role="presentation"></td>
+								<td><img src="images/items/F2hintbk.png" role="presentation"></td>
 								<th scope="row">Fallout 2 Hintbook</th>
 								<td>New Reno (Father Tully)</td>
 								<td>Experience and stuff</td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/bugspray.png" role="presentation"></td>
+								<td><img src="images/items/bugspray.png" role="presentation"></td>
 								<th scope="row">Plant Spray</th>
 								<td>EPA</td>
 								<td>Kill plants</td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/bugspray.png" role="presentation"></td>
+								<td><img src="images/items/bugspray.png" role="presentation"></td>
 								<th scope="row">Bug Spray</th>
 								<td>EPA</td>
 								<td>Kill pests</td>
@@ -10730,565 +10730,565 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><img src="/images/items/Fo2_brain.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_brain.png" role="presentation"></td>
 								<th scope="row">Abnormal Brain</th>
 								<td>SAD</td>
 								<td>Hmm</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_account_book.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_account_book.png" role="presentation"></td>
 								<th scope="row">Account Book</th>
 								<td>Raiders</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Dogtags.png" role="presentation"></td>
+								<td><img src="images/items/Dogtags.png" role="presentation"></td>
 								<th scope="row">Angel-Eyes's Dog Tags</th>
 								<td>Raiders</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/ANNABONE.png" role="presentation"></td>
+								<td><img src="images/items/ANNABONE.png" role="presentation"></td>
 								<th scope="row">Anna's Bones</th>
 								<td>Den</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Annas_locket.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Annas_locket.png" role="presentation"></td>
 								<th scope="row">Anna's Gold Locket</th>
 								<td>Den (Joey)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_bio_med_gel.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_bio_med_gel.png" role="presentation"></td>
 								<th scope="row">Bio Med Gel</th>
 								<td>SAD</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Bishop's Holodisk</th>
 								<td>New Reno (Bishop's)</td>
 								<td>Two quests</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Dogtags.png" role="presentation"></td>
+								<td><img src="images/items/Dogtags.png" role="presentation"></td>
 								<th scope="row">Blondie's Dog Tags</th>
 								<td>Raiders</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Blue_Memory_Module.png" role="presentation"></td>
+								<td><img src="images/items/Blue_Memory_Module.png" role="presentation"></td>
 								<th scope="row">Blue Memory Module</th>
 								<td>Navarro</td>
 								<td>Charisma</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PASSKEY2.png" role="presentation"></td>
+								<td><img src="images/items/PASSKEY2.png" role="presentation"></td>
 								<th scope="row">Blue Pass Key</th>
 								<td>Gecko (plant), Navarro</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo1_Cats_Paw.png" role="presentation"></td>
+								<td><img src="images/items/Fo1_Cats_Paw.png" role="presentation"></td>
 								<th scope="row">Cat's Paw Magazine</th>
 								<td>Klamath (Duntons)</td>
 								<td>Two quests, collect 10</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/KEY5.png" role="presentation"></td>
+								<td><img src="images/items/KEY5.png" role="presentation"></td>
 								<th scope="row">Cell Door Key</th>
 								<td>BH (jail)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_brain.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_brain.png" role="presentation"></td>
 								<th scope="row">Chimpanzee Brain</th>
 								<td>SAD</td>
 								<td>Never use this</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Eye1.png" role="presentation"></td>
+								<td><img src="images/items/Eye1.png" role="presentation"></td>
 								<th scope="row">Clifton's Eye</th>
 								<td>SAD</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Clipbrd.png" role="presentation"></td>
+								<td><img src="images/items/Clipbrd.png" role="presentation"></td>
 								<th scope="row">Clipboard</th>
 								<td>Gecko (Harold's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Computer_Voice_Module.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Computer_Voice_Module.png" role="presentation"></td>
 								<th scope="row">Computer Voice Module</th>
 								<td>VC (vault), New Reno (Eldridge)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Cornelius_gold_watch.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Cornelius_gold_watch.png" role="presentation"></td>
 								<th scope="row">Cornelius' Gold Watch</th>
 								<td>Modoc (rat nest)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/DAYPASS.png" role="presentation"></td>
+								<td><img src="images/items/DAYPASS.png" role="presentation"></td>
 								<th scope="row">Day Pass</th>
 								<td>VC (customs)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Cards1.png" role="presentation"></td>
+								<td><img src="images/items/Cards1.png" role="presentation"></td>
 								<th scope="row">Deck of "Tragic" Cards</th>
 								<td>Klamath (Vic's)</td>
 								<td>Play in Gecko bar</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Eye1.png" role="presentation"></td>
+								<td><img src="images/items/Eye1.png" role="presentation"></td>
 								<th scope="row">Dixon's Eye</th>
 								<td>SAD</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Doctor's_Papers.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Doctor's_Papers.png" role="presentation"></td>
 								<th scope="row">Doctor's Papers</th>
 								<td>NCR (Dr Henry's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/EmptyJet.png" role="presentation"></td>
+								<td><img src="images/items/EmptyJet.png" role="presentation"></td>
 								<th scope="row">Empty Jet Canister</th>
 								<td>New Reno (Wright's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Enlightened_One's_Letter.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Enlightened_One's_Letter.png" role="presentation"></td>
 								<th scope="row">Enlightened One's Letter</th>
 								<td>NCR (Hubologist)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Excavator_Chip.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Excavator_Chip.png" role="presentation"></td>
 								<th scope="row">Excavator Chip</th>
 								<td>Redding (mine)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Explosive_Switch.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Explosive_Switch.png" role="presentation"></td>
 								<th scope="row">Explosive Switch</th>
 								<td>BH (Jacob)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_False_Citizenship_Papers.png" role="presentation"></td>
+								<td><img src="images/items/FO2_False_Citizenship_Papers.png" role="presentation"></td>
 								<th scope="row">False Citizenship Papers</th>
 								<td>VC (Skeev)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Firewood.png" role="presentation"></td>
+								<td><img src="images/items/Firewood.png" role="presentation"></td>
 								<th scope="row">Firewood</th>
 								<td>Klamath (trapping grounds)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Flint.png" role="presentation"></td>
+								<td><img src="images/items/Flint.png" role="presentation"></td>
 								<th scope="row">Flint</th>
 								<td>Arroyo (Morlis)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CARBATRY.png" role="presentation"></td>
+								<td><img src="images/items/CARBATRY.png" role="presentation"></td>
 								<th scope="row">Fuel Cell Controller</th>
 								<td>Gecko (Skeeter)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_fuel_cell_regulator.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_fuel_cell_regulator.png" role="presentation"></td>
 								<th scope="row">Fuel Cell Regulator</th>
 								<td>Klamath (trapper town)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2ElvisPainting.png" role="presentation"></td>
+								<td><img src="images/items/FO2ElvisPainting.png" role="presentation"></td>
 								<th scope="row">Fuzzy Painting</th>
 								<td>NCR (doctor)</td>
 								<td>Saltbeef's</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Geck.png" role="presentation"></td>
+								<td><img src="images/items/Geck.png" role="presentation"></td>
 								<th scope="row">G.E.C.K.</th>
 								<td>Vault 13, Enclave</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Gecko Holodisk</th>
 								<td>Gecko (Gordon)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Pelt1.png" role="presentation"></td>
+								<td><img src="images/items/Pelt1.png" role="presentation"></td>
 								<th scope="row">Gecko Pelt</th>
 								<td>Klamath</td>
 								<td>Entering VC</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Pelt2.png" role="presentation"></td>
+								<td><img src="images/items/Pelt2.png" role="presentation"></td>
 								<th scope="row">Golden Gecko Pelt</th>
 								<td>Klamath</td>
 								<td>Entering VC</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Green_Memory_Module.png" role="presentation"></td>
+								<td><img src="images/items/Green_Memory_Module.png" role="presentation"></td>
 								<th scope="row">Green Memory Module</th>
 								<td>Military Base</td>
 								<td>Perception</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Howshell.png" role="presentation"></td>
+								<td><img src="images/items/Howshell.png" role="presentation"></td>
 								<th scope="row">Howitzer Shell</th>
 								<td>SAD</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_brain.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_brain.png" role="presentation"></td>
 								<th scope="row">Human Brain</th>
 								<td>SAD</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/HYMGPART.png" role="presentation"></td>
+								<td><img src="images/items/HYMGPART.png" role="presentation"></td>
 								<th scope="row">Hydroelectric Part</th>
 								<td>VC (Randal)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/K9Parts.png" role="presentation"></td>
+								<td><img src="images/items/K9Parts.png" role="presentation"></td>
 								<th scope="row">K-9 Motivator</th>
 								<td>Navarro</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Mag8ball.png" role="presentation"></td>
+								<td><img src="images/items/Mag8ball.png" role="presentation"></td>
 								<th scope="row">Magic 8-Ball</th>
 								<td>NR (Bishop's), Enclave (maze)</td>
 								<td>Clues</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Drymeat.png" role="presentation"></td>
+								<td><img src="images/items/Drymeat.png" role="presentation"></td>
 								<th scope="row">Meat Jerky</th>
 								<td>Klamath</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Metal_Pole.png" role="presentation"></td>
+								<td><img src="images/items/Metal_Pole.png" role="presentation"></td>
 								<th scope="row">Metal Pole</th>
 								<td>Military Base</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Mine_Parts.png" role="presentation"></td>
+								<td><img src="images/items/Mine_Parts.png" role="presentation"></td>
 								<th scope="row">Mine Parts</th>
 								<td>New Reno (Renesco)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/BCASE2A.png" role="presentation"></td>
+								<td><img src="images/items/BCASE2A.png" role="presentation"></td>
 								<th scope="row">Moore's Briefcase</th>
 								<td>VC (Moore)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Mr_Nixon_doll.png" role="presentation"></td>
+								<td><img src="images/items/Mr_Nixon_doll.png" role="presentation"></td>
 								<th scope="row">Mr. Nixon Doll</th>
 								<td>VC (courtyard)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Mutagenic_Serum.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Mutagenic_Serum.png" role="presentation"></td>
 								<th scope="row">Mutagenic Serum</th>
 								<td>NCR (Dr Henry)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_NavCom_parts.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_NavCom_parts.png" role="presentation"></td>
 								<th scope="row">NavCom Parts</th>
 								<td>Vault 13</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">NCR Spy Holodisk</th>
 								<td>Vault 15</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Note_from_Francis.png" role="presentation"></td>
+								<td><img src="images/items/Note_from_Francis.png" role="presentation"></td>
 								<th scope="row">Note from Francis</th>
 								<td>BH (underground)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_oil_can.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_oil_can.png" role="presentation"></td>
 								<th scope="row">Oil Can</th>
 								<td>Tin woodsman</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_oxygen_tank.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_oxygen_tank.png" role="presentation"></td>
 								<th scope="row">Oxygen Tank</th>
 								<td>New Reno (Salvatore)</td>
 								<td>Steal only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Part_Requisition_Form.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Part_Requisition_Form.png" role="presentation"></td>
 								<th scope="row">Part Requisition Form</th>
 								<td>Gecko (Harold's, Festus)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Password_Paper.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Password_Paper.png" role="presentation"></td>
 								<th scope="row">Password Paper</th>
 								<td>SAD</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Plasma_Transformer.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Plasma_Transformer.png" role="presentation"></td>
 								<th scope="row">Plasma Transformer</th>
 								<td>Gecko (Jeremy)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Chem_Poison.png" role="presentation"></td>
+								<td><img src="images/items/Chem_Poison.png" role="presentation"></td>
 								<th scope="row">Poison</th>
 								<td>NCR (Jubilee's), Enclave (maze)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_oxygen_tank.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_oxygen_tank.png" role="presentation"></td>
 								<th scope="row">Poison Tank</th>
 								<td>New Reno (Mordino basement)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Presidential_Access_Key.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Presidential_Access_Key.png" role="presentation"></td>
 								<th scope="row">Presidential Access Key</th>
 								<td>Enclave</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Presidential_Pass.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Presidential_Pass.png" role="presentation"></td>
 								<th scope="row">Presidential Pass</th>
 								<td>NCR (Gunther)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Raiders_Map.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Raiders_Map.png" role="presentation"></td>
 								<th scope="row">Raiders Map</th>
 								<td>New Reno (Bishop's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Ramirez_Box,_Closed.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Ramirez_Box,_Closed.png" role="presentation"></td>
 								<th scope="row">Ramirez Box, Closed</th>
 								<td>New Reno (Mordino)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Ramirez_Box,_Open.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Ramirez_Box,_Open.png" role="presentation"></td>
 								<th scope="row">Ramirez Box, Open</th>
 								<td>New Reno (Mordino)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Ranger's_Map.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Ranger's_Map.png" role="presentation"></td>
 								<th scope="row">Ranger's Map</th>
 								<td>NCR (Rangers)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Reactor Holodisk</th>
 								<td>Gecko (Festus)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Red_Memory_Module.png" role="presentation"></td>
+								<td><img src="images/items/Red_Memory_Module.png" role="presentation"></td>
 								<th scope="row">Red Memory Module</th>
 								<td>VC (vault)</td>
 								<td>Strength</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PASSKEY1.png" role="presentation"></td>
+								<td><img src="images/items/PASSKEY1.png" role="presentation"></td>
 								<th scope="row">Red Pass Key</th>
 								<td>Gecko (plant)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Robotprt.png" role="presentation"></td>
+								<td><img src="images/items/Robotprt.png" role="presentation"></td>
 								<th scope="row">Robot Motivator</th>
 								<td>SAD</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/ROPE.png" role="presentation"></td>
+								<td><img src="images/items/ROPE.png" role="presentation"></td>
 								<th scope="row">Rope</th>
 								<td>Klamath</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Boots.png" role="presentation"></td>
+								<td><img src="images/items/Boots.png" role="presentation"></td>
 								<th scope="row">Rubber Boots</th>
 								<td>Klamath, Toxic Caves</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_damaged_rubber_doll.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_damaged_rubber_doll.png" role="presentation"></td>
 								<th scope="row">Rubber Doll</th>
 								<td>BH (Marcus')</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Slag_Message.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Slag_Message.png" role="presentation"></td>
 								<th scope="row">Slag Message</th>
 								<td>Ghost Farm (Vegeir)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Smitfood.png" role="presentation"></td>
+								<td><img src="images/items/Smitfood.png" role="presentation"></td>
 								<th scope="row">Smitty's Meal</th>
 								<td>Den (Mom)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_spectacles.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_spectacles.png" role="presentation"></td>
 								<th scope="row">Spectacles</th>
 								<td>BH (scorpion)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_stables_ID_badge.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_stables_ID_badge.png" role="presentation"></td>
 								<th scope="row">Stables ID Badge</th>
 								<td>Stables</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Raiders_Map.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Raiders_Map.png" role="presentation"></td>
 								<th scope="row">Survey Map</th>
 								<td>Military Base</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Tanker_Fob.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Tanker_Fob.png" role="presentation"></td>
 								<th scope="row">Tanker Fob</th>
 								<td>Navarro</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Temple_Key.png" role="presentation"></td>
+								<td><img src="images/items/Temple_Key.png" role="presentation"></td>
 								<th scope="row">Temple Key</th>
 								<td>Temple of Trials (Cameron)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Lavender_Flower.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Lavender_Flower.png" role="presentation"></td>
 								<th scope="row">"The Lavender Flower"</th>
 								<td>Den</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Key.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Key.png" role="presentation"></td>
 								<th scope="row">Trapper Town Key</th>
 								<td>Klamath (dog, Slim)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Dogtags.png" role="presentation"></td>
+								<td><img src="images/items/Dogtags.png" role="presentation"></td>
 								<th scope="row">Tuco's Dog Tags</th>
 								<td>Raiders</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Vault_15_Computer_Parts.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Vault_15_Computer_Parts.png" role="presentation"></td>
 								<th scope="row">Vault 15 Computer Parts</th>
 								<td>Vault 15</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PASSKEY1.png" role="presentation"></td>
+								<td><img src="images/items/PASSKEY1.png" role="presentation"></td>
 								<th scope="row">Vault 15 Keycard</th>
 								<td>Vault 15 (Zeke)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Vault_15_Shack_Key.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Vault_15_Shack_Key.png" role="presentation"></td>
 								<th scope="row">Vault 15 Shack Key</th>
 								<td>Vault 15 (Phil)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Vertibird_plans.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Vertibird_plans.png" role="presentation"></td>
 								<th scope="row">Vertibird Plans</th>
 								<td>Navarro</td>
 								<td>1-3 quests</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/RADIO3.png" role="presentation"></td>
+								<td><img src="images/items/RADIO3.png" role="presentation"></td>
 								<th scope="row">Vic's Radio</th>
 								<td>Klamath (Vic's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Water-flask.png" role="presentation"></td>
+								<td><img src="images/items/Water-flask.png" role="presentation"></td>
 								<th scope="row">Vic's Water Flask</th>
 								<td>Arroyo, Klamath (Vic's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Yellow_Memory_Module.png" role="presentation"></td>
+								<td><img src="images/items/Yellow_Memory_Module.png" role="presentation"></td>
 								<th scope="row">Yellow Memory Module</th>
 								<td>SAD</td>
 								<td>Intelligence</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PASSKEY3.png" role="presentation"></td>
+								<td><img src="images/items/PASSKEY3.png" role="presentation"></td>
 								<th scope="row">Yellow Pass Key</th>
 								<td>Gecko (plant, Percy's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Westin Holodisk</th>
 								<td>NCR (Westin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Heart_Pills.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Heart_Pills.png" role="presentation"></td>
 								<th scope="row">Heart Pills</th>
 								<td>NCR (Jubilee's)</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/bookcst2.png" role="presentation"></td>
+								<td><img src="images/items/bookcst2.png" role="presentation"></td>
 								<th scope="row">Diary</th>
 								<td>The Den</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/HEARTPIL.png" role="presentation"></td>
+								<td><img src="images/items/HEARTPIL.png" role="presentation"></td>
 								<th scope="row">Fake Heart Pills</th>
 								<td>New Reno</td>
 								<td>New way to kill Westin</td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/K9Kevlar.png" role="presentation"></td>
+								<td><img src="images/items/K9Kevlar.png" role="presentation"></td>
 								<th scope="row">K-9 Kevlar</th>
 								<td>&mdash;</td>
 								<td>Use to upgrade <a href="#npcs--k9">K-9</a></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/MUTARMOR.png" role="presentation"></td>
+								<td><img src="images/items/MUTARMOR.png" role="presentation"></td>
 								<th scope="row">Mutant Armor</th>
 								<td>Abbey</td>
 								<td>Give to <a href="#npcs--marcus">Marcus</a></td>
@@ -11318,355 +11318,355 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><img src="/images/items/FO2_Ballgag.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Ballgag.png" role="presentation"></td>
 								<th scope="row">Ball Gag</th>
 								<td>BH (Francis), Enclave</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Botlcaps.png" role="presentation"></td>
+								<td><img src="images/items/Botlcaps.png" role="presentation"></td>
 								<th scope="row">Bottle Caps</th>
 								<td>BH (well)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CHEF.png" role="presentation"></td>
+								<td><img src="images/items/CHEF.png" role="presentation"></td>
 								<th scope="row">Box Of Noodles</th>
 								<td>Den (Smitty, Mom's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Broadcast Holodisk</th>
 								<td>SAD</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Cheezy.png" role="presentation"></td>
+								<td><img src="images/items/Cheezy.png" role="presentation"></td>
 								<th scope="row">Cheezy Poofs</th>
 								<td>Den (Smitty's), Gecko</td>
 								<td>Rat only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/SCIENCE.png" role="presentation"></td>
+								<td><img src="images/items/SCIENCE.png" role="presentation"></td>
 								<th scope="row">Chemistry Journals</th>
 								<td>SF (FD8, tanker)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CONDOMBL.png" role="presentation"></td>
+								<td><img src="images/items/CONDOMBL.png" role="presentation"></td>
 								<th scope="row">Condom (Blue Package)</th>
 								<td>Raiders, Redding, New Reno</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CONDOMGR.png" role="presentation"></td>
+								<td><img src="images/items/CONDOMGR.png" role="presentation"></td>
 								<th scope="row">Condom (Green Package)</th>
 								<td>Gecko, Raiders, New Reno</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/CONDOMRD.png" role="presentation"></td>
+								<td><img src="images/items/CONDOMRD.png" role="presentation"></td>
 								<th scope="row">Condom (Red Package)</th>
 								<td>NR (chop shop), Stables</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/COSMETIC.png" role="presentation"></td>
+								<td><img src="images/items/COSMETIC.png" role="presentation"></td>
 								<th scope="row">Cosmetics Case</th>
 								<td>VC (vault), New Reno</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/POT.png" role="presentation"></td>
+								<td><img src="images/items/POT.png" role="presentation"></td>
 								<th scope="row">Daisies</th>
 								<td>Crashed Whale</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_damaged_rubber_doll.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_damaged_rubber_doll.png" role="presentation"></td>
 								<th scope="row">Damaged Rubber Doll</th>
 								<td>BH (Typhon)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Cards2.png" role="presentation"></td>
+								<td><img src="images/items/Cards2.png" role="presentation"></td>
 								<th scope="row">Deck of Cards</th>
 								<td>VC, Raiders</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Dice.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Dice.png" role="presentation"></td>
 								<th scope="row">Dice</th>
 								<td>VC, Raiders</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Eastregg.png" role="presentation"></td>
+								<td><img src="images/items/Eastregg.png" role="presentation"></td>
 								<th scope="row">Easter Egg</th>
 								<td>New Reno (Eldridge's basement)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Evacuation Holodisk</th>
 								<td>SAD</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Experiment Holodisk</th>
 								<td>SAD</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Flower.png" role="presentation"></td>
+								<td><img src="images/items/Flower.png" role="presentation"></td>
 								<th scope="row">Flower</th>
 								<td>Klamath</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2ElvisPainting.png" role="presentation"></td>
+								<td><img src="images/items/FO2ElvisPainting.png" role="presentation"></td>
 								<th scope="row">Fuzzy Painting</th>
 								<td>Klamath (Sajag's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Gold_Tooth.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Gold_Tooth.png" role="presentation"></td>
 								<th scope="row">Gold Tooth</th>
 								<td>New Reno (Jules), Golgotha</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Hubologist Holodisk</th>
 								<td>SF (Goldmann/Cruz)</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Iguanaonastick1.png" role="presentation"></td>
+								<td><img src="images/items/Iguanaonastick1.png" role="presentation"></td>
 								<th scope="row">Iguana-on-a-stick</th>
 								<td>Klamath</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Iguanaonastick2.png" role="presentation"></td>
+								<td><img src="images/items/Iguanaonastick2.png" role="presentation"></td>
 								<th scope="row">Iguana-on-a-stick</th>
 								<td>Klamath</td>
 								<td>Different picture</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Junk.png" role="presentation"></td>
+								<td><img src="images/items/Junk.png" role="presentation"></td>
 								<th scope="row">Junk</th>
 								<td>VC (Val's, vault)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Kokoweef_Mine_Scrip.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Kokoweef_Mine_Scrip.png" role="presentation"></td>
 								<th scope="row">Kokoweef Mine Scrip</th>
 								<td>Redding</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/ZIP1.png" role="presentation"></td>
+								<td><img src="images/items/ZIP1.png" role="presentation"></td>
 								<th scope="row">Lighter</th>
 								<td>Den (Rebecca's), VC (vault)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/DICE2.png" role="presentation"></td>
+								<td><img src="images/items/DICE2.png" role="presentation"></td>
 								<th scope="row">Loaded Dice</th>
 								<td>New Reno, Golgotha</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Masticator's_ear.png" role="presentation"></td>
+								<td><img src="images/items/Masticator's_ear.png" role="presentation"></td>
 								<th scope="row">Masticator's Ear</th>
 								<td>New Reno (Jungle Gym)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">M.B. Holodisk 1</th>
 								<td>Military Base</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">M.B. Holodisk 2</th>
 								<td>Military Base</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">M.B. Holodisk 3</th>
 								<td>Military Base</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">M.B. Holodisk 4</th>
 								<td>Military Base</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">M.B. Holodisk 5</th>
 								<td>Military Base</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Medical Holodisk</th>
 								<td>SAD</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Medical_supplies.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Medical_supplies.png" role="presentation"></td>
 								<th scope="row">Medical Supplies</th>
 								<td>Enclave (maze)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Morningstar_Mine_Scrip.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Morningstar_Mine_Scrip.png" role="presentation"></td>
 								<th scope="row">Morningstar Mine Scrip</th>
 								<td>Redding, Golgotha</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Robotprt.png" role="presentation"></td>
+								<td><img src="images/items/Robotprt.png" role="presentation"></td>
 								<th scope="row">Motor</th>
 								<td>Navarro</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Necklace.png" role="presentation"></td>
+								<td><img src="images/items/Necklace.png" role="presentation"></td>
 								<th scope="row">Necklace</th>
 								<td>New Reno (Bishop's, Mrs Bishop)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">NCR History Holodisk</th>
 								<td>NR (Eldridge's), NCR (Tandi)</td>
 								<td>Read only (only NCR copy works)</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Pack_of_Marked_Cards.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Pack_of_Marked_Cards.png" role="presentation"></td>
 								<th scope="row">Pack of Marked Cards</th>
 								<td>NR (Mordino's), Golgotha</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Player's_ear.png" role="presentation"></td>
+								<td><img src="images/items/Player's_ear.png" role="presentation"></td>
 								<th scope="row">Player's Ear</th>
 								<td>New Reno (Jungle Gym)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/POCKLINT.png" role="presentation"></td>
+								<td><img src="images/items/POCKLINT.png" role="presentation"></td>
 								<th scope="row">Pocket Lint</th>
 								<td>VC (Martin), Redding (Josh)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/RADIO3.png" role="presentation"></td>
+								<td><img src="images/items/RADIO3.png" role="presentation"></td>
 								<th scope="row">Radio</th>
 								<td>VC (Val's, vault)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Radscorpion_limbs.png" role="presentation"></td>
+								<td><img src="images/items/Radscorpion_limbs.png" role="presentation"></td>
 								<th scope="row">Radscorpion Limbs</th>
 								<td>Klamath (pastures), NR (CP, GG)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Ranger_Pin.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Ranger_Pin.png" role="presentation"></td>
 								<th scope="row">Ranger Pin</th>
 								<td>NCR (Rangers)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO1_Reserved_item.png" role="presentation"></td>
+								<td><img src="images/items/FO1_Reserved_item.png" role="presentation"></td>
 								<th scope="row">Reserved Item</th>
 								<td>Redding (Stanwell)</td>
 								<td>Bug</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Sheriff's_Badge.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Sheriff's_Badge.png" role="presentation"></td>
 								<th scope="row">Sheriff's Badge</th>
 								<td>Redding (Marion)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_Shiv.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_Shiv.png" role="presentation"></td>
 								<th scope="row">Shiv</th>
 								<td>New Reno, SF</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Sierra Mission Holodisk</th>
 								<td>SAD</td>
 								<td>Read only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/DINNER.png" role="presentation"></td>
+								<td><img src="images/items/DINNER.png" role="presentation"></td>
 								<th scope="row">Small Dusty Box Of Some Sort</th>
 								<td>Ghost Farm, VC (vault)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_small_statuette.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_small_statuette.png" role="presentation"></td>
 								<th scope="row">Small Statuette</th>
 								<td>New Reno (Wright kids)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Fo2_talisman.png" role="presentation"></td>
+								<td><img src="images/items/Fo2_talisman.png" role="presentation"></td>
 								<th scope="row">Talisman</th>
 								<td>Gecko</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Technical_Manual.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Technical_Manual.png" role="presentation"></td>
 								<th scope="row">Technical Manual</th>
 								<td>VC (Val's), NR (Eldridge's)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/TAPE3.png" role="presentation"></td>
+								<td><img src="images/items/TAPE3.png" role="presentation"></td>
 								<th scope="row">Vault 13 Holodisk</th>
 								<td>NCR (Merk)</td>
 								<td>Empty location only</td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/FO2_Water_Chip.png" role="presentation"></td>
+								<td><img src="images/items/FO2_Water_Chip.png" role="presentation"></td>
 								<th scope="row">Water Chip</th>
 								<td>VC (vault), Vault 13</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/Water-flask.png" role="presentation"></td>
+								<td><img src="images/items/Water-flask.png" role="presentation"></td>
 								<th scope="row">Water Flask</th>
 								<td>BH (Liz), Cafe of Broken Dreams</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td><img src="/images/items/PASSKEY3.png" role="presentation"></td>
+								<td><img src="images/items/PASSKEY3.png" role="presentation"></td>
 								<th scope="row">Yellow Reactor Keycard</th>
 								<td>Klamath (canyon)</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/pelt3.png" role="presentation"></td>
+								<td><img src="images/items/pelt3.png" role="presentation"></td>
 								<th scope="row">Fire Gecko Pelts</th>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/ryba_c.png" role="presentation"></td>
+								<td><img src="images/items/ryba_c.png" role="presentation"></td>
 								<th scope="row">Fish</th>
 								<td>Umbra Tribe</td>
 								<td></td>
@@ -11692,223 +11692,223 @@
 						</thead>
 						<tbody>
 							<tr class="rp">
-								<td><img src="/images/items/raidmap.png" role="presentation"></td>
+								<td><img src="images/items/raidmap.png" role="presentation"></td>
 								<th scope="row">Sam Pritchard's Map</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/bucket.png" role="presentation"></td>
+								<td><img src="images/items/bucket.png" role="presentation"></td>
 								<th scope="row">Bucket</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/xbass2.png" role="presentation"></td>
+								<td><img src="images/items/xbass2.png" role="presentation"></td>
 								<th scope="row">Scaly Fish</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/ksieg2b.png" role="presentation"></td>
+								<td><img src="images/items/ksieg2b.png" role="presentation"></td>
 								<th scope="row">Ode to the Flame deluge</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/NBOOK.png" role="presentation"></td>
+								<td><img src="images/items/NBOOK.png" role="presentation"></td>
 								<th scope="row">Text Book</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/lbook.png" role="presentation"></td>
+								<td><img src="images/items/lbook.png" role="presentation"></td>
 								<th scope="row">Army Technical Manual</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/bookcst1.png" role="presentation"></td>
+								<td><img src="images/items/bookcst1.png" role="presentation"></td>
 								<th scope="row">Operations Manual</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/booktrap.png" role="presentation"></td>
+								<td><img src="images/items/booktrap.png" role="presentation"></td>
 								<th scope="row">Chinese Army: Special Ops Manual</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/bottle1.png" role="presentation"></td>
+								<td><img src="images/items/bottle1.png" role="presentation"></td>
 								<th scope="row">Bottle of Wine</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/disk8.png" role="presentation"></td>
+								<td><img src="images/items/disk8.png" role="presentation"></td>
 								<th scope="row">Botany Holodisk</th>
 								<td>EPA</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/geckfk.png" role="presentation"></td>
+								<td><img src="images/items/geckfk.png" role="presentation"></td>
 								<th scope="row">Expired G.E.C.K.</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/bcoin.png" role="presentation"></td>
+								<td><img src="images/items/bcoin.png" role="presentation"></td>
 								<th scope="row">Old Coin</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/watch.png" role="presentation"></td>
+								<td><img src="images/items/watch.png" role="presentation"></td>
 								<th scope="row">A Watch</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/cigy2.png" role="presentation"></td>
+								<td><img src="images/items/cigy2.png" role="presentation"></td>
 								<th scope="row">Pack of Cigarettes</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/gasmask.png" role="presentation"></td>
+								<td><img src="images/items/gasmask.png" role="presentation"></td>
 								<th scope="row">Gas Mask</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/syringe.png" role="presentation"></td>
+								<td><img src="images/items/syringe.png" role="presentation"></td>
 								<th scope="row">Syringe</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/dogfood.png" role="presentation"></td>
+								<td><img src="images/items/dogfood.png" role="presentation"></td>
 								<th scope="row">Dog Food</th>
 								<td>EPA</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/enro2.png" role="presentation"></td>
+								<td><img src="images/items/enro2.png" role="presentation"></td>
 								<th scope="row">Environmental Armor</th>
 								<td>EPA</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/FAKECITZ.png" role="presentation"></td>
+								<td><img src="images/items/FAKECITZ.png" role="presentation"></td>
 								<th scope="row">EPA Pamphlet</th>
 								<td>EPA</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/lpass.png" role="presentation"></td>
+								<td><img src="images/items/lpass.png" role="presentation"></td>
 								<th scope="row">Security Rooms Key Card</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/ttube.png" role="presentation"></td>
+								<td><img src="images/items/ttube.png" role="presentation"></td>
 								<th scope="row">Test Tube Rack</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/drg_rad2.png" role="presentation"></td>
+								<td><img src="images/items/drg_rad2.png" role="presentation"></td>
 								<th scope="row">Random Chemicals</th>
 								<td>EPA</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/seeds.png" role="presentation"></td>
+								<td><img src="images/items/seeds.png" role="presentation"></td>
 								<th scope="row">Corn Seeds</th>
 								<td>EPA</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/seeds.png" role="presentation"></td>
+								<td><img src="images/items/seeds.png" role="presentation"></td>
 								<th scope="row">Experimental Seeds</th>
 								<td>EPA</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/dynamit.png" role="presentation"></td>
+								<td><img src="images/items/dynamit.png" role="presentation"></td>
 								<th scope="row">Trigger Activated Dynamite</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/toggle.png" role="presentation"></td>
+								<td><img src="images/items/toggle.png" role="presentation"></td>
 								<th scope="row">Trigger Switch</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/TPAPER2.png" role="presentation"></td>
+								<td><img src="images/items/TPAPER2.png" role="presentation"></td>
 								<th scope="row">Paper</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/drill.png" role="presentation"></td>
+								<td><img src="images/items/drill.png" role="presentation"></td>
 								<th scope="row">A Drill</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/poprocks.png" role="presentation"></td>
+								<td><img src="images/items/poprocks.png" role="presentation"></td>
 								<th scope="row">Pop Rocks</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/shamp.png" role="presentation"></td>
+								<td><img src="images/items/shamp.png" role="presentation"></td>
 								<th scope="row">Bottle of Shampoo</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/ear1.png" role="presentation"></td>
+								<td><img src="images/items/ear1.png" role="presentation"></td>
 								<th scope="row">Human Ear</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/jar.png" role="presentation"></td>
+								<td><img src="images/items/jar.png" role="presentation"></td>
 								<th scope="row">ERSI Canister</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/Saber.png" role="presentation"></td>
+								<td><img src="images/items/Saber.png" role="presentation"></td>
 								<th scope="row">Lightsaber</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/Blaster.png" role="presentation"></td>
+								<td><img src="images/items/Blaster.png" role="presentation"></td>
 								<th scope="row">Blaster</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/CHINCHART.png" role="presentation"></td>
+								<td><img src="images/items/chinchrt.png" role="presentation"></td>
 								<th scope="row">Chinese Code Chart</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/SCORP2.png" role="presentation"></td>
+								<td><img src="images/items/SCORP2.png" role="presentation"></td>
 								<th scope="row">Small Scorpion Tail</th>
 								<td>&mdash;</td>
 								<td></td>
 							</tr>
 							<tr class="rp">
-								<td><img src="/images/items/seed.png" role="presentation"></td>
+								<td><img src="images/items/seed.png" role="presentation"></td>
 								<th scope="row">Plant Seed</th>
 								<td>EPA</td>
 								<td></td>
