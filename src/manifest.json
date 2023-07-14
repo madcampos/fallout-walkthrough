@@ -1,0 +1,56 @@
+{
+	"id": "https://madcampos.dev/projects/fallout-walkthrough?id=6508c44f-06e6-4471-be84-b70031f9f69d",
+	"scope": "https://madcampos.dev/projects/fallout-walkthrough?utm_source=pwa&utm_medium=install&utm_campaign=web_app_manifest",
+	"name": "Fallout 2 Walkthrough",
+	"short_name": "FO2 Walk",
+	"lang": "en-US",
+	"dir": "ltr",
+	"description": "The Nearly Ultimate Fallout 2 Guide",
+	"categories": [
+		"game",
+		"fallout",
+		"fallout 2",
+		"walkthrough",
+		"guide",
+		"game guide"
+	],
+	"display": "standalone",
+	"orientation": "portrait",
+	"display_override": ["window-controls-overlay"],
+	"background_color": "#0f56b3",
+	"theme_color": "#ffd700",
+	"prefer_related_applications": false,
+	"icons": [
+		{
+			"src": "icons/transparent/manifest-icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "icons/maskable/manifest-icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "icons/transparent/manifest-icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "icons/maskable/manifest-icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"handle_links": "preffered",
+	"launch_handler": {
+		"client_mode": "navigate-existing"
+	},
+	"edge_side_panel": {
+		"preffer_width": 460
+	}
+}
