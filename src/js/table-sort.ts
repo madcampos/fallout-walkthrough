@@ -1,8 +1,8 @@
 const collator = new Intl.Collator('en', { sensitivity: 'base', numeric: true, caseFirst: 'upper' });
 
 function compareRowsByColumn(rowA: HTMLTableRowElement, rowB: HTMLTableRowElement, column: number, order: 'ascending' | 'descending' = 'ascending') {
-	const columnA = rowA.children[column].textContent ?? '';
-	const columnB = rowB.children[column].textContent ?? '';
+	const columnA = rowA.children[column]?.textContent ?? '';
+	const columnB = rowB.children[column]?.textContent ?? '';
 
 	if (order === 'ascending') {
 		return collator.compare(columnA, columnB);
@@ -21,17 +21,18 @@ function sortByColumn(event: MouseEvent) {
 
 	let order: 'ascending' | 'descending' = 'ascending';
 
-	if (thCell.dataset.order === 'descending') {
+	if (thCell.dataset['order'] === 'descending') {
 		order = 'ascending';
 	} else {
 		order = 'descending';
 	}
 
 	table.querySelectorAll('th').forEach((thEl) => {
-		delete thEl.dataset.order;
+		// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+		delete thEl.dataset['order'];
 	});
 
-	thCell.dataset.order = order;
+	thCell.dataset['order'] = order;
 
 	[...tbody.querySelectorAll('tr')].sort((first, last) => compareRowsByColumn(first, last, column, order)).forEach((row) => tbody.appendChild(row));
 }
