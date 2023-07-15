@@ -93,6 +93,8 @@ export default defineConfig(({ mode }) => {
 			passWithNoTests: true,
 			maxConcurrency: 4,
 			coverage: {
+				excludeNodeModules: true,
+				reportsDirectory: '../dist/coverage',
 				functions: 75,
 				branches: 75,
 				lines: 75,
