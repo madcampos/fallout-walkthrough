@@ -21,7 +21,7 @@ function sortByColumn(event: MouseEvent) {
 
 	let order: 'ascending' | 'descending' = 'ascending';
 
-	if (thCell.dataset['order'] === 'descending') {
+	if (thCell.dataset.order === 'descending') {
 		order = 'ascending';
 	} else {
 		order = 'descending';
@@ -29,10 +29,10 @@ function sortByColumn(event: MouseEvent) {
 
 	table.querySelectorAll('th').forEach((thEl) => {
 		// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
-		delete thEl.dataset['order'];
+		delete thEl.dataset.order;
 	});
 
-	thCell.dataset['order'] = order;
+	thCell.dataset.order = order;
 
 	[...tbody.querySelectorAll('tr')].sort((first, last) => compareRowsByColumn(first, last, column, order)).forEach((row) => tbody.appendChild(row));
 }
