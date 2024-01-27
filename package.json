@@ -47,19 +47,12 @@
 		"svgo": "^3.1.0",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.12",
-		"vite-plugin-html-minifier": "^1.0.3",
 		"vite-plugin-pwa": "^0.17.4",
 		"vitest": "^1.1.1"
 	},
 	"lint-staged": {
-		"*.ts": [
-			"eslint --ext .ts --fix",
-			"vitest related"
-		],
-		"*.js": [
-			"eslint --ext .js --fix",
-			"vitest related"
-		],
+		"*.ts": "eslint --ext .ts --fix",
+		"*.js": "eslint --ext .js --fix",
 		"*.css": "stylelint --fix"
 	},
 	"commitlint": {
