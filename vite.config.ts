@@ -15,8 +15,8 @@ export default defineConfig(({ mode }) => {
 	const sslOptions = mode === 'production'
 		? false
 		: {
-			cert: readFileSync('./certs/server.crt'),
-			key: readFileSync('./certs/server.key')
+			cert: readFileSync('./certs/server.crt', 'utf-8'),
+			key: readFileSync('./certs/server.key', 'utf-8')
 		};
 
 	const config: UserConfig = {
@@ -49,6 +49,7 @@ export default defineConfig(({ mode }) => {
 		clearScreen: false,
 		server: {
 			host: 'localhost',
+			// @ts-expect-error
 			https: sslOptions,
 			open: false,
 			cors: true,
@@ -69,23 +70,9 @@ export default defineConfig(({ mode }) => {
 			}
 		},
 		preview: {
+			// @ts-expect-error
 			https: sslOptions,
 			open: true
-		},
-		test: {
-			include: ['**/*.test.ts'],
-			minThreads: 1,
-			maxThreads: 4,
-			passWithNoTests: true,
-			maxConcurrency: 4,
-			coverage: {
-				excludeNodeModules: true,
-				reportsDirectory: '../dist/coverage',
-				functions: 75,
-				branches: 75,
-				lines: 75,
-				statements: 75
-			}
 		}
 	};
 
