@@ -2,7 +2,7 @@
 // eslint-env node
 import { readFileSync } from 'fs';
 
-import { defineConfig, type UserConfig } from 'vitest/config';
+import { defineConfig, type UserConfig } from 'vite';
 import { type ManifestOptions, VitePWA as vitePWA } from 'vite-plugin-pwa';
 import { resolve } from 'path';
 import { externalResources, internalResources } from './src/service-worker';
