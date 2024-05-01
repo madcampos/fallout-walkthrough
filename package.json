@@ -25,18 +25,18 @@
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^18.4.3",
-		"@commitlint/config-conventional": "^18.4.3",
-		"@types/node": "^20.10.6",
-		"@typescript-eslint/eslint-plugin": "^6.17.0",
-		"@typescript-eslint/parser": "^6.17.0",
-		"eslint": "^8.56.0",
-		"husky": "^8.0.3",
-		"lint-staged": "^15.2.0",
-		"stylelint": "^16.1.0",
-		"typescript": "^5.3.3",
-		"vite": "^5.0.12",
-		"vite-plugin-pwa": "^0.17.4"
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
+		"@types/node": "^20.12.8",
+		"@typescript-eslint/eslint-plugin": "^7.8.0",
+		"@typescript-eslint/parser": "^7.8.0",
+		"eslint": "^9.1.1",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"stylelint": "^16.4.0",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.10",
+		"vite-plugin-pwa": "^0.20.0"
 	},
 	"lint-staged": {
 		"*.ts": "eslint --ext .ts --fix",
