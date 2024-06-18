@@ -25,27 +25,14 @@
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.3.0",
-		"@commitlint/config-conventional": "^19.2.2",
-		"@types/node": "^20.12.8",
-		"@typescript-eslint/eslint-plugin": "^7.8.0",
-		"@typescript-eslint/parser": "^7.8.0",
+		"@types/node": "^20.14.5",
+		"@typescript-eslint/eslint-plugin": "^7.13.1",
+		"@typescript-eslint/parser": "^7.13.1",
 		"eslint": "^8.57.0",
 		"husky": "^9.0.11",
-		"lint-staged": "^15.2.2",
-		"stylelint": "^16.5.0",
+		"stylelint": "^16.6.1",
 		"typescript": "^5.4.5",
-		"vite": "^5.2.11",
+		"vite": "^5.3.1",
 		"vite-plugin-pwa": "^0.20.0"
-	},
-	"lint-staged": {
-		"*.ts": "eslint --ext .ts --fix",
-		"*.js": "eslint --ext .js --fix",
-		"*.css": "stylelint --fix"
-	},
-	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		]
 	}
 }
