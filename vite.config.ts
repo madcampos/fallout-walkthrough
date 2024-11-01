@@ -2,22 +2,25 @@
 // eslint-env node
 import { readFileSync } from 'fs';
 
+import { resolve } from 'path';
 import { defineConfig, type UserConfig } from 'vite';
 import { type ManifestOptions, VitePWA as vitePWA } from 'vite-plugin-pwa';
-import { resolve } from 'path';
-import { externalResources, internalResources } from './src/service-worker';
+import { assetsCache, externalResourcesCache, pagesCache, scriptsCache } from './src/sw-caching';
 
 const manifest: Partial<ManifestOptions> = JSON.parse(readFileSync('./src/manifest.json', { encoding: 'utf8' }));
 
 export default defineConfig(({ mode }) => {
-	const baseUrl = mode === 'production' ? 'https://fallout2.madcampos.dev/' : 'https://localhost:3000/';
+	let baseUrl = 'https://fallout2.madcampos.dev/';
+	let sslOptions = undefined;
 
-	const sslOptions = mode === 'production'
-		? false
-		: {
+	if (mode !== 'production') {
+		baseUrl = 'https://localhost:3000/';
+
+		sslOptions = {
 			cert: readFileSync('./certs/server.crt', 'utf-8'),
 			key: readFileSync('./certs/server.key', 'utf-8')
 		};
+	}
 
 	const config: UserConfig = {
 		plugins: [
@@ -32,8 +35,10 @@ export default defineConfig(({ mode }) => {
 					clientsClaim: true,
 					navigationPreload: false,
 					runtimeCaching: [
-						internalResources,
-						externalResources
+						pagesCache,
+						assetsCache,
+						scriptsCache,
+						externalResourcesCache
 					]
 				},
 				devOptions: {
@@ -49,7 +54,6 @@ export default defineConfig(({ mode }) => {
 		clearScreen: false,
 		server: {
 			host: 'localhost',
-			// @ts-expect-error
 			https: sslOptions,
 			open: false,
 			cors: true,
@@ -70,7 +74,6 @@ export default defineConfig(({ mode }) => {
 			}
 		},
 		preview: {
-			// @ts-expect-error
 			https: sslOptions,
 			open: true
 		}
