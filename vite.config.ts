@@ -27,13 +27,17 @@ export default defineConfig(({ mode }) => {
 			vitePWA({
 				registerType: 'prompt',
 				minify: true,
+				showMaximumFileSizeToCacheInBytesWarning: true,
 				includeAssets: ['/icons/favicon.svg'],
 				manifest,
-				scope: baseUrl,
 				workbox: {
+					// eslint-disable-next-line @typescript-eslint/no-magic-numbers
+					maximumFileSizeToCacheInBytes: 1024 * 128,
 					cleanupOutdatedCaches: true,
 					clientsClaim: true,
+					skipWaiting: true,
 					navigationPreload: false,
+					directoryIndex: 'index.html',
 					runtimeCaching: [
 						pagesCache,
 						assetsCache,
