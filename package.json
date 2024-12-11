@@ -22,14 +22,14 @@
 		"preview": "vite preview --port 3000"
 	},
 	"devDependencies": {
-		"@types/node": "^22.8.6",
-		"@typescript-eslint/eslint-plugin": "^8.12.2",
-		"@typescript-eslint/parser": "^8.12.2",
-		"eslint": "^9.14.0",
-		"globals": "^15.11.0",
+		"@types/node": "^22.10.1",
+		"@typescript-eslint/eslint-plugin": "^8.16.0",
+		"@typescript-eslint/parser": "^8.16.0",
+		"eslint": "^9.16.0",
+		"globals": "^15.13.0",
 		"husky": "^9.1.6",
-		"typescript": "^5.6.3",
-		"vite": "^5.4.10",
-		"vite-plugin-pwa": "^0.20.5"
+		"typescript": "^5.7.2",
+		"vite": "^6.0.1",
+		"vite-plugin-pwa": "^0.21.1"
 	}
 }
