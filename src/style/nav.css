@@ -1,29 +1,24 @@
-#toc {
-	background: var(--bg-color);
-	color: inherit;
-	border: none;
-	inset: 0 auto 0 0;
-	margin: 0;
-	min-height: 100vh;
-	height: 100vh;
-	position: absolute;
-	width: var(--toc-width);
-}
+@layer components {
+	#toc {
+		position: absolute;
+		margin: 0;
+		inset: 0 auto 0 0;
+		border: none;
+		background: var(--bg-color);
+		width: var(--toc-width);
+		height: 100vh;
+		min-height: 100vh;
+		color: inherit;
+	}
 
-#toc::backdrop {
-	background-color: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(10px);
-}
+	#toc::backdrop {
+		backdrop-filter: blur(10px);
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 
-nav {
-	overflow: auto;
-	width: 100%;
-	height: 100%;
+	nav {
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+	}
 }
-
-summary :is(h1, h2, h3, h4, h5, h6) {
-	margin: 0;
-	display: inline-block;
-}
-
-/** TODO: add symmary focus and active styles */

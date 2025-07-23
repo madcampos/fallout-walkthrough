@@ -78,10 +78,13 @@
 		"blockSelectorLinebreak": "consistent",
 		"omitNumberLeadingZero": false,
 		"trailingComma": false,
-		"padComments": true,
+		"formatComments": false,
+		"alignComments": true,
 		"linebreakInPseudoParens": false,
-		"declarationOrder": "alphabetical",
+		"declarationOrder": "concentric",
+		"declarationOrderGroupBy": "nonDeclarationAndEmptyLine",
 		"singleLineBlockThreshold": 1,
+		"attrValueQuotes": "always",
 		"ignoreCommentDirective": "dprint-ignore"
 	},
 	"markdown": {
@@ -117,11 +120,12 @@
 		"vForDelimiterStyle": "of",
 		"vSlotStyle": "short",
 		"vBindSameNameShortHand": false,
-		"astroAttrShorthand": true
+		"astroAttrShorthand": true,
+		"ignoreCommentDirective": "dprint-ignore",
+		"ignoreFileCommentDirective": "dprint-ignore-file"
 	},
 	"yaml": {
 		"printWidth": 180,
-		"useTabs": false,
 		"indentWidth": 2,
 		"lineBreak": "lf",
 		"quotes": "preferDouble",
@@ -135,17 +139,24 @@
 		"trimTrailingZero": false,
 		"ignoreCommentDirective": "dprint-ignore"
 	},
+	"toml": {
+		"indentWidth": 4,
+		"useTabs": true,
+		"newLineKind": "lf",
+		"comment.forceLeadingSpace": true
+	},
 	"excludes": [
 		"dist/**",
 		"**/node_modules",
 		"**/*-lock.json"
 	],
 	"plugins": [
-		"https://plugins.dprint.dev/typescript-0.91.4.wasm",
-		"https://plugins.dprint.dev/json-0.19.3.wasm",
-		"https://plugins.dprint.dev/g-plane/malva-v0.5.1.wasm",
-		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.11.0.wasm",
-		"https://plugins.dprint.dev/markdown-0.17.1.wasm",
-		"https://plugins.dprint.dev/g-plane/pretty_yaml-v0.4.0.wasm"
+		"https://plugins.dprint.dev/typescript-0.95.7.wasm",
+		"https://plugins.dprint.dev/json-0.20.0.wasm",
+		"https://plugins.dprint.dev/g-plane/malva-v0.12.1.wasm",
+		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.21.0.wasm",
+		"https://plugins.dprint.dev/markdown-0.18.0.wasm",
+		"https://plugins.dprint.dev/g-plane/pretty_yaml-v0.5.1.wasm",
+		"https://plugins.dprint.dev/toml-0.7.0.wasm"
 	]
 }

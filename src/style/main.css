@@ -1,13 +1,9 @@
+@layer variables, base, components, accessibility;
+
 @import url('./vars.css');
-@import url('./font.css');
 @import url('./base.css');
-@import url('./scrollbars.css');
 @import url('./buttons.css');
-@import url('./links.css');
-@import url('./text.css');
-@import url('./lists.css');
 @import url('./tables.css');
 @import url('./nav.css');
 @import url('./maps.css');
 @import url('./notes.css');
-@import url('./layout.css');

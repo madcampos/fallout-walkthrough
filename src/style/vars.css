@@ -1,72 +1,86 @@
-:root {
-	/* Fonts */
-	--font-family: 'ChicagoFLF', 'Cascadia Code', 'Fira Code', 'Monaco', monospace;
-	--title-family: 'fallouty', var(--font-family);
+@font-face {
+	src: url('./font/ChicagoFLF.ttf');
+	font-family: ChicagoFLF;
 
-	/* Sizes */
-	--font-size: 18px;
-	--margin-size: 2rem;
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+}
 
-	--divider-icon-size: 5rem;
-	--divider-size: calc(var(--divider-icon-size) / 10);
+@font-face {
+	src: url('./font/fallouty.ttf');
+	font-family: fallouty;
 
-	--scrollbar-size: 0.5rem;
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
+}
 
-	--table-wrapper-height: clamp(15rem, calc(90vh - 4rem), 100rem);
-	--table-wrapper-width: clamp(15rem, calc(90vw - (var(--margin-size) * 4)), 100rem);
-	--table-spacing: 0.1rem;
-	--table-cell-padding: 0.2rem;
-	--table-image-size: clamp(4rem, 10vmin, 6rem);
+@layer variables {
+	:root {
+		/* Fonts */
+		--font-family: 'ChicagoFLF', 'Cascadia Code', 'Fira Code', 'Monaco', monospace;
+		--title-family: 'fallouty', var(--font-family);
+		/* Sizes */
+		--font-size: 1.2rem;
+		--margin-size: 2rem;
 
-	--map-wrapper-size: clamp(15rem, calc(90vmin - 4rem), 100rem);
-	--world-map-size: 100%;
+		--divider-icon-size: 5rem;
+		--divider-size: calc(var(--divider-icon-size) / 10);
 
-	--rounded-corners: 0.4rem;
-	--button-size: 4rem;
+		--table-wrapper-height: clamp(15rem, calc(90vh - 4rem), 100rem);
+		--table-wrapper-width: clamp(15rem, calc(90vw - var(--margin-size) * 4), 100rem);
+		--table-spacing: 0.1rem;
+		--table-cell-padding: 0.2rem;
+		--table-image-size: clamp(4rem, 10vmin, 6rem);
 
-	--image-size: clamp(15rem, 50vmin, 60rem);
+		--map-wrapper-size: clamp(15rem, calc(90vmin - 4rem), 100rem);
+		--world-map-size: 100%;
 
-	--toc-width: clamp(15rem, 100vmin, 30rem);
+		--rounded-corners: 0.4rem;
+		--button-size: 4rem;
 
-	/* Colors */
-	--bg-color: lightgray;
-	--font-color: darkslategray;
+		--image-size: clamp(15rem, 50vmin, 60rem);
 
-	--scrollbar-color: rgba(169, 169, 169, 0.5);
-	--scrollbar-bg-color: rgba(169, 169, 169, 0.2);
+		--toc-width: clamp(15rem, 100vmin, 30rem);
+		/* Colors */
+		--bg-color: light-dark(lightgray, #141414);
+		--font-color: light-dark(darkslategray, whitesmoke);
 
-	--link-color: dodgerblue;
-	--link-visited-color: indigo;
-	--link-hover-color: darkorange;
-	--link-active-color: red;
+		--scrollbar-color: rgba(169, 169, 169, 0.5);
+		--scrollbar-bg-color: rgba(169, 169, 169, 0.2);
 
-	--bg-table-even: gainsboro;
-	--bg-table-odd: silver;
+		--link-color: light-dark(dodgerblue, darkslateblue);
+		--link-visited-color: light-dark(indigo, darkorchid);
+		--link-hover-color: light-dark(darkorange, orangered);
+		--link-active-color: light-dark(red, maroon);
 
-	--color-red: orangered;
-	--bg-red: lightsalmon;
+		--bg-table-even: light-dark(gainsboro, #181a1b);
+		--bg-table-odd: light-dark(silver, #212c2c);
 
-	--color-blue: navy;
-	--bg-blue: cornflowerblue;
+		--color-red: light-dark(orangered, navajowhite);
+		--bg-red: light-dark(lightsalmon, maroon);
 
-	--color-green: darkgreen;
-	--bg-green: darkseagreen;
+		--color-blue: light-dark(navy, lightskyblue);
+		--bg-blue: light-dark(cornflowerblue, midnightblue);
 
-	--color-yellow: darkgoldenrod;
-	--bg-yellow: khaki;
+		--color-green: light-dark(darkgreen, palegreen);
+		--bg-green: light-dark(darkseagreen, darkgreen);
 
-	--title-rp: magenta;
-	--color-rp: purple;
-	--bg-rp: violet;
+		--color-yellow: light-dark(darkgoldenrod, yellow);
+		--bg-yellow: light-dark(khaki, saddlebrown);
 
-	--map-marker-color: lime;
-	--map-route-color: darkorange;
-	--map-encounter-color: deepskyblue;
+		--title-rp: light-dark(magenta, deeppink);
+		--color-rp: light-dark(purple, peachpuff);
+		--bg-rp: light-dark(violet, #2b0049);
 
-	--completed-quest-color: rgba(211, 211, 211, 0.5);
+		--map-marker-color: lime;
+		--map-route-color: darkorange;
+		--map-encounter-color: deepskyblue;
 
-	--divider-gradient:
-		linear-gradient(
+		--completed-quest-color: rgba(211, 211, 211, 0.5);
+
+		--divider-gradient: linear-gradient(
 			to right,
 			transparent,
 			darkgray calc(50% - var(--divider-icon-size) - var(--divider-size)),
@@ -75,50 +89,16 @@
 			darkgray calc(50% + var(--divider-icon-size) + var(--divider-size)),
 			transparent
 		);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg-color: #141414;
-		--font-color: whitesmoke;
-
-		--link-color: darkslateblue;
-		--link-visited-color: darkorchid;
-		--link-hover-color: orangered;
-		--link-active-color: maroon;
-
-		--bg-table-even: #212c2c;
-		--bg-table-odd: #181a1b;
-
-		--color-red: navajowhite;
-		--bg-red: maroon;
-
-		--color-blue: lightskyblue;
-		--bg-blue: midnightblue;
-
-		--color-green: palegreen;
-		--bg-green: darkgreen;
-
-		--color-yellow: yellow;
-		--bg-yellow: saddlebrown;
-
-		--title-rp: deeppink;
-		--color-rp: peachpuff;
-		--bg-rp: #2b0049;
 	}
-}
 
-@media (max-width: 600px) {
-	:root {
-		--font-size: 14px;
-		--margin-size: 1rem;
-		--divider-icon-size: 3rem;
-		--world-map-size: 200vmax;
+	@media (max-width: 600px) {
+		:root {
+			--font-size: 1rem;
+			--margin-size: 1rem;
+			--divider-icon-size: 3rem;
+			--world-map-size: 200vmax;
+		}
 	}
-}
 
-@media (max-width: 1000px) {
-	:root {
-		--world-map-size: 150vmax;
-	}
+	@media (max-width: 1000px) { :root { --world-map-size: 150vmax; } }
 }

@@ -4,10 +4,6 @@ import { readFileSync } from 'fs';
 
 import { resolve } from 'path';
 import { defineConfig, type UserConfig } from 'vite';
-import { type ManifestOptions, VitePWA as vitePWA } from 'vite-plugin-pwa';
-import { assetsCache, externalResourcesCache, pagesCache, scriptsCache } from './src/sw-caching';
-
-const manifest: Partial<ManifestOptions> = JSON.parse(readFileSync('./src/manifest.json', { encoding: 'utf8' }));
 
 export default defineConfig(({ mode }) => {
 	let baseUrl = 'https://fallout2.madcampos.dev/';
@@ -23,33 +19,6 @@ export default defineConfig(({ mode }) => {
 	}
 
 	const config: UserConfig = {
-		plugins: [
-			vitePWA({
-				registerType: 'prompt',
-				minify: true,
-				showMaximumFileSizeToCacheInBytesWarning: true,
-				includeAssets: ['/icons/favicon.svg'],
-				manifest,
-				workbox: {
-					// eslint-disable-next-line @typescript-eslint/no-magic-numbers
-					maximumFileSizeToCacheInBytes: 1024 * 128,
-					cleanupOutdatedCaches: true,
-					clientsClaim: true,
-					skipWaiting: true,
-					navigationPreload: false,
-					directoryIndex: 'index.html',
-					runtimeCaching: [
-						pagesCache,
-						assetsCache,
-						scriptsCache,
-						externalResourcesCache
-					]
-				},
-				devOptions: {
-					enabled: false
-				}
-			})
-		],
 		base: baseUrl,
 		envPrefix: 'APP_',
 		envDir: '../',
@@ -57,7 +26,7 @@ export default defineConfig(({ mode }) => {
 		publicDir: '../public',
 		clearScreen: false,
 		server: {
-			host: 'localhost',
+			host: '0.0.0.0',
 			https: sslOptions,
 			open: false,
 			cors: true,

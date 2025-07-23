@@ -1,54 +1,48 @@
-.table-wrapper {
-	width: var(--table-wrapper-width);
-	max-height: var(--table-wrapper-height);
-	margin-inline: auto;
-	margin-block: var(--margin-size);
-	overflow: auto;
-	contain: content;
-	content-visibility: auto;
-}
+@layer components {
+	table-wrapper {
+		display: block;
+		contain: content;
+		margin-inline: auto;
+		margin-block: var(--margin-size);
+		width: var(--table-wrapper-width);
+		max-height: var(--table-wrapper-height);
+		overflow: auto;
+		content-visibility: auto;
 
-table {
-	border-spacing: var(--table-spacing);
-	width: 100%;
-	text-align: center;
-}
+		table {
+			border-spacing: var(--table-spacing);
+			width: 100%;
+			text-align: center;
 
-tr:nth-child(odd) {
-	background-color: var(--bg-table-odd);
-}
+			& img {
+				image-rendering: pixelated;
+				max-width: var(--table-image-size);
+				max-height: var(--table-image-size);
+			}
+		}
 
-tr:nth-child(even) {
-	background-color: var(--bg-table-even);
-}
+		tr {
+			&:nth-child(odd) { background-color: var(--bg-table-odd); }
+			&:nth-child(even) { background-color: var(--bg-table-even); }
+			& > * { padding: var(--table-cell-padding); }
+		}
 
-tr > * {
-	padding: var(--table-cell-padding);
-}
+		thead {
+			position: sticky;
+			top: 0;
 
-thead th {
-	background-color: inherit;
-	position: sticky;
-	top: 0;
-}
+			tr:nth-child(1) { background-color: var(--bg-table-even); }
+		}
 
-:is(th, tr)[data-align='left'] { text-align: left; }
-:is(th, tr)[data-align='right'] { text-align: right; }
+		th[scope='col'] {
+			&:not([data-no-order])::after { content: ' ⏺'; }
+			&[data-order='ascending']::after { content: ' 🔼'; }
+			&[data-order='descending']::after { content: ' 🔽'; }
+		}
 
-th[scope='col']:not([data-no-order])::after {
-	content: ' ⏺';
-}
-
-th[scope='col'][data-order='ascending']::after {
-	content: ' 🔼';
-}
-
-th[scope='col'][data-order='descending']::after {
-	content: ' 🔽';
-}
-
-table img {
-	max-width: var(--table-image-size);
-	max-height: var(--table-image-size);
-	image-rendering: pixelated;
+		:is(th, tr) {
+			&[data-align='left'] { text-align: left; }
+			&[data-align='right'] { text-align: right; }
+		}
+	}
 }

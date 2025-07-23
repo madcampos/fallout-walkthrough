@@ -1,27 +1,27 @@
-button {
-	font-family: inherit;
-	font-size: calc(var(--button-size) / 2);
-	line-height: calc(var(--button-size) / 2);
-	color: var(--font-color);
-	border: solid medium currentcolor;
-	border-radius: 100vmax;
-	background-color: var(--bg-color);
-	z-index: 1;
-	width: var(--button-size);
-	height: var(--button-size);
-	text-align: center;
-	margin: calc(var(--margin-size) / 2);
-	position: fixed;
-	bottom: 0;
-}
+@layer components {
+	button {
+		position: fixed;
+		bottom: 0;
+		z-index: 1;
+		margin: calc(var(--margin-size) / 2);
+		border: solid medium currentcolor;
+		border-radius: 100vmax;
+		background-color: var(--bg-color);
+		width: var(--button-size);
+		height: var(--button-size);
+		color: var(--font-color);
+		font-size: calc(var(--button-size) / 2);
+		line-height: calc(var(--button-size) / 2);
+		font-family: inherit;
+		text-align: center;
+	}
 
-#toc-button {
-	z-index: 1;
-}
+	#toc-button { z-index: 1; }
 
-#top-button {
-	z-index: 1;
-	right: 0;
-}
+	#top-button {
+		right: 0;
+		z-index: 1;
+	}
 
-/** TODO: add focus and active styles */
+	/** TODO: add focus and active styles */
+}

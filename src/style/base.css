@@ -1,30 +1,190 @@
-*, *::before, *::after {
-	box-sizing: border-box;
-}
+@layer base {
+	:root {
+		scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg-color);
+		scrollbar-width: thin;
+		color: var(--font-color);
+		color-scheme: light dark;
+		font-size: var(--font-size);
+		line-height: 1.5;
+		font-family: var(--font-family);
+	}
 
-html, body {
-	height: 100%;
-	margin: 0;
-}
+	*, *::before, *::after {
+		box-sizing: border-box;
+		font-family: inherit;
+	}
 
-body {
-	-webkit-font-smoothing: antialiased;
-	line-height: 1.5;
-	font-size: var(--font-size);
-	font-family: var(--font-family);
-	color: var(--font-color);
-}
+	html, body { height: 100%; }
 
-img, picture, video, canvas, svg {
-	display: block;
-	max-width: 100%;
-	text-align: center;
-	margin-inline: auto;
-}
+	body {
+		margin: 0;
+		background-color: var(--bg-color);
+	}
 
-input, button { font: inherit; }
+	img, picture, video, canvas, svg {
+		display: block;
+		margin-inline: auto;
+		max-width: 100%;
+		text-align: center;
+	}
 
-*::selection {
-	background-color: var(--font-color);
-	color: var(--bg-color);
+	*::selection {
+		background-color: var(--font-color);
+		color: var(--bg-color);
+	}
+
+	a {
+		color: var(--link-color);
+		text-decoration-color: currentcolor;
+
+		transition: all 0.2s ease-in-out;
+
+		&:visited { color: var(--link-visited-color); }
+		&:hover { color: var(--link-hover-color); }
+		&:active { color: var(--link-active-color); }
+
+		&:focus {
+			outline: none;
+			color: var(--link-active-color);
+		}
+
+		@media (prefers-reduced-motion: no-preference) { text-decoration: dotted underline; }
+	}
+
+	main {
+		padding-inline: calc(var(--button-size) + var(--margin-size));
+		height: 100%;
+		overflow: auto;
+
+		& > * {
+			margin-inline: auto;
+			max-width: 120ch;
+		}
+	}
+
+	article > :is(h2, h3, h4), article details > summary {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background-color: var(--bg-color);
+	}
+
+	picture img {
+		margin-block: var(--margin-size);
+		width: var(--image-size);
+		height: var(--image-size);
+	}
+
+	/** TODO: add symmary focus and active styles */
+
+	input[type='checkbox']:checked ~ * {
+		color: var(--completed-quest-color);
+		text-decoration: line-through;
+		text-decoration-style: solid;
+		text-decoration-thickness: 0.2rem;
+	}
+
+	hr {
+		margin: calc(var(--divider-icon-size) / 1.5) 0;
+		border: none;
+		background: var(--divider-gradient);
+		height: 0.1rem;
+		overflow: visible;
+		text-align: center;
+
+		&::before {
+			display: inline-block;
+			transform: translateY(-50%);
+			background-image: url('../images/vault-tec.svg');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: calc(var(--divider-icon-size) * 2);
+			height: var(--divider-icon-size);
+			content: '';
+		}
+	}
+
+	.header-link {
+		visibility: hidden;
+		color: inherit;
+		font-size: 1ch;
+		text-decoration: none;
+	}
+
+	h1 {
+		font-size: 5.052rem;
+		text-align: center;
+	}
+
+	h2 { font-size: 2.441rem; }
+	h3 { font-size: 1.953rem; }
+	h4 { font-size: 1.563rem; }
+
+	:is(h1, h2, h3, h4, h5, h6) {
+		font-family: var(--title-family);
+
+		&:hover .header-link { visibility: visible; }
+	}
+
+	summary :is(hgroup, h1, h2, h3, h4, h5, h6) {
+		display: inline-block;
+		margin: 0;
+	}
+
+	/** TODO: add symmary focus and active styles */
+
+	:is(p, h1, h2, h3, h4, h5, h6) {
+		margin-block: 0;
+		margin-block-end: calc(var(--margin-size) / 2);
+		overflow-wrap: break-word;
+	}
+
+	p { margin-block-end: var(--margin-size); }
+
+	figure:has(blockquote) {
+		margin-inline: auto;
+		margin-block: var(--margin-size);
+		width: clamp(20ch, 70%, 55ch);
+		font-style: italic;
+
+		blockquote { margin: 0; }
+		p { margin-block-end: calc(var(--margin-size) / 2); }
+		figcaption {
+			display: block;
+			text-align: right;
+
+			&::before { content: '— '; }
+		}
+	}
+
+	small { font-size: 0.7em; }
+
+	dl { margin-block: var(--margin-size); }
+
+	dt {
+		font-weight: bold;
+		text-decoration-line: underline;
+		text-decoration-thickness: 0.15ch;
+		text-decoration-skip-ink: auto;
+
+		margin-block: calc(var(--margin-size) / 2);
+
+		&:first-of-type { margin-block-start: 0; }
+
+		@media (prefers-reduced-motion: reduce) { text-decoration-style: double; }
+	}
+
+	dd { margin-inline-start: calc(var(--margin-size) / 2); }
+
+	ul, ol {
+		margin-block: var(--margin-size);
+		padding-inline-start: calc(var(--margin-size) * 2);
+		list-style-type: '◊ ';
+		list-style-position: outside;
+	}
+
+	ol { list-style-type: decimal-leading-zero; }
+
+	li :is(ol, ul) { margin-block: 0; }
 }
