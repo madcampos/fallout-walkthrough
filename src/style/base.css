@@ -9,10 +9,8 @@
 		font-family: var(--font-family);
 	}
 
-	*, *::before, *::after {
-		box-sizing: border-box;
-		font-family: inherit;
-	}
+	*, *::before, *::after { box-sizing: border-box; }
+	*:not(kbd, code, pre, samp), *::before, *::after { font-family: inherit; }
 
 	html, body { height: 100%; }
 
@@ -127,16 +125,8 @@
 		&:hover .header-link { visibility: visible; }
 	}
 
-	summary :is(hgroup, h1, h2, h3, h4, h5, h6) {
-		display: inline-block;
-		margin: 0;
-	}
-
-	/** TODO: add symmary focus and active styles */
-
 	:is(p, h1, h2, h3, h4, h5, h6) {
-		margin-block: 0;
-		margin-block-end: calc(var(--margin-size) / 2);
+		margin-block: calc(var(--margin-size) / 2);
 		overflow-wrap: break-word;
 	}
 
