@@ -17,39 +17,39 @@ function compareRowsByColumn(rowA, rowB, column, order = 'ascending') {
 	return collator.compare(columnB, columnA);
 }
 
-/**
- * @param {MouseEvent} event
- */
-function sortByColumn(event) {
-	event.stopPropagation();
-
-	const thCell = /** @type {HTMLTableCellElement}*/ (event.target);
-	const table = thCell.closest('table');
-	const tbody = table?.querySelector('tbody');
-	const column = thCell.cellIndex;
-
-	/** @type {'ascending' | 'descending'} */
-	let order = 'ascending';
-
-	if (thCell.dataset['order'] === 'descending') {
-		order = 'ascending';
-	} else {
-		order = 'descending';
-	}
-
-	table?.querySelectorAll('th').forEach((thEl) => {
-		delete thEl.dataset['order'];
-	});
-
-	thCell.dataset['order'] = order;
-
-	[...tbody?.querySelectorAll('tr') ?? []].sort((first, last) => compareRowsByColumn(first, last, column, order)).forEach((row) => tbody?.appendChild(row));
-}
-
 export function registerTableSort() {
-	[...document.querySelectorAll('table')].forEach((table) => {
-		[...(/**@type {NodeListOf<HTMLTableCellElement>} */ (table.querySelectorAll('thead th:not([data-no-order])')))].forEach((thEl) => {
-			thEl.addEventListener('click', sortByColumn, true);
+	document.addEventListener('click', (evt) => {
+		// eslint-disable-next-line @typescript-eslint/prefer-destructuring
+		const target = /** @type {HTMLElement}*/ (evt.target);
+
+		if (!target.matches('th[aria-sort]')) {
+			return;
+		}
+
+		evt.stopPropagation();
+
+		const thCell = /** @type {HTMLTableCellElement}*/ (target);
+		const table = thCell.closest('table');
+		const tbody = table?.querySelector('tbody');
+		const column = thCell.cellIndex;
+
+		/** @type {'ascending' | 'descending'} */
+		let order = 'ascending';
+
+		if (thCell.ariaSort === 'descending') {
+			order = 'ascending';
+		} else {
+			order = 'descending';
+		}
+
+		table?.querySelectorAll('th[aria-sort]').forEach((thEl) => {
+			thEl.ariaSort = 'none';
 		});
+
+		thCell.ariaSort = order;
+
+		[...tbody?.querySelectorAll('tr') ?? []]
+			.sort((first, last) => compareRowsByColumn(first, last, column, order))
+			.forEach((row) => tbody?.appendChild(row));
 	});
 }
