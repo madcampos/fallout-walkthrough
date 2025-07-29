@@ -98,7 +98,7 @@ function buildHeadingLevels(headingList, prevHeadingId = '') {
 export function buildTableOfContents() {
 	const headings = /** @type {HTMLHeadingElement[]} */ ([...document.body.querySelectorAll('main :is(h2, h3, h4, h5, h6)')]);
 
-	console.log(buildHeadingLevels(headings));
+	document.querySelector('#toc nav')?.insertAdjacentHTML('beforeend', `<ol>${buildHeadingLevels(headings)}</ol>`);
 }
 
 export function handleTableOfContents() {
