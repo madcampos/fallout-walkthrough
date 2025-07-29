@@ -38,186 +38,16 @@
 	</head>
 
 	<body>
-		<button type="button" id="toc-button" popovertarget="toc">≡</button>
-		<button type="button" id="top-button">⌤</button>
+		<button type="button" id="toc-button" popovertarget="toc">
+			<span class="visually-hidden">Table Of Contents</span>
+		</button>
+		<button type="button" id="top-button">
+			<span class="visually-hidden">Scroll to top</span>
+		</button>
 
-		<dialog id="toc" popover>
+		<dialog id="toc" popover closedby="any">
 			<nav>
 				<h2>Table of contents</h2>
-
-				<ol>
-					<li><a href="#introduction">Introduction</a></li>
-					<li><a href="#preparations">Preparations</a></li>
-					<li>
-						<details open>
-							<summary><a href="#character-design">Character design</a></summary>
-							<ol>
-								<li><a href="#character-design--stats">Stats</a></li>
-								<li><a href="#character-design--traits">Traits</a></li>
-								<li><a href="#character-design--skills">Skills</a></li>
-								<li><a href="#character-design--perks">Perks</a></li>
-								<li>
-									<details open>
-										<summary><a href="#character-design--suggested-characters">Suggested Characters</a></summary>
-										<ol>
-											<li><a href="#character-design--suggested-characters--team-gunfighter">Team Gunfighter</a></li>
-											<li><a href="#character-design--suggested-characters--gifted-gunfighter">Gifted Gunfighter</a></li>
-											<li><a href="#character-design--suggested-characters--solo-sniper">Solo Sniper</a></li>
-											<li><a href="#character-design--suggested-characters--team-brawler">Team Brawler</a></li>
-											<li><a href="#character-design--suggested-characters--solo-brawler">Solo Brawler</a></li>
-											<li><a href="#character-design--suggested-characters--stupid">Stupid</a></li>
-										</ol>
-									</details>
-								</li>
-								<li><a href="#character-design--special-perks">Special Perks</a></li>
-								<li><a href="#character-design--reputations">Reputations</a></li>
-								<li><a href="#character-design--radiation">Radiation</a></li>
-							</ol>
-						</details>
-					</li>
-					<li>
-						<details open>
-							<summary><a href="#area-walkthrough">Area walkthrough</a></summary>
-							<ol>
-								<li><a href="#world-map">(World Map)</a></li>
-								<li><a href="#temple-of-trials">Temple of Trials</a></li>
-								<li><a href="#arroyo">Arroyo</a></li>
-								<li><a href="#klamath">Klamath</a></li>
-								<li><a href="#toxic-caves">Toxic Caves</a></li>
-								<li><a href="#the-den">The Den</a></li>
-								<li><a href="#slavers-camp" data-rp-content>Slaver's Camp</a></li>
-								<li><a href="#umbra-tribe" data-rp-content>Umbra tribe</a></li>
-								<li><a href="#modoc">Modoc</a></li>
-								<li><a href="#ghost-farm">Ghost Farm</a></li>
-								<li><a href="#vault-city">Vault City</a></li>
-								<li><a href="#vault-village" data-rp-content>Vault Village</a></li>
-								<li><a href="#gecko">Gecko</a></li>
-								<li><a href="#abbey" data-rp-content>Abbey</a></li>
-								<li><a href="#raiders">Raiders</a></li>
-								<li><a href="#broken-hills">Broken Hills</a></li>
-								<li><a href="#redding">Redding</a></li>
-								<li><a href="#new-reno">New Reno</a></li>
-								<li><a href="#golgotha">Golgotha</a></li>
-								<li><a href="#stables">The Stables</a></li>
-								<li><a href="#sierra-army-depot">Sierra Army Depot</a></li>
-								<li><a href="#epa" data-rp-content>Environmental Protection Agency</a></li>
-								<li><a href="#ncr">New California Republic</a></li>
-								<li><a href="#vault-15">Vault 15</a></li>
-								<li><a href="#vault-13">Vault 13</a></li>
-								<li><a href="#military-base">Military Base</a></li>
-								<li><a href="#san-francisco">San Francisco</a></li>
-								<li><a href="#shi-submarine" data-rp-content>Shi Submarine</a></li>
-								<li><a href="#navarro">Navarro</a></li>
-								<li><a href="#the-enclave">The Enclave</a></li>
-							</ol>
-						</details>
-					</li>
-					<li>
-						<details open>
-							<summary><a href="#endings">Endings</a></summary>
-							<ol>
-								<li><a href="#endings--arroyo">Arroyo</a></li>
-								<li><a href="#endings--modoc">Modoc</a></li>
-								<li><a href="#endings--the-den">The Den</a></li>
-								<li><a href="#endings--vault-city">Vault City</a></li>
-								<li><a href="#endings--new-reno">New Reno</a></li>
-								<li><a href="#endings--richard-wrights-murder">Richard Wright's Murder</a></li>
-								<li><a href="#endings--myron">Myron</a></li>
-								<li><a href="#endings--gecko">Gecko</a></li>
-								<li><a href="#endings--redding">Redding</a></li>
-								<li><a href="#endings--broken-hills">Broken Hills</a></li>
-								<li><a href="#endings--ncr">NCR</a></li>
-								<li><a href="#endings--vault-15">Vault 15</a></li>
-								<li><a href="#endings--vault-13">Vault 13</a></li>
-								<li><a href="#endings--san-francisco">San Francisco</a></li>
-								<li><a href="#endings--tanker-vagrants">Tanker Vagrants</a></li>
-							</ol>
-						</details>
-					</li>
-					<li>
-						<details open>
-							<summary><a href="#encounters">Encounters</a></summary>
-							<ol>
-								<li><a href="#encounters--good-encounters">Good Encounters</a></li>
-								<li><a href="#encounters--pointless-encounters">Pointless Encounters</a></li>
-								<li><a href="#encounters--bad-encounters">Bad Encounters</a></li>
-								<li><a href="#encounters--other-encounters">Other Encounters</a></li>
-							</ol>
-						</details>
-					</li>
-					<li>
-						<details open>
-							<summary><a href="#npc">NPCs</a></summary>
-							<ol>
-								<li><a href="#npcs--sulik">Sulik</a></li>
-								<li><a href="#npcs--vic">Vic</a></li>
-								<li><a href="#npcs--miria">Miria</a></li>
-								<li><a href="#npcs--davin">Davin</a></li>
-								<li><a href="#npcs--laddie">Laddie</a></li>
-								<li><a href="#npcs--cassidy">Cassidy</a></li>
-								<li><a href="#npcs--lenny">Lenny</a></li>
-								<li><a href="#npcs--marcus">Marcus</a></li>
-								<li><a href="#npcs--myron">Myron</a></li>
-								<li><a href="#npcs--brain-bot">Brain Bot</a></li>
-								<li><a href="#npcs--robodog">Robodog</a></li>
-								<li><a href="#npcs--goris">Goris</a></li>
-								<li><a href="#npcs--k9">K-9</a></li>
-								<li><a href="#npcs--dogmeat">Dogmeat</a></li>
-								<li><a href="#npcs--pariah-dog">Pariah dog</a></li>
-								<li><a href="#npcs--kitsune">Kitsune</a></li>
-								<li><a href="#npcs--cat-jules">Cat Jules</a></li>
-								<li><a href="#npcs--dex">Dex</a></li>
-							</ol>
-						</details>
-					</li>
-					<li><a href="#car">Car</a></li>
-					<li><a href="#stupid">Stupid</a></li>
-					<li>
-						<details open>
-							<summary><a href="#combat">Combat</a></summary>
-							<ol>
-								<li><a href="#combat--general">General</a></li>
-								<li><a href="#combat--tactics-and-party-management">Tactics and party management</a></li>
-								<li><a href="#combat--suggested-weapon-progression">Suggested weapon progression</a></li>
-								<li><a href="#combat--random-weapons-and-ammo-notes">Random weapon and ammo notes</a></li>
-							</ol>
-						</details>
-					</li>
-					<li>
-						<details open>
-							<summary><a href="#items">Items</a></summary>
-							<ol>
-								<li><a href="#items--armor">Armor</a></li>
-								<li><a href="#items--weapons">Weapons</a></li>
-								<li><a href="#items--ammo">Ammo</a></li>
-								<li>
-									<a href="#items--items-which-can-be-consumed-for-an-effect-may-also-have-quest-use"
-									>Items which can be consumed for an effect (may also have quest use)</a>
-								</li>
-								<li><a href="#items--items-which-have-general-use-may-also-have-quest-use">Items which have general use (may also have quest use)</a></li>
-								<li>
-									<a href="#items--items-which-have-one-time-or-one-place-use-unless-otherwise-noted"
-									>Items which have one-time or one-place use (unless otherwise noted)</a>
-								</li>
-								<li><a href="#items--items-which-have-no-meaningful-use">Items which have no (meaningful) use</a></li>
-								<li><a href="#items--list-of-upgrade-costs">List of upgrade costs</a></li>
-								<li><a href="#items--list-of-addiction-effects">List of addiction effects</a></li>
-							</ol>
-						</details>
-					</li>
-					<li>
-						<details open>
-							<summary><a href="#addenda">Addenda</a></summary>
-							<ol>
-								<li><a href="#addenda--the-too-many-items-bug">The too many items bug</a></li>
-								<li><a href="#addenda--unfinished-business">Unfinished Business</a></li>
-								<li><a href="#addenda--note-on-guide-translation">Note on guide translation</a></li>
-							</ol>
-						</details>
-					</li>
-					<li><a href="#acknowledgements">Acknowledgements</a></li>
-					<li><a href="#copyright-notice">Copyright Notice</a></li>
-				</ol>
 			</nav>
 		</dialog>
 
@@ -247,10 +77,7 @@
 
 			<article>
 				<header>
-					<h2 id="introduction">
-						Introduction
-						<a class="header-link" href="#introduction">🔗</a>
-					</h2>
+					<h2>Introduction</h2>
 
 					<figure>
 						<blockquote>
@@ -342,10 +169,7 @@
 			<hr />
 
 			<article>
-				<h2 id="preparations">
-					Preparations
-					<a class="header-link" href="#preparations">🔗</a>
-				</h2>
+				<h2>Preparations</h2>
 
 				<figure>
 					<blockquote>
@@ -509,10 +333,7 @@
 			<hr />
 
 			<article>
-				<h2 id="character-design">
-					Character design
-					<a class="header-link" href="#character-design">🔗</a>
-				</h2>
+				<h2>Character design</h2>
 
 				<figure>
 					<blockquote>
@@ -551,10 +372,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="character-design--stats">
-					Stats
-					<a class="header-link" href="#character-design--stats">🔗</a>
-				</h3>
+				<h3>Stats</h3>
 
 				<p>When allotting char points there are some things to keep in mind:</p>
 
@@ -659,10 +477,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="character-design--traits">
-					Traits
-					<a class="header-link" href="#character-design--traits">🔗</a>
-				</h3>
+				<h3>Traits</h3>
 
 				<p>Recommended traits:</p>
 
@@ -805,10 +620,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="character-design--skills">
-					Skills
-					<a class="header-link" href="#character-design--skills">🔗</a>
-				</h3>
+				<h3>Skills</h3>
 
 				<p>Recommended skills to tag:</p>
 
@@ -965,9 +777,9 @@
 
 				<wt-note type="green">
 					<p>
-						<em>Starseeker</em> adds this on Steal: "I have found out that if you have low Lockpick skills, you can try to steal stuff from locked drawers or tables,
-						but it may not always work for some reason. It won't work on lockers." Experimentation shows that it works on desks and workbenches, but not on lockers or
-						footlockers.
+						<cite>Starseeker</cite> adds this on Steal: "I have found out that if you have low Lockpick skills, you can try to steal stuff from locked drawers or
+						tables, but it may not always work for some reason. It won't work on lockers." Experimentation shows that it works on desks and workbenches, but not on
+						lockers or footlockers.
 					</p>
 				</wt-note>
 
@@ -997,10 +809,7 @@
 					even before modifiers are applied, just like Outdoorsman.
 				</p>
 
-				<h3 id="character-design--perks">
-					Perks
-					<a class="header-link" href="#character-design--perks">🔗</a>
-				</h3>
+				<h3>Perks</h3>
 
 				<p>The three top perks, hands down:</p>
 
@@ -1073,14 +882,14 @@
 
 				<wt-note type="green">
 					<p>
-						<em>Michal Burger</em> puts in: "The Bonus Move perk is for an HtH character far superior to Action Boy/Girl, which you suggested, because your enemies tend
-						to slide 2-8 hexes after you hit them so you almost always use up all of your 'move only' Action Points, even if you have two levels of this perk. Another
-						advantage is that you can get Bonus Move at 6th level, compared to 12th for Action Boy. I can never find any good perks at the early levels, so I almost
-						always go for Toughness and Bonus Move. And some extra move AP can be still useful even in ranged combat - for hiding behind obstacles." This argument was
-						made for <em>Fallout</em> where the Super Sledge is the best melee weapon, but it has merit even without the knock-back angle. <em>Volcano</em> adds: "I
-						find Bonus Move has its uses in ranged combat, when using heavy burst weapons like miniguns or the Bozar. It allows you to get a clear field of fire so that
-						you can target the enemy without blowing apart your NPCs. And it allows you to line up critters to ensure hitting more than one with each burst. Wiping out
-						six floaters with three bursts from a Vindicator is a lot of fun."
+						<cite>Michal Burger</cite> puts in: "The Bonus Move perk is for an HtH character far superior to Action Boy/Girl, which you suggested, because your enemies
+						tend to slide 2-8 hexes after you hit them so you almost always use up all of your 'move only' Action Points, even if you have two levels of this perk.
+						Another advantage is that you can get Bonus Move at 6th level, compared to 12th for Action Boy. I can never find any good perks at the early levels, so I
+						almost always go for Toughness and Bonus Move. And some extra move AP can be still useful even in ranged combat - for hiding behind obstacles." This
+						argument was made for <em>Fallout</em> where the Super Sledge is the best melee weapon, but it has merit even without the knock-back angle. <em>Volcano</em>
+						adds: "I find Bonus Move has its uses in ranged combat, when using heavy burst weapons like miniguns or the Bozar. It allows you to get a clear field of
+						fire so that you can target the enemy without blowing apart your NPCs. And it allows you to line up critters to ensure hitting more than one with each
+						burst. Wiping out six floaters with three bursts from a Vindicator is a lot of fun."
 					</p>
 				</wt-note>
 
@@ -1202,9 +1011,9 @@
 
 				<wt-note type="green">
 					<p>
-						<em>Krum Stanoev</em> adds: "There's another fairly obvious way to modify your primary stats in-game with the Mutate! perk. You can start with an Agility of
-						6 and still get Sniper: you pick Finesse, then you pick Gain Agility to make it 7, then Mutate! to swap Finesse for Small Frame and get AG 8 for Sniper just
-						before you make it to level 24." (Or you could take a dose of Psycho.)
+						<cite>Krum Stanoev</cite> adds: "There's another fairly obvious way to modify your primary stats in-game with the Mutate! perk. You can start with an
+						Agility of 6 and still get Sniper: you pick Finesse, then you pick Gain Agility to make it 7, then Mutate! to swap Finesse for Small Frame and get AG 8 for
+						Sniper just before you make it to level 24." (Or you could take a dose of Psycho.)
 					</p>
 				</wt-note>
 
@@ -1380,9 +1189,9 @@
 
 				<wt-note type="green">
 					<p>
-						<em>Kanhef</em> explains Heave Ho!: "A character's maximum range for throwing weapons is ST*3. Someone with a Strength of 2 can throw things up to 6 hexes
-						away. Taking Heave Ho! gives them an effective ST of 4, for a range of 12. However, the maximum throwing range is 8 for spears, and 15 for grenades. So
-						raising Strength above 5 doesn't increase range at all. Characters with a Strength of 1 would benefit from this perk; it's completely useless with a
+						<cite>Kanhef</cite> explains Heave Ho!: "A character's maximum range for throwing weapons is ST*3. Someone with a Strength of 2 can throw things up to 6
+						hexes away. Taking Heave Ho! gives them an effective ST of 4, for a range of 12. However, the maximum throwing range is 8 for spears, and 15 for grenades.
+						So raising Strength above 5 doesn't increase range at all. Characters with a Strength of 1 would benefit from this perk; it's completely useless with a
 						Strength over 4." Throwing Knives have a maximum range of 16 hexes, but taking a perk to increase your ST 5 character's range with that particular weapon by
 						1 hex would seem to fall within the definition of "completely useless".
 					</p>
@@ -1466,10 +1275,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="character-design--suggested-characters">
-					Suggested characters
-					<a class="header-link" href="#character-design--suggested-characters">🔗</a>
-				</h3>
+				<h3>Suggested characters</h3>
 
 				<p>
 					First of all, none of that "theme character" nonsense, like tagging Science and Repair and choosing "tech perks" like Educated and Mr. Fixit, or tagging Sneak
@@ -1504,10 +1310,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h4 id="character-design--suggested-characters--team-gunfighter">
-								Team gunfighter
-								<a class="header-link" href="#character-design--suggested-characters--team-gunfighter">🔗</a>
-							</h4>
+							<h4>Team gunfighter</h4>
 
 							<p><small>A bright and sociable character who can bring three friends along. You can take on all quests and pack some punch.</small></p>
 						</hgroup>
@@ -1544,10 +1347,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h4 id="character-design--suggested-characters--gifted-gunfighter">
-								Gifted gunfighter
-								<a class="header-link" href="#character-design--suggested-characters--gifted-gunfighter">🔗</a>
-							</h4>
+							<h4>Gifted gunfighter</h4>
 
 							<p><small>A boosted version of the above.</small></p>
 						</hgroup>
@@ -1580,10 +1380,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h4 id="character-design--suggested-characters--solo-sniper">
-								Solo sniper
-								<a class="header-link" href="#character-design--suggested-characters--solo-sniper">🔗</a>
-							</h4>
+							<h4>Solo sniper</h4>
 
 							<p>
 								<small>A character that can do almost everything in the game and mostly relies on ranged (and deadly) sniping to conquer the enemy. A bit harder to
@@ -1623,10 +1420,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h4 id="character-design--suggested-characters--team-brawler">
-								Team brawler
-								<a class="header-link" href="#character-design--suggested-characters--team-brawler">🔗</a>
-							</h4>
+							<h4>Team brawler</h4>
 
 							<p><small>A character devoted to Unarmed and Melee Weapons.</small></p>
 						</hgroup>
@@ -1666,10 +1460,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h4 id="character-design--suggested-characters--solo-brawler">
-								Solo brawler
-								<a class="header-link" href="#character-design--suggested-characters--solo-brawler">🔗</a>
-							</h4>
+							<h4>Solo brawler</h4>
 
 							<p>
 								<small>Same as above but with less CH. Not really an improvement, though, since you lose some quest features and mostly boost Luck in return
@@ -1705,10 +1496,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h4 id="character-design--suggested-characters--stupid">
-								Stupid
-								<a class="header-link" href="#character-design--suggested-characters--stupid">🔗</a>
-							</h4>
+							<h4>Stupid</h4>
 
 							<p>
 								<small>The workings of the stupid game is detailed in the Stupid section. I wouldn't recommend playing a stupid HtH character, it's rather hard
@@ -1745,10 +1533,7 @@
 					</dl>
 				</details>
 
-				<h3 id="character-design--special-perks">
-					Special perks
-					<a class="header-link" href="#character-design--special-perks">🔗</a>
-				</h3>
+				<h3>Special perks</h3>
 
 				<p>A quick list of special perks that can be gained, detailed further in the walkthrough:</p>
 
@@ -1799,10 +1584,7 @@
 					<dd>The pariah dog will bestow this doubtful perk upon you.</dd>
 				</dl>
 
-				<h3 id="character-design--reputations">
-					Reputations
-					<a class="header-link" href="#character-design--reputations">🔗</a>
-				</h3>
+				<h3>Reputations</h3>
 
 				<p>
 					During the game you will accumulate characteristics which are neither perks nor traits, but presented alongside them. They're often called "karmic traits", or
@@ -1890,10 +1672,7 @@
 					once is hardly used at all and doesn't even work properly. It won't really make any difference whether you have 500 karma or 1500.
 				</p>
 
-				<h3 id="character-design--radiation">
-					Radiation
-					<a class="header-link" href="#character-design--radiation">🔗</a>
-				</h3>
+				<h3>Radiation</h3>
 
 				<p>
 					And now for some stuff on radiation, which does play a small part in the <em>Fallout</em> world. Sources of radiation include Fruit, golden geckos, and aliens
@@ -2015,10 +1794,7 @@
 			<hr />
 
 			<article>
-				<h2 id="area-walkthrough">
-					Area walkthrough
-					<a class="header-link" href="#area-walkthrough">🔗</a>
-				</h2>
+				<h2>Area walkthrough</h2>
 
 				<figure>
 					<blockquote>
@@ -2124,10 +1900,7 @@
 			<hr />
 
 			<article>
-				<h2 id="world-map">
-					World Map
-					<a class="header-link" href="#world-map">🔗</a>
-				</h2>
+				<h2>World Map</h2>
 
 				<map-wrapper>
 					<svg viewBox="0 0 1400 1500" width="1400" height="1500" id="world-map">
@@ -2378,10 +2151,7 @@
 			<hr />
 
 			<article>
-				<h2 id="temple-of-trials">
-					Temple of Trials
-					<a class="header-link" href="#temple-of-trials">🔗</a>
-				</h2>
+				<h2>Temple of Trials</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/temple-of-trials.jpg" />
@@ -2518,10 +2288,7 @@
 			<hr />
 
 			<article>
-				<h2 id="arroyo">
-					Arroyo
-					<a class="header-link" href="#arroyo">🔗</a>
-				</h2>
+				<h2>Arroyo</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/arroyo.jpg" />
@@ -2645,10 +2412,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="arroyo--quests">
-							Quests
-							<a class="header-link" href="#arroyo--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -2793,10 +2557,7 @@
 			<hr />
 
 			<article>
-				<h2 id="klamath">
-					Klamath
-					<a class="header-link" href="#klamath">🔗</a>
-				</h2>
+				<h2>Klamath</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/klamath.jpg" />
@@ -3069,10 +2830,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="klamath--quests">
-							Quests
-							<a class="header-link" href="#klamath--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -3387,10 +3145,7 @@
 			<hr />
 
 			<article>
-				<h2 id="toxic-caves">
-					Toxic Caves
-					<a class="header-link" href="#toxic-caves">🔗</a>
-				</h2>
+				<h2>Toxic Caves</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/toxic-caves.jpg" />
@@ -3481,10 +3236,7 @@
 			<hr />
 
 			<article>
-				<h2 id="the-den">
-					The Den
-					<a class="header-link" href="#the-den">🔗</a>
-				</h2>
+				<h2>The Den</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/den.jpg" />
@@ -3806,10 +3558,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="the-den--quests">
-							Quests
-							<a class="header-link" href="#the-den--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -4178,10 +3927,7 @@
 			<hr />
 
 			<article data-rp-content>
-				<h2 id="slavers-camp">
-					Slaver's Camp
-					<a class="header-link" href="#slavers-camp">🔗</a>
-				</h2>
+				<h2>Slaver's Camp</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/slavers.jpg" />
@@ -4218,10 +3964,7 @@
 			<hr />
 
 			<article data-rp-content>
-				<h2 id="umbra-tribe">
-					Umbra Tribe
-					<a class="header-link" href="#umbra-tribe">🔗</a>
-				</h2>
+				<h2>Umbra Tribe</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/umbra-tribe.jpg" />
@@ -4235,10 +3978,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="umbra-tribe--quests">
-							Quests
-							<a class="header-link" href="#umbra-tribe--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -4362,10 +4102,7 @@
 			<hr />
 
 			<article>
-				<h2 id="modoc">
-					Modoc
-					<a class="header-link" href="#modoc">🔗</a>
-				</h2>
+				<h2>Modoc</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/modoc.jpg" />
@@ -4549,10 +4286,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="modoc--quests">
-							Quests
-							<a class="header-link" href="#modoc--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -4851,10 +4585,7 @@
 			<hr />
 
 			<article>
-				<h2 id="ghost-farm">
-					Ghost Farm
-					<a class="header-link" href="#ghost-farm">🔗</a>
-				</h2>
+				<h2>Ghost Farm</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/ghost-farm.jpg" />
@@ -4927,10 +4658,7 @@
 			<hr />
 
 			<article>
-				<h2 id="vault-city">
-					Vault City
-					<a class="header-link" href="#vault-city">🔗</a>
-				</h2>
+				<h2>Vault City</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/vault-city.jpg" />
@@ -5404,10 +5132,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="vault-city--quests">
-							Quests
-							<a class="header-link" href="#vault-city--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -5708,10 +5433,7 @@
 			<hr />
 
 			<article data-rp-content>
-				<h2 id="vault-village">
-					Vault Village
-					<a class="header-link" href="#vault-village">🔗</a>
-				</h2>
+				<h2>Vault Village</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/village.jpg" />
@@ -5719,10 +5441,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="vault-village--quests">
-							Quests
-							<a class="header-link" href="#vault-village--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -5807,10 +5526,7 @@
 			<hr />
 
 			<article>
-				<h2 id="gecko">
-					Gecko
-					<a class="header-link" href="#gecko">🔗</a>
-				</h2>
+				<h2>Gecko</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/gecko.jpg" />
@@ -5910,10 +5626,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="gecko--quests">
-							Quests
-							<a class="header-link" href="#gecko--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -6173,10 +5886,7 @@
 			<hr />
 
 			<article data-rp-content>
-				<h2 id="abbey">
-					Abbey
-					<a class="header-link" href="#abbey">🔗</a>
-				</h2>
+				<h2>Abbey</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/abbey.jpg" />
@@ -6210,10 +5920,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="abbey--quests">
-							Quests
-							<a class="header-link" href="#abbey--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -6351,10 +6058,7 @@
 			<hr />
 
 			<article>
-				<h2 id="raiders">
-					Raiders
-					<a class="header-link" href="#raiders">🔗</a>
-				</h2>
+				<h2>Raiders</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/raiders.jpg" />
@@ -6528,10 +6232,7 @@
 			<hr />
 
 			<article>
-				<h2 id="broken-hills">
-					Broken Hills
-					<a class="header-link" href="#broken-hills">🔗</a>
-				</h2>
+				<h2>Broken Hills</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/broken-hills.jpg" />
@@ -6716,10 +6417,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="broken-hills--quests">
-							Quests
-							<a class="header-link" href="#broken-hills--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -6948,10 +6646,7 @@
 			<hr />
 
 			<article>
-				<h2 id="redding">
-					Redding
-					<a class="header-link" href="#redding">🔗</a>
-				</h2>
+				<h2>Redding</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/redding.jpg" />
@@ -7189,10 +6884,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="redding--quests">
-							Quests
-							<a class="header-link" href="#redding--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -7327,10 +7019,7 @@
 			<hr />
 
 			<article>
-				<h2 id="new-reno">
-					New Reno
-					<a class="header-link" href="#new-reno">🔗</a>
-				</h2>
+				<h2>New Reno</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/new-reno.jpg" />
@@ -8100,10 +7789,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="new-reno--quests">
-							Quests
-							<a class="header-link" href="#new-reno--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -8766,10 +8452,7 @@
 			<hr />
 
 			<article>
-				<h2 id="golgotha">
-					Golgotha
-					<a class="header-link" href="#golgotha">🔗</a>
-				</h2>
+				<h2>Golgotha</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/golgotha.jpg" />
@@ -8856,10 +8539,7 @@
 			<hr />
 
 			<article>
-				<h2 id="stables">
-					The Stables
-					<a class="header-link" href="#stables">🔗</a>
-				</h2>
+				<h2>The Stables</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/stables.jpg" />
@@ -8957,10 +8637,7 @@
 			<hr />
 
 			<article>
-				<h2 id="sierra-army-depot">
-					Sierra Army Depot
-					<a class="header-link" href="#sierra-army-depot">🔗</a>
-				</h2>
+				<h2>Sierra Army Depot</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/sad.jpg" />
@@ -9265,10 +8942,7 @@
 			<hr />
 
 			<article data-rp-content>
-				<h2 id="epa">
-					EPA
-					<a class="header-link" href="#epa">🔗</a>
-				</h2>
+				<h2>EPA</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/epa.jpg" />
@@ -9541,10 +9215,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="epa--quests">
-							Quests
-							<a class="header-link" href="#epa--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -9667,10 +9338,7 @@
 			<hr />
 
 			<article>
-				<h2 id="ncr">
-					New California Republic
-					<a class="header-link" href="#ncr">🔗</a>
-				</h2>
+				<h2>New California Republic</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/ncr.jpg" />
@@ -10045,10 +9713,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="ncr--quests">
-							Quests
-							<a class="header-link" href="#ncr--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details data-rp-content>
@@ -10493,10 +10158,7 @@
 			<hr />
 
 			<article>
-				<h2 id="vault-15">
-					Vault 15
-					<a class="header-link" href="#vault-15">🔗</a>
-				</h2>
+				<h2>Vault 15</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/vault-15.jpg" />
@@ -10573,10 +10235,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="vault-15--quests">
-							Quests
-							<a class="header-link" href="#vault-15--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -10686,10 +10345,7 @@
 			<hr />
 
 			<article>
-				<h2 id="vault-13">
-					Vault 13
-					<a class="header-link" href="#vault-13">🔗</a>
-				</h2>
+				<h2>Vault 13</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/vault-13.jpg" />
@@ -10772,10 +10428,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="vault-13--quests">
-							Quests
-							<a class="header-link" href="#vault-13--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -10843,10 +10496,7 @@
 			<hr />
 
 			<article>
-				<h2 id="military-base">
-					Military Base
-					<a class="header-link" href="#military-base">🔗</a>
-				</h2>
+				<h2>Military Base</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/military-base.jpg" />
@@ -10948,10 +10598,7 @@
 			<hr />
 
 			<article>
-				<h2 id="san-francisco">
-					San Francisco
-					<a class="header-link" href="#san-francisco">🔗</a>
-				</h2>
+				<h2>San Francisco</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/san-francisco.jpg" />
@@ -11411,10 +11058,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="san-francisco--quests">
-							Quests
-							<a class="header-link" href="#san-francisco--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -11984,10 +11628,7 @@
 			<hr />
 
 			<article type="rp">
-				<h2 id="shi-submarine">
-					Shi Submarine
-					<a class="header-link" href="#shi-submarine">🔗</a>
-				</h2>
+				<h2>Shi Submarine</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/shi-submarine.jpg" />
@@ -12047,10 +11688,7 @@
 			<hr />
 
 			<article>
-				<h2 id="navarro">
-					Navarro
-					<a class="header-link" href="#navarro">🔗</a>
-				</h2>
+				<h2>Navarro</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/navarro.jpg" />
@@ -12207,10 +11845,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="navarro--quests">
-							Quests
-							<a class="header-link" href="#navarro--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -12283,10 +11918,7 @@
 			<hr />
 
 			<article>
-				<h2 id="the-enclave">
-					The Enclave
-					<a class="header-link" href="#the-enclave">🔗</a>
-				</h2>
+				<h2>The Enclave</h2>
 
 				<picture>
 					<img width="450" height="450" src="/images/backgrounds/enclave.jpg" />
@@ -12867,10 +12499,7 @@
 
 				<details class="quests" open>
 					<summary>
-						<h3 id="the-enclave--quests">
-							Quests
-							<a class="header-link" href="#the-enclave--quests">🔗</a>
-						</h3>
+						<h3>Quests</h3>
 					</summary>
 
 					<details>
@@ -12897,10 +12526,7 @@
 			<hr />
 
 			<article>
-				<h2 id="endings">
-					Endings
-					<a class="header-link" href="#endings">🔗</a>
-				</h2>
+				<h2>Endings</h2>
 
 				<figure>
 					<blockquote>
@@ -12914,20 +12540,14 @@
 					get an ending for a location it must be named on the world map, which means you must have either entered it or had someone put it on the map.
 				</p>
 
-				<h3 id="endings--arroyo">
-					Arroyo
-					<a class="header-link" href="#endings--arroyo">🔗</a>
-				</h3>
+				<h3>Arroyo</h3>
 
 				<dl>
 					<dt>Arroyo re-settled using G.E.C.K.</dt>
 					<dd>You always get this, even if you don't have any G.E.C.K. at this point (for instance, if you let both of them blow up with the Enclave).</dd>
 				</dl>
 
-				<h3 id="endings--modoc">
-					Modoc
-					<a class="header-link" href="#endings--modoc">🔗</a>
-				</h3>
+				<h3>Modoc</h3>
 
 				<dl>
 					<dt>Modoc is razed after Slags are killed by the townspeople</dt>
@@ -12945,10 +12565,7 @@
 
 				<p>There are two pictures for Modoc, one "apples" picture for ending 3, one "desert" picture for all the others.</p>
 
-				<h3 id="endings--the-den">
-					The Den
-					<a class="header-link" href="#endings--the-den">🔗</a>
-				</h3>
+				<h3>The Den</h3>
 
 				<dl>
 					<dt>The Den disperses</dt>
@@ -12966,10 +12583,7 @@
 
 				<p>There are two pictures for the Den: one "wall" picture for endings 1 and 3, one "sign" picture for endings 2 and 4.</p>
 
-				<h3 id="endings--vault-city">
-					Vault City
-					<a class="header-link" href="#endings--vault-city">🔗</a>
-				</h3>
+				<h3>Vault City</h3>
 
 				<dl>
 					<dt>Population driven to NCR by radiation</dt>
@@ -12991,10 +12605,7 @@
 					</dd>
 				</dl>
 
-				<h3 id="endings--new-reno">
-					New Reno
-					<a class="header-link" href="#endings--new-reno">🔗</a>
-				</h3>
+				<h3>New Reno</h3>
 
 				<dl>
 					<dt>Everyone dead</dt>
@@ -13064,10 +12675,7 @@
 					<p>The two "impregnation" endings take precedence over all others. Obviously they're only available for male characters.</p>
 				</wt-note>
 
-				<h3 id="endings--richard-wrights-murder">
-					Richard Wright's murder
-					<a class="header-link" href="#endings--richard-wrights-murder">🔗</a>
-				</h3>
+				<h3>Richard Wright's murder</h3>
 
 				<dl>
 					<dt>Murder solved</dt>
@@ -13081,20 +12689,14 @@
 					<p>You always get ending 2 if you attack the Wrights at any time during the game, even if you never got the quest to begin with.</p>
 				</wt-note>
 
-				<h3 id="endings--myron">
-					Myron
-					<a class="header-link" href="#endings--myron">🔗</a>
-				</h3>
+				<h3>Myron</h3>
 
 				<dl>
 					<dt>Myron dead and forgotten</dt>
 					<dd>Hear Myron's name from Jules, Little Jesus, Renesco, Reed or Myron himself, and don't have him killed during the game.</dd>
 				</dl>
 
-				<h3 id="endings--gecko">
-					Gecko
-					<a class="header-link" href="#endings--gecko">🔗</a>
-				</h3>
+				<h3>Gecko</h3>
 
 				<dl>
 					<dt>Gecko destroyed</dt>
@@ -13118,10 +12720,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="endings--redding">
-					Redding
-					<a class="header-link" href="#endings--redding">🔗</a>
-				</h3>
+				<h3>Redding</h3>
 
 				<dl>
 					<dt>Redding annexed by Vault City</dt>
@@ -13139,10 +12738,7 @@
 
 				<p>Redding has two pictures showing different mining equipment, one for endings 1-2 and one for endings 3-4.</p>
 
-				<h3 id="endings--broken-hills">
-					Broken Hills
-					<a class="header-link" href="#endings--broken-hills">🔗</a>
-				</h3>
+				<h3>Broken Hills</h3>
 
 				<dl>
 					<dt>Mutants dead, BH disperses</dt>
@@ -13155,10 +12751,7 @@
 					<dd>Do neither of the above.</dd>
 				</dl>
 
-				<h3 id="endings--ncr">
-					New California Republic
-					<a class="header-link" href="#endings--ncr">🔗</a>
-				</h3>
+				<h3>New California Republic</h3>
 
 				<dl>
 					<dt>NCR established</dt>
@@ -13176,10 +12769,7 @@
 
 				<p>The NCR has two pictures, both showing the flag; for endings 2-3 the flag is in tatters.</p>
 
-				<h3 id="endings--vault-15">
-					Vault 15
-					<a class="header-link" href="#endings--vault-15">🔗</a>
-				</h3>
+				<h3>Vault 15</h3>
 
 				<dl>
 					<dt>Vault 15 joins NCR</dt>
@@ -13194,10 +12784,7 @@
 					desert (just like the place looked in <em>Fallout</em>, yay! None of that where-the-heck-did-that-come-from cliff wall stuff).
 				</p>
 
-				<h3 id="endings--vault-13">
-					Vault 13
-					<a class="header-link" href="#endings--vault-13">🔗</a>
-				</h3>
+				<h3>Vault 13</h3>
 
 				<dl>
 					<dt>Genocide</dt>
@@ -13211,10 +12798,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="endings--san-francisco">
-					San Francisco
-					<a class="header-link" href="#endings--san-francisco">🔗</a>
-				</h3>
+				<h3>San Francisco</h3>
 
 				<dl>
 					<dt>Population disperses after rampage</dt>
@@ -13240,10 +12824,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="endings--tanker-vagrants">
-					Tanker vagrants
-					<a class="header-link" href="#endings--tanker-vagrants">🔗</a>
-				</h3>
+				<h3>Tanker vagrants</h3>
 
 				<dl>
 					<dt>Vagrants move on</dt>
@@ -13254,10 +12835,7 @@
 			<hr />
 
 			<article id="encounter">
-				<h2 id="encounters">
-					Encounters
-					<a class="header-link" href="#encounters">🔗</a>
-				</h2>
+				<h2>Encounters</h2>
 
 				<figure>
 					<blockquote>
@@ -13589,10 +13167,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="encounters--good-encounters">
-					Good encounters
-					<a class="header-link" href="#encounters--good-encounters">🔗</a>
-				</h3>
+				<h3>Good encounters</h3>
 
 				<details id="guardian-of-forever">
 					<summary>A Guardian Portal (8)(Guardian of Forever)</summary>
@@ -13777,10 +13352,7 @@
 					</p>
 				</details>
 
-				<h3 id="encounters--pointless-encounters">
-					Pointless encounters
-					<a class="header-link" href="#encounters--pointless-encounters">🔗</a>
-				</h3>
+				<h3>Pointless encounters</h3>
 
 				<details id="crashed-whale">
 					<summary>The remains of a whale (6) (Crashed Whale)</summary>
@@ -13792,10 +13364,7 @@
 					</p>
 				</details>
 
-				<h3 id="encounters--bad-encounters">
-					Bad encounters
-					<a class="header-link" href="#encounters--bad-encounters">🔗</a>
-				</h3>
+				<h3>Bad encounters</h3>
 
 				<details id="pariahs">
 					<summary>A lone surviving dog (6) (Pariahs)</summary>
@@ -13861,10 +13430,7 @@
 					</wt-note>
 				</details>
 
-				<h3 id="encounters--other-encounters">
-					Other encounters
-					<a class="header-link" href="#encounters--other-encounters">🔗</a>
-				</h3>
+				<h3>Other encounters</h3>
 
 				<details id="wrong-place">
 					<summary>Some people in the wrong place at the wrong time</summary>
@@ -14001,10 +13567,7 @@
 			<hr />
 
 			<article id="npc">
-				<h2 id="npcs">
-					NPCs
-					<a class="header-link" href="#npcs">🔗</a>
-				</h2>
+				<h2>NPCs</h2>
 
 				<figure>
 					<blockquote>
@@ -14203,10 +13766,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--sulik">
-								Sulik
-								<a class="header-link" href="#npcs--sulik">🔗</a>
-							</h3>
+							<h3>Sulik</h3>
 							<p>
 								<small>Found in Klamath. Your first NPC, and he should be with you all the way. Sulik can "consult the spirits" and sometimes provide you with
 									extremely vague clues depending on location, but nothing I would pore over for too long.</small>
@@ -14251,10 +13811,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--vic">
-								Vic
-								<a class="header-link" href="#npcs--vic">🔗</a>
-							</h3>
+							<h3>Vic</h3>
 							<p>
 								<small>Found in the Den. He's not as fun as <a href="#npcs--sulik">Sulik</a> or <a href="#npcs--cassidy">Cassidy</a>, but well worth keeping. He's
 									quite useful with a Gauss Rifle later on. After you've had him in your party for a while, you get a special dialogue option to tell him not to
@@ -14298,10 +13855,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--miria">
-								Miria
-								<a class="header-link" href="#npcs--miria">🔗</a>
-							</h3>
+							<h3>Miria</h3>
 							<p>
 								<small>From Modoc. You really shouldn't touch her. Note that Miria and <a href="#npcs--davin">Davin</a> don't have <em>any</em> skills, they just
 									default to Unarmed since that skill has the highest base value.</small>
@@ -14337,10 +13891,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--davin">
-								Davin
-								<a class="header-link" href="#npcs--davin">🔗</a>
-							</h3>
+							<h3>Davin</h3>
 							<p><small>See <a href="#npcs--miria">Miria</a>.</small></p>
 						</hgroup>
 					</summary>
@@ -14373,10 +13924,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--laddie">
-								Laddie
-								<a class="header-link" href="#npcs--laddie">🔗</a>
-							</h3>
+							<h3>Laddie</h3>
 							<p><small>Jonny's dog in Modoc.</small></p>
 						</hgroup>
 					</summary>
@@ -14414,10 +13962,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--cassidy">
-								Cassidy
-								<a class="header-link" href="#npcs--cassidy">🔗</a>
-							</h3>
+							<h3>Cassidy</h3>
 							<p><small>Found in Vault City. Quite possibly your best choice. Very good with a rifle, but a good HtH fighter as well.</small></p>
 						</hgroup>
 					</summary>
@@ -14480,10 +14025,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--lenny">
-								Lenny
-								<a class="header-link" href="#npcs--lenny">🔗</a>
-							</h3>
+							<h3>Lenny</h3>
 							<p><small>Found in Gecko. Lenny is perhaps useful for a pack rat but not much more. Take him only if you favor large parties.</small></p>
 						</hgroup>
 					</summary>
@@ -14523,10 +14065,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--marcus">
-								Marcus
-								<a class="header-link" href="#npcs--marcus">🔗</a>
-							</h3>
+							<h3>Marcus</h3>
 							<p>
 								<small>Found in Broken Hills, Marcus is a mixed blessing. On the one hand he's big, carries a lot, and makes things go boom in the night... On the
 									other hand, he's slow, he can't wear armor and he favors weaponry that kills party members.</small>
@@ -14573,10 +14112,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--myron">
-								Myron
-								<a class="header-link" href="#npcs--myron">🔗</a>
-							</h3>
+							<h3>Myron</h3>
 							<p>
 								<small>You should pick up Myron to initiate the Jet quest, then leave him somewhere. His primary use is to make chems. Let him do this for all of
 									the ingredients you happen to be carrying (he checks both his own and your inventory) before you dump him somewhere accessible (e.g., outside
@@ -14636,10 +14172,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--brain-bot">
-								Brain Bot
-								<a class="header-link" href="#npcs--brain-bot">🔗</a>
-							</h3>
+							<h3>Brain Bot</h3>
 							<p>
 								<small>A.k.a. Skynet, which refers to the best incarnation of this NPC and the only one that can earn levels. This robot is found in the Sierra Army
 									Depot and must be assembled before it can get on the road. Whether it's useful or not depends on which brain you put into the bot: the
@@ -14692,10 +14225,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--robodog">
-								Robodog
-								<a class="header-link" href="#npcs--robodog">🔗</a>
-							</h3>
+							<h3>Robodog</h3>
 							<p>
 								<small>A.k.a. Cyberdog. Found in New California Republic. Don't pick him up. Although Robodog is primarily organic and can be healed using First Aid
 									and Doctor, you can also use a Tool or a Super Tool Kit on him about once per hour, which will heal 10-40 HP if you pass a Repair check. You
@@ -14726,10 +14256,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--goris">
-								Goris
-								<a class="header-link" href="#npcs--goris">🔗</a>
-							</h3>
+							<h3>Goris</h3>
 							<p>
 								<small>Found in Vault 13. If he's with you at the time of the Vault 13 massacre, he'll leave to return there. Once you go there you can pick him up
 									again. But would you want to? He can't use armor, and the animation where he removes and wears his robe is annoying as hell.</small>
@@ -14793,10 +14320,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--k9">
-								K-9
-								<a class="header-link" href="#npcs--k9">🔗</a>
-							</h3>
+							<h3>K-9</h3>
 							<p>
 								<small>Found in Navarro. Another useless robodog (albeit the best dog NPC, for what it's worth). Actually the game calls it "Cybernetic Dog". K-9
 									counts as an organic creature for healing purposes but has only 50% resistance to EMP damage (something to think about if you ever send your
@@ -14837,10 +14361,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--dogmeat">
-								Dogmeat
-								<a class="header-link" href="#npcs--dogmeat">🔗</a>
-							</h3>
+							<h3>Dogmeat</h3>
 							<p>
 								<small>Found in the Cafe of Broken Dreams special encounter. Pick him up if it's early in the game, or for the nostalgia value, or to attack him and
 									kill Mel.</small>
@@ -14877,10 +14398,7 @@
 				<details>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--pariah-dog">
-								Pariah dog
-								<a class="header-link" href="#npcs--pariah-dog">🔗</a>
-							</h3>
+							<h3>Pariah dog</h3>
 							<p>
 								<small>Found in a special encounter and described in that section. Someone somewhere obviously likes the idea of dog NPCs. This one will join over
 									the party limit and follow you indefinitely, but you can't give it instructions, tell it to stay or anything.</small>
@@ -14909,10 +14427,7 @@
 				<details data-rp-content>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--kitsune">
-								Kitsune
-								<a class="header-link" href="#npcs--kitsune">🔗</a>
-							</h3>
+							<h3>Kitsune</h3>
 							<p><small>Found in EPA</small></p>
 						</hgroup>
 					</summary>
@@ -14935,10 +14450,7 @@
 				<details data-rp-content>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--cat-jules">
-								Cat Jules
-								<a class="header-link" href="#npcs--cat-jules">🔗</a>
-							</h3>
+							<h3>Cat Jules</h3>
 							<p><small>Found in EPA</small></p>
 						</hgroup>
 					</summary>
@@ -14963,10 +14475,7 @@
 				<details data-rp-content>
 					<summary>
 						<hgroup>
-							<h3 id="npcs--dex">
-								Dex
-								<a class="header-link" href="#npcs--dex">🔗</a>
-							</h3>
+							<h3>Dex</h3>
 							<p><small>Found in EPA</small></p>
 						</hgroup>
 					</summary>
@@ -15028,10 +14537,7 @@
 			<hr />
 
 			<article>
-				<h2 id="car">
-					Car
-					<a class="header-link" href="#car">🔗</a>
-				</h2>
+				<h2>Car</h2>
 
 				<figure>
 					<blockquote>
@@ -15143,10 +14649,7 @@
 			<hr />
 
 			<article>
-				<h2 id="stupid">
-					Stupid
-					<a class="header-link" href="#stupid">🔗</a>
-				</h2>
+				<h2>Stupid</h2>
 
 				<figure>
 					<blockquote>
@@ -15284,10 +14787,7 @@
 			<hr />
 
 			<article>
-				<h2 id="combat">
-					Combat
-					<a class="header-link" href="#combat">🔗</a>
-				</h2>
+				<h2>Combat</h2>
 
 				<figure>
 					<blockquote>
@@ -15298,10 +14798,7 @@
 
 				<p>This is not supposed to be a be-all and end-all guide to <em>Fallout</em> tactics, just a collection of hints and comments that fit under a common heading.</p>
 
-				<h3 id="combat--general">
-					General
-					<a class="header-link" href="#combat--general">🔗</a>
-				</h3>
+				<h3>General</h3>
 
 				<p>
 					You can alter combat difficulty for a single battle if you're having problems. Of course, most often you also have the option to leave and return with bigger
@@ -15389,10 +14886,7 @@
 
 				<p>melee attacks give a +5% bonus to your Critical Chance.</p>
 
-				<h3 id="combat--tactics-and-party-management">
-					Tactics and party management
-					<a class="header-link" href="#combat--tactics-and-party-management">🔗</a>
-				</h3>
+				<h3>Tactics and party management</h3>
 
 				<p>
 					As was explained in the Toxic Caves section, holding the A key as the game is loading a new area will let you get a jump on opponents. You can also open a door
@@ -15480,10 +14974,7 @@
 					joined in as well.
 				</p>
 
-				<h3 id="combat--suggested-weapon-progression">
-					Suggested weapon progressions
-					<a class="header-link" href="#combat--suggested-weapon-progression">🔗</a>
-				</h3>
+				<h3>Suggested weapon progressions</h3>
 
 				<p>
 					There are lots of weapons in <em>Fallout 2</em>, many of which you'll probably never use. Whoever stormed their enemies wielding a Club or a Sawed-Off Shotgun?
@@ -15605,10 +15096,7 @@
 					grenades early in the game (you can often hope to hit something at short range and low skill level) and prepare to switch to a decent weapon skill.
 				</p>
 
-				<h3 id="combat--random-weapons-and-ammo-notes">
-					Random weapons and ammo notes
-					<a class="header-link" href="#combat--random-weapons-and-ammo-notes">🔗</a>
-				</h3>
+				<h3>Random weapons and ammo notes</h3>
 
 				<p>
 					Some people advise against "wasting" ammo on the Pipe Rifle or 10mm Pistol early in the game, shooting rats and geckos and stuff. I disagree completely: Klamath
@@ -15718,10 +15206,7 @@
 			<hr />
 
 			<article>
-				<h2 id="items">
-					Items
-					<a class="header-link" href="#items">🔗</a>
-				</h2>
+				<h2>Items</h2>
 
 				<figure>
 					<blockquote>
@@ -15754,10 +15239,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="items--armor">
-					Armor
-					<a class="header-link" href="#items--armor">🔗</a>
-				</h3>
+				<h3>Armor</h3>
 
 				<table-wrapper>
 					<table>
@@ -15942,10 +15424,7 @@
 					<p>The two types of Power Armor raise your ST by 3 to a maximum of 10. The two types of Advanced Power Armor raise your ST by 4.</p>
 				</wt-note>
 
-				<h3 id="items--weapons">
-					Weapons
-					<a class="header-link" href="#items--weapons">🔗</a>
-				</h3>
+				<h3>Weapons</h3>
 
 				<table-wrapper>
 					<table>
@@ -17024,10 +16503,7 @@
 					<p>For punch and kick attacks, refer to the manual where they are described in detail. They don't go in the table since they're not items.</p>
 				</wt-note>
 
-				<h3 id="items--ammo">
-					Ammo
-					<a class="header-link" href="#items--ammo">🔗</a>
-				</h3>
+				<h3>Ammo</h3>
 
 				<table-wrapper>
 					<table>
@@ -17261,10 +16737,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="items--items-which-can-be-consumed-for-an-effect-may-also-have-quest-use">
-					Items which can be consumed for an effect (may also have quest use)
-					<a class="header-link" href="#items--items-which-can-be-consumed-for-an-effect-may-also-have-quest-use">🔗</a>
-				</h3>
+				<h3>Items which can be consumed for an effect (may also have quest use)</h3>
 
 				<table-wrapper>
 					<table>
@@ -17562,10 +17035,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="items--items-which-have-general-use-may-also-have-quest-use">
-					Items which have general use (may also have quest use)
-					<a class="header-link" href="#items--items-which-have-general-use-may-also-have-quest-use">🔗</a>
-				</h3>
+				<h3>Items which have general use (may also have quest use)</h3>
 
 				<table-wrapper>
 					<table>
@@ -17786,10 +17256,7 @@
 					<p>Although there are two Mirrored Shades in the game, you can only benefit from wearing one pair, which sort of makes sense.</p>
 				</wt-note>
 
-				<h3 id="items--items-which-have-one-time-or-one-place-use-unless-otherwise-noted">
-					Items which have one-time or one-place use (unless otherwise noted)
-					<a class="header-link" href="#items--items-which-have-one-time-or-one-place-use-unless-otherwise-noted">🔗</a>
-				</h3>
+				<h3>Items which have one-time or one-place use (unless otherwise noted)</h3>
 
 				<table-wrapper>
 					<table>
@@ -18377,10 +17844,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="items--items-which-have-no-meaningful-use">
-					Items which have no (meaningful) use
-					<a class="header-link" href="#items--items-which-have-no-meaningful-use">🔗</a>
-				</h3>
+				<h3>Items which have no (meaningful) use</h3>
 
 				<table-wrapper>
 					<table>
@@ -18751,10 +18215,7 @@
 					</table>
 				</table-wrapper>
 
-				<h3 id="items--items-added-in-restoration-project">
-					Items added in Restoration Project
-					<a class="header-link" href="#items--items-added-in-restoration-project">🔗</a>
-				</h3>
+				<h3>Items added in Restoration Project</h3>
 
 				<table-wrapper>
 					<table>
@@ -18993,10 +18454,7 @@
 					</table>
 				</table-wrapper>
 
-				<h3 id="items--list-of-upgrade-costs">
-					List of upgrade costs
-					<a class="header-link" href="#items--list-of-upgrade-costs">🔗</a>
-				</h3>
+				<h3>List of upgrade costs</h3>
 
 				<table-wrapper>
 					<table>
@@ -19121,10 +18579,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="items--list-of-addiction-effects">
-					List of addiction effects
-					<a class="header-link" href="#items--list-of-addiction-effects">🔗</a>
-				</h3>
+				<h3>List of addiction effects</h3>
 
 				<table-wrapper>
 					<table>
@@ -19196,10 +18651,7 @@
 			<hr />
 
 			<article>
-				<h2 id="addenda">
-					Addenda
-					<a class="header-link" href="#addenda">🔗</a>
-				</h2>
+				<h2>Addenda</h2>
 
 				<figure>
 					<blockquote>
@@ -19208,10 +18660,7 @@
 					<figcaption>The Chosen One</figcaption>
 				</figure>
 
-				<h3 id="addenda--the-too-many-items-bug">
-					The too many items bug
-					<a class="header-link" href="#addenda--the-too-many-items-bug">🔗</a>
-				</h3>
+				<h3>The too many items bug</h3>
 
 				<p>
 					I don't know exactly how it works technically, but what happens is that late in the game, if you have too many (different) items in one location, this will
@@ -19264,10 +18713,7 @@
 					</p>
 				</wt-note>
 
-				<h3 id="addenda--unfinished-business">
-					Unfinished business
-					<a class="header-link" href="#addenda--unfinished-business">🔗</a>
-				</h3>
+				<h3>Unfinished business</h3>
 
 				<p>
 					You may think <em>Fallout 2</em> is a big enough game as it is, but the designers were aiming to make it even bigger. There are lots and lots of things, great
@@ -19286,10 +18732,7 @@
 					<li>A few extra movies (e.g., meeting Gruthar, the desert transaction and getting the <a href="#car">Car</a>).</li>
 				</ul>
 
-				<h3 id="addenda--note-on-guide-translation">
-					Note on guide translation
-					<a class="header-link" href="#addenda--note-on-guide-translation">🔗</a>
-				</h3>
+				<h3>Note on guide translation</h3>
 
 				<p>
 					Since putting out version 1.1 I've been asked by a few people if it's OK for them to translate the guide into other languages, something which would seem to
@@ -19333,10 +18776,7 @@
 			<hr />
 
 			<footer>
-				<h3 id="acknowledgements">
-					Acknowledgements
-					<a class="header-link" href="#acknowledgements">🔗</a>
-				</h3>
+				<h3>Acknowledgements</h3>
 
 				<ul>
 					<li>Without the use of Per's Fallout 2 walkthrough, I would not have been able to pinpoint the majority of the bugs fixed in my patch. Thanks!</li>
@@ -19371,10 +18811,7 @@
 					<li>And lastly, thanks to all the friendly people over at No Mutants Allowed with all the help they have provided. Thanks!</li>
 				</ul>
 
-				<h3 id="copyright-notice">
-					Copyright notice
-					<a class="header-link" href="#copyright-notice">🔗</a>
-				</h3>
+				<h3>Copyright notice</h3>
 
 				<p>
 					Needless to say, this guide is Copyright 2001-2008 Per Jorner. All rights reserved as regards the writing and general design, except for the background which is
