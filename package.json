@@ -11,22 +11,12 @@
 		"node": "22.15.0"
 	},
 	"scripts": {
-		"start": "vite",
 		"typecheck": "tsc --noEmit",
-		"lint:js": "eslint src --fix",
-		"lint": "npm run typecheck && npm run lint:js",
 		"format": "dprint fmt",
-		"build": "vite build",
-		"prepreview": "npm run build",
-		"preview": "vite preview --port 3000"
+		"deploy": "wrangler deploy --minify"
 	},
 	"devDependencies": {
-		"@types/node": "^25.2.2",
-		"@typescript-eslint/eslint-plugin": "^8.54.0",
-		"@typescript-eslint/parser": "^8.31.0",
-		"eslint": "^10.0.0",
-		"globals": "^17.3.0",
-		"typescript": "^5.9.2",
-		"vite": "^7.3.1"
+		"typescript": "^6.0.2",
+		"wrangler": "4.79.0"
 	}
 }

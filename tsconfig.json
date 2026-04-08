@@ -1,13 +1,12 @@
 {
-	"include": ["vite.config.ts", "src/**/*"],
-	"exclude": ["node_modules/**/*", "dist/**/*", "public/lib/**/*"],
+	"include": ["src/**/*"],
+	"exclude": ["node_modules/**/*"],
 	"compilerOptions": {
 		"allowImportingTsExtensions": true,
 		"allowJs": true,
 		"allowSyntheticDefaultImports": true,
 		"allowUnreachableCode": false,
 		"allowUnusedLabels": false,
-		"baseUrl": ".",
 		"checkJs": true,
 		"composite": true,
 		"erasableSyntaxOnly": true,
@@ -38,7 +37,7 @@
 		"sourceMap": false,
 		"strict": true,
 		"target": "ESNext",
-		"tsBuildInfoFile": "dist/.tsbuildinfo",
+		"tsBuildInfoFile": "node_modules/.tsbuildinfo",
 		"useDefineForClassFields": true,
 		"useUnknownInCatchVariables": false,
 		"verbatimModuleSyntax": true

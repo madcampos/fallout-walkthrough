@@ -1,4 +1,4 @@
-@layer variables, base, components, accessibility;
+@layer variables, base, components;
 
 @import url('./vars.css');
 @import url('./base.css');
