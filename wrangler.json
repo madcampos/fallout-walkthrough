@@ -1,7 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "fallout-walkthrough",
-	"compatibility_date": "2026-04-07",
+	"compatibility_date": "2026-05-30",
 	"compatibility_flags": ["nodejs_compat"],
 	"keep_vars": false,
 	"send_metrics": false,
@@ -17,10 +17,23 @@
 		"upstream_protocol": "https"
 	},
 	"assets": {
-		"directory": "./src",
+		"directory": "./public",
+		"binding": "Assets",
 		"run_worker_first": false,
 		"html_handling": "auto-trailing-slash",
 		"not_found_handling": "404-page"
 	},
-	"vars": { "NODE_ENV": "production" }
+	"vars": { "NODE_ENV": "production" },
+	"env": {
+		"local": {
+			"assets": {
+				"directory": "./public",
+				"binding": "Assets",
+				"run_worker_first": false,
+				"html_handling": "auto-trailing-slash",
+				"not_found_handling": "404-page"
+			},
+			"vars": { "NODE_ENV": "local" }
+		}
+	}
 }

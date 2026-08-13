@@ -1,0 +1,107 @@
+{
+	"id": "/?id=6508c44f-06e6-4471-be84-b70031f9f69d",
+	"scope": "/?utm_source=pwa&utm_medium=install&utm_campaign=web_app_manifest",
+	"start_url": "/?utm_source=pwa&utm_medium=start_url&utm_campaign=web_app_manifest",
+	"scope_extensions": [{ "type": "origin", "origin": "https://falout2.madcampos.dev/" }],
+	"name": "Fallout 2 Walkthrough",
+	"short_name": "FO2 Guide",
+	"lang": "en-US",
+	"dir": "ltr",
+	"description": "The Nearly Ultimate Fallout 2 Guide",
+	"categories": [
+		"game",
+		"fallout",
+		"fallout 2",
+		"walkthrough",
+		"guide",
+		"game guide"
+	],
+	"display": "standalone",
+	"display_override": ["window-controls-overlay"],
+	"orientation": "portrait",
+	"background_color": "#0f56b3",
+	"theme_color": "#ffd700",
+	"color_scheme_dark": {
+		"theme_color": "#2e8b57",
+		"background_color": "#f5f5f5"
+	},
+	"prefer_related_applications": false,
+	"icons": [
+		{
+			"src": "/icons/icon.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		},
+		{
+			"src": "/icons/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/icons/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/icons/icon-mask.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/icons/icon-mask-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/icons/icon-mask-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/icons/icon-mono.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/icons/icon-mono-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/icons/icon-mono-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/icons/icon-mask-mono.svg",
+			"sizes": "any",
+			"type": "image/svg+xml",
+			"purpose": "maskable monochrome"
+		},
+		{
+			"src": "/icons/icon-mask-mono-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable monochrome"
+		},
+		{
+			"src": "/icons/icon-mask-mono-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable monochrome"
+		}
+	],
+	"handle_links": "preffered",
+	"launch_handler": { "client_mode": "navigate-existing" },
+	"protocol_handlers": [],
+	"edge_side_panel": { "preffer_width": 460 }
+}

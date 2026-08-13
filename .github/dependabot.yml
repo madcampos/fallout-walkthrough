@@ -14,16 +14,13 @@ updates:
       time: "14:00"
       timezone: "America/Toronto"
     cooldown:
-      default-days: 21
+      default-days: 14
     target-branch: "main"
     labels:
       - "dependencies"
     commit-message:
       prefix: "[dependency update]"
     groups:
-      dev-dependencies:
-        patterns:
-          - "*"
       dependencies:
         patterns:
           - "*"
