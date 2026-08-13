@@ -4,5 +4,766 @@
 	<title>Fallout 2 Walkthrough</title>
 	<description>The Nearly Ultimate Fallout 2 Guide</description>
 	<link>https://fallout2.madcampos.dev/</link>
+
+	<item>
+		<title>v3.0.0</title>
+		<pubDate>2026-08-13T00:25:26-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/fallout-walkthrough/compare/v2.1.0...v3.0.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>add readme and original files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/caaba2a">caaba2a</a>)</li>
+				<li>update styles (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ef15f8e">ef15f8e</a>)</li>
+				<li>update config files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5fef80e">5fef80e</a>)</li>
+				<li>remove dependencies and deploy to cloudflare (<a href="https://github.com/madcampos/fallout-walkthrough/commit/515caa2">515caa2</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update version (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f5cbacc">f5cbacc</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/05b025c">05b025c</a>)</li>
+				<li>rename application files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8a7a688">8a7a688</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (#85) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/935d1bd">935d1bd</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (#86) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4a83673">4a83673</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b821594">b821594</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6d817d9">6d817d9</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9fc5185">9fc5185</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/321d4f8">321d4f8</a>)</li>
+				<li>update dependabot settings (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be36ff2">be36ff2</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (#80) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4d43e88">4d43e88</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b91798d">b91798d</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (#78) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15a64a">b15a64a</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5723549">5723549</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (#76) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c131d91">c131d91</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ea721a3">ea721a3</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a6227cc">a6227cc</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.90.1 to 4.99.0 in the dev-dependencies group (#93) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f499eb3">f499eb3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d625674">d625674</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.81.1 to 4.90.1 in the dev-dependencies group (#92) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d720fe3">d720fe3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/54345ca">54345ca</a>)</li>
+				<li>[dependency update]: bump wrangler from 4.79.0 to 4.81.1 in the dev-dependencies group (#91) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/444755e">444755e</a>)</li>
+				<li>[dependency update]: bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3c726c6">3c726c6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#87) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7307abd">7307abd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb80986">fb80986</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#84) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7679398">7679398</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/77d4e37">77d4e37</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (#83) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dcc74a6">dcc74a6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/38940a4">38940a4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (#82) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5ca5ed4">5ca5ed4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8bc6f7">c8bc6f7</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#79) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0540ece">0540ece</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1b8884e">1b8884e</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#77) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb04abd">fb04abd</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4106017">4106017</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#75) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/40c23fc">40c23fc</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f401e58">f401e58</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#74) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e69a7e1">e69a7e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d94e48f">d94e48f</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v2.1.0</title>
+		<pubDate>2025-07-29T01:36:45-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/fallout-walkthrough/compare/v2.0.0...v2.1.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>add readme and original files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/caaba2a">caaba2a</a>)</li>
+				<li>update styles (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ef15f8e">ef15f8e</a>)</li>
+				<li>update config files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5fef80e">5fef80e</a>)</li>
+				<li>remove dependencies and deploy to cloudflare (<a href="https://github.com/madcampos/fallout-walkthrough/commit/515caa2">515caa2</a>)</li>
+				<li>remove ids and links in favour of generated toc (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a9c074d">a9c074d</a>)</li>
+				<li>generate TOC (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abad41e">abad41e</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>table sorting (<a href="https://github.com/madcampos/fallout-walkthrough/commit/cedef16">cedef16</a>)</li>
+				<li>misc changes (<a href="https://github.com/madcampos/fallout-walkthrough/commit/90e1fb3">90e1fb3</a>)</li>
+				<li>toc generation (<a href="https://github.com/madcampos/fallout-walkthrough/commit/888d7ce">888d7ce</a>)</li>
+				<li>font issues (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c955676">c955676</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update version (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f5cbacc">f5cbacc</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/05b025c">05b025c</a>)</li>
+				<li>rename application files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8a7a688">8a7a688</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (#85) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/935d1bd">935d1bd</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (#86) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4a83673">4a83673</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b821594">b821594</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6d817d9">6d817d9</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9fc5185">9fc5185</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/321d4f8">321d4f8</a>)</li>
+				<li>update dependabot settings (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be36ff2">be36ff2</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (#80) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4d43e88">4d43e88</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b91798d">b91798d</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (#78) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15a64a">b15a64a</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5723549">5723549</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (#76) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c131d91">c131d91</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ea721a3">ea721a3</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a6227cc">a6227cc</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.90.1 to 4.99.0 in the dev-dependencies group (#93) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f499eb3">f499eb3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d625674">d625674</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.81.1 to 4.90.1 in the dev-dependencies group (#92) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d720fe3">d720fe3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/54345ca">54345ca</a>)</li>
+				<li>[dependency update]: bump wrangler from 4.79.0 to 4.81.1 in the dev-dependencies group (#91) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/444755e">444755e</a>)</li>
+				<li>[dependency update]: bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3c726c6">3c726c6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#87) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7307abd">7307abd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb80986">fb80986</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#84) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7679398">7679398</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/77d4e37">77d4e37</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (#83) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dcc74a6">dcc74a6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/38940a4">38940a4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (#82) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5ca5ed4">5ca5ed4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8bc6f7">c8bc6f7</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#79) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0540ece">0540ece</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1b8884e">1b8884e</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#77) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb04abd">fb04abd</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4106017">4106017</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#75) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/40c23fc">40c23fc</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f401e58">f401e58</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#74) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e69a7e1">e69a7e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d94e48f">d94e48f</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v2.0.0</title>
+		<pubDate>2025-07-23T02:25:23-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/fallout-walkthrough/compare/v1.2.0...v2.0.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>add readme and original files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/caaba2a">caaba2a</a>)</li>
+				<li>update styles (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ef15f8e">ef15f8e</a>)</li>
+				<li>update config files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5fef80e">5fef80e</a>)</li>
+				<li>remove dependencies and deploy to cloudflare (<a href="https://github.com/madcampos/fallout-walkthrough/commit/515caa2">515caa2</a>)</li>
+				<li>remove ids and links in favour of generated toc (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a9c074d">a9c074d</a>)</li>
+				<li>generate TOC (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abad41e">abad41e</a>)</li>
+				<li>update project config and structure (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b9397b5">b9397b5</a>)</li>
+				<li>update vite pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/2f9d2da">2f9d2da</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>table sorting (<a href="https://github.com/madcampos/fallout-walkthrough/commit/cedef16">cedef16</a>)</li>
+				<li>misc changes (<a href="https://github.com/madcampos/fallout-walkthrough/commit/90e1fb3">90e1fb3</a>)</li>
+				<li>toc generation (<a href="https://github.com/madcampos/fallout-walkthrough/commit/888d7ce">888d7ce</a>)</li>
+				<li>font issues (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c955676">c955676</a>)</li>
+				<li>resolve wrong format command (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8d9737">c8d9737</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update version (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f5cbacc">f5cbacc</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/05b025c">05b025c</a>)</li>
+				<li>rename application files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8a7a688">8a7a688</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (#85) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/935d1bd">935d1bd</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (#86) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4a83673">4a83673</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b821594">b821594</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6d817d9">6d817d9</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9fc5185">9fc5185</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/321d4f8">321d4f8</a>)</li>
+				<li>update dependabot settings (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be36ff2">be36ff2</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (#80) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4d43e88">4d43e88</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b91798d">b91798d</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (#78) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15a64a">b15a64a</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5723549">5723549</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (#76) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c131d91">c131d91</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ea721a3">ea721a3</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (#71) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6e5fd0c">6e5fd0c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/50bdbc5">50bdbc5</a>)</li>
+				<li>update packages and toolsing (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6a2f292">6a2f292</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (#70) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15f460">b15f460</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/22bec2c">22bec2c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (#69) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0eaf9f2">0eaf9f2</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/79002b0">79002b0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (#67) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f704e08">f704e08</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fa6144a">fa6144a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (#61) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d13c931">d13c931</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6b3c040">6b3c040</a>)</li>
+				<li>update vite and pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/47a6018">47a6018</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e0c7d0c">e0c7d0c</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a6227cc">a6227cc</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.90.1 to 4.99.0 in the dev-dependencies group (#93) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f499eb3">f499eb3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d625674">d625674</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.81.1 to 4.90.1 in the dev-dependencies group (#92) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d720fe3">d720fe3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/54345ca">54345ca</a>)</li>
+				<li>[dependency update]: bump wrangler from 4.79.0 to 4.81.1 in the dev-dependencies group (#91) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/444755e">444755e</a>)</li>
+				<li>[dependency update]: bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3c726c6">3c726c6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#87) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7307abd">7307abd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb80986">fb80986</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#84) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7679398">7679398</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/77d4e37">77d4e37</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (#83) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dcc74a6">dcc74a6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/38940a4">38940a4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (#82) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5ca5ed4">5ca5ed4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8bc6f7">c8bc6f7</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#79) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0540ece">0540ece</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1b8884e">1b8884e</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#77) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb04abd">fb04abd</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4106017">4106017</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#75) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/40c23fc">40c23fc</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f401e58">f401e58</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#74) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e69a7e1">e69a7e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d94e48f">d94e48f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#73) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/89820e1">89820e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c0afc89">c0afc89</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#72) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7b05259">7b05259</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d5dd3cb">d5dd3cb</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#68) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/42b6066">42b6066</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6c7c5e8">6c7c5e8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (#65) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0c8f8f5">0c8f8f5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b0317eb">b0317eb</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#64) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6db0e48">6db0e48</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/505abb8">505abb8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#63) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/739486e">739486e</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9b695e0">9b695e0</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (#62) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d920725">d920725</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f7c7339">f7c7339</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (#59) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f9df8fd">f9df8fd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f379fc1">f379fc1</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v1.2.0</title>
+		<pubDate>2024-10-21T15:47:07-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/fallout-walkthrough/compare/v1.1.0...v1.2.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>add readme and original files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/caaba2a">caaba2a</a>)</li>
+				<li>update styles (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ef15f8e">ef15f8e</a>)</li>
+				<li>update config files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5fef80e">5fef80e</a>)</li>
+				<li>remove dependencies and deploy to cloudflare (<a href="https://github.com/madcampos/fallout-walkthrough/commit/515caa2">515caa2</a>)</li>
+				<li>remove ids and links in favour of generated toc (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a9c074d">a9c074d</a>)</li>
+				<li>generate TOC (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abad41e">abad41e</a>)</li>
+				<li>update project config and structure (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b9397b5">b9397b5</a>)</li>
+				<li>update vite pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/2f9d2da">2f9d2da</a>)</li>
+				<li>update missing images and paths (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b310f57">b310f57</a>)</li>
+				<li>update url and small style tweaks (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3578ad6">3578ad6</a>)</li>
+				<li>update packages and build workflow (<a href="https://github.com/madcampos/fallout-walkthrough/commit/61aa1be">61aa1be</a>)</li>
+				<li>update dependabot frequency (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8cd3347">8cd3347</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>table sorting (<a href="https://github.com/madcampos/fallout-walkthrough/commit/cedef16">cedef16</a>)</li>
+				<li>misc changes (<a href="https://github.com/madcampos/fallout-walkthrough/commit/90e1fb3">90e1fb3</a>)</li>
+				<li>toc generation (<a href="https://github.com/madcampos/fallout-walkthrough/commit/888d7ce">888d7ce</a>)</li>
+				<li>font issues (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c955676">c955676</a>)</li>
+				<li>resolve wrong format command (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8d9737">c8d9737</a>)</li>
+				<li>resolve ts errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9964ac5">9964ac5</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update version (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f5cbacc">f5cbacc</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/05b025c">05b025c</a>)</li>
+				<li>rename application files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8a7a688">8a7a688</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (#85) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/935d1bd">935d1bd</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (#86) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4a83673">4a83673</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b821594">b821594</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6d817d9">6d817d9</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9fc5185">9fc5185</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/321d4f8">321d4f8</a>)</li>
+				<li>update dependabot settings (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be36ff2">be36ff2</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (#80) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4d43e88">4d43e88</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b91798d">b91798d</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (#78) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15a64a">b15a64a</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5723549">5723549</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (#76) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c131d91">c131d91</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ea721a3">ea721a3</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (#71) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6e5fd0c">6e5fd0c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/50bdbc5">50bdbc5</a>)</li>
+				<li>update packages and toolsing (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6a2f292">6a2f292</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (#70) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15f460">b15f460</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/22bec2c">22bec2c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (#69) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0eaf9f2">0eaf9f2</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/79002b0">79002b0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (#67) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f704e08">f704e08</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fa6144a">fa6144a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (#61) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d13c931">d13c931</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6b3c040">6b3c040</a>)</li>
+				<li>update vite and pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/47a6018">47a6018</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e0c7d0c">e0c7d0c</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/fallout-walkthrough/commit/afbf56f">afbf56f</a>)</li>
+				<li>update missing configs (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9774a4b">9774a4b</a>)</li>
+				<li>fix linting errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/67136db">67136db</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/13eb129">13eb129</a>)</li>
+				<li>update packages and config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dfdde76">dfdde76</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5640a1e">5640a1e</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d804230">d804230</a>)</li>
+				<li>remove old packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/547d62a">547d62a</a>)</li>
+				<li>update github actions (<a href="https://github.com/madcampos/fallout-walkthrough/commit/62f8ded">62f8ded</a>)</li>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (#41) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/534f05c">534f05c</a>)</li>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f0dc4ab">f0dc4ab</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (#36) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ccb3181">ccb3181</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3cb3cc4">3cb3cc4</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.29 to 8.4.31 (#32) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9814d45">9814d45</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.29 to 8.4.31 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7711e11">7711e11</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a6227cc">a6227cc</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.90.1 to 4.99.0 in the dev-dependencies group (#93) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f499eb3">f499eb3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d625674">d625674</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.81.1 to 4.90.1 in the dev-dependencies group (#92) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d720fe3">d720fe3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/54345ca">54345ca</a>)</li>
+				<li>[dependency update]: bump wrangler from 4.79.0 to 4.81.1 in the dev-dependencies group (#91) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/444755e">444755e</a>)</li>
+				<li>[dependency update]: bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3c726c6">3c726c6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#87) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7307abd">7307abd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb80986">fb80986</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#84) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7679398">7679398</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/77d4e37">77d4e37</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (#83) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dcc74a6">dcc74a6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/38940a4">38940a4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (#82) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5ca5ed4">5ca5ed4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8bc6f7">c8bc6f7</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#79) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0540ece">0540ece</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1b8884e">1b8884e</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#77) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb04abd">fb04abd</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4106017">4106017</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#75) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/40c23fc">40c23fc</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f401e58">f401e58</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#74) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e69a7e1">e69a7e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d94e48f">d94e48f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#73) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/89820e1">89820e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c0afc89">c0afc89</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#72) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7b05259">7b05259</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d5dd3cb">d5dd3cb</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#68) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/42b6066">42b6066</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6c7c5e8">6c7c5e8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (#65) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0c8f8f5">0c8f8f5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b0317eb">b0317eb</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#64) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6db0e48">6db0e48</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/505abb8">505abb8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#63) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/739486e">739486e</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9b695e0">9b695e0</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (#62) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d920725">d920725</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f7c7339">f7c7339</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (#59) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f9df8fd">f9df8fd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f379fc1">f379fc1</a>)</li>
+				<li>Remove github pages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/129f946">129f946</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (#54) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/08614e0">08614e0</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/aea2554">aea2554</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (#40) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0ef6e39">0ef6e39</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ee3691a">ee3691a</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 11 updates (#38) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abdd201">abdd201</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/bade2a5">bade2a5</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (#37) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4db30b4">4db30b4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c6dd98b">c6dd98b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 7 updates (#35) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e1ab989">e1ab989</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 7 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e4b6063">e4b6063</a>)</li>
+				<li>[dependency update]: bump vite from 4.4.9 to 4.4.11 (#29) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7035944">7035944</a>)</li>
+				<li>[dependency update]: bump vite from 4.4.9 to 4.4.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9df7c36">9df7c36</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (#23) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8b21227">8b21227</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/303aab2">303aab2</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 13 updates (#20) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3cccd93">3cccd93</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 13 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/443e43a">443e43a</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v1.1.0</title>
+		<pubDate>2023-08-01T00:49:52-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/fallout-walkthrough/compare/v1.0.0...v1.1.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>add readme and original files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/caaba2a">caaba2a</a>)</li>
+				<li>update styles (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ef15f8e">ef15f8e</a>)</li>
+				<li>update config files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5fef80e">5fef80e</a>)</li>
+				<li>remove dependencies and deploy to cloudflare (<a href="https://github.com/madcampos/fallout-walkthrough/commit/515caa2">515caa2</a>)</li>
+				<li>remove ids and links in favour of generated toc (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a9c074d">a9c074d</a>)</li>
+				<li>generate TOC (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abad41e">abad41e</a>)</li>
+				<li>update project config and structure (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b9397b5">b9397b5</a>)</li>
+				<li>update vite pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/2f9d2da">2f9d2da</a>)</li>
+				<li>update missing images and paths (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b310f57">b310f57</a>)</li>
+				<li>update url and small style tweaks (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3578ad6">3578ad6</a>)</li>
+				<li>update packages and build workflow (<a href="https://github.com/madcampos/fallout-walkthrough/commit/61aa1be">61aa1be</a>)</li>
+				<li>update dependabot frequency (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8cd3347">8cd3347</a>)</li>
+				<li>update build process (<a href="https://github.com/madcampos/fallout-walkthrough/commit/15eaa33">15eaa33</a>)</li>
+				<li>add security config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c42a3f9">c42a3f9</a>)</li>
+				<li>update/fix css (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4b5ffc1">4b5ffc1</a>)</li>
+				<li>block google from tracking (<a href="https://github.com/madcampos/fallout-walkthrough/commit/df52506">df52506</a>)</li>
+				<li>add manifest and service worker (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3bb8347">3bb8347</a>)</li>
+				<li>update references to be relative (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be1f1d5">be1f1d5</a>)</li>
+				<li>update build process (<a href="https://github.com/madcampos/fallout-walkthrough/commit/83a7c86">83a7c86</a>)</li>
+				<li>add missing items (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8bc8883">8bc8883</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>table sorting (<a href="https://github.com/madcampos/fallout-walkthrough/commit/cedef16">cedef16</a>)</li>
+				<li>misc changes (<a href="https://github.com/madcampos/fallout-walkthrough/commit/90e1fb3">90e1fb3</a>)</li>
+				<li>toc generation (<a href="https://github.com/madcampos/fallout-walkthrough/commit/888d7ce">888d7ce</a>)</li>
+				<li>font issues (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c955676">c955676</a>)</li>
+				<li>resolve wrong format command (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8d9737">c8d9737</a>)</li>
+				<li>resolve ts errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9964ac5">9964ac5</a>)</li>
+				<li>small linting fix to dataset reference (<a href="https://github.com/madcampos/fallout-walkthrough/commit/20e51ee">20e51ee</a>)</li>
+				<li>resolve typescript errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/50f5185">50f5185</a>)</li>
+				<li>update typescript config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1cf9f24">1cf9f24</a>)</li>
+				<li>resolve problems with tables (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ffd99aa">ffd99aa</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update version (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f5cbacc">f5cbacc</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/05b025c">05b025c</a>)</li>
+				<li>rename application files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8a7a688">8a7a688</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (#85) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/935d1bd">935d1bd</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (#86) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4a83673">4a83673</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b821594">b821594</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6d817d9">6d817d9</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9fc5185">9fc5185</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/321d4f8">321d4f8</a>)</li>
+				<li>update dependabot settings (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be36ff2">be36ff2</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (#80) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4d43e88">4d43e88</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b91798d">b91798d</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (#78) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15a64a">b15a64a</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5723549">5723549</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (#76) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c131d91">c131d91</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ea721a3">ea721a3</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (#71) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6e5fd0c">6e5fd0c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/50bdbc5">50bdbc5</a>)</li>
+				<li>update packages and toolsing (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6a2f292">6a2f292</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (#70) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15f460">b15f460</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/22bec2c">22bec2c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (#69) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0eaf9f2">0eaf9f2</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/79002b0">79002b0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (#67) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f704e08">f704e08</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fa6144a">fa6144a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (#61) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d13c931">d13c931</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6b3c040">6b3c040</a>)</li>
+				<li>update vite and pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/47a6018">47a6018</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e0c7d0c">e0c7d0c</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/fallout-walkthrough/commit/afbf56f">afbf56f</a>)</li>
+				<li>update missing configs (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9774a4b">9774a4b</a>)</li>
+				<li>fix linting errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/67136db">67136db</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/13eb129">13eb129</a>)</li>
+				<li>update packages and config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dfdde76">dfdde76</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5640a1e">5640a1e</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d804230">d804230</a>)</li>
+				<li>remove old packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/547d62a">547d62a</a>)</li>
+				<li>update github actions (<a href="https://github.com/madcampos/fallout-walkthrough/commit/62f8ded">62f8ded</a>)</li>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (#41) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/534f05c">534f05c</a>)</li>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f0dc4ab">f0dc4ab</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (#36) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ccb3181">ccb3181</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3cb3cc4">3cb3cc4</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.29 to 8.4.31 (#32) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9814d45">9814d45</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.29 to 8.4.31 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7711e11">7711e11</a>)</li>
+				<li>**deps**: bump semver from 5.7.1 to 5.7.2 (#1) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/19dd06c">19dd06c</a>)</li>
+				<li>update coverage run (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8731c21">8731c21</a>)</li>
+				<li>**deps**: bump semver from 5.7.1 to 5.7.2 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6166833">6166833</a>)</li>
+				<li>update test coverage provider (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1f8f712">1f8f712</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a6227cc">a6227cc</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.90.1 to 4.99.0 in the dev-dependencies group (#93) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f499eb3">f499eb3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d625674">d625674</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.81.1 to 4.90.1 in the dev-dependencies group (#92) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d720fe3">d720fe3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/54345ca">54345ca</a>)</li>
+				<li>[dependency update]: bump wrangler from 4.79.0 to 4.81.1 in the dev-dependencies group (#91) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/444755e">444755e</a>)</li>
+				<li>[dependency update]: bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3c726c6">3c726c6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#87) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7307abd">7307abd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb80986">fb80986</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#84) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7679398">7679398</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/77d4e37">77d4e37</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (#83) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dcc74a6">dcc74a6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/38940a4">38940a4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (#82) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5ca5ed4">5ca5ed4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8bc6f7">c8bc6f7</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#79) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0540ece">0540ece</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1b8884e">1b8884e</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#77) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb04abd">fb04abd</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4106017">4106017</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#75) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/40c23fc">40c23fc</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f401e58">f401e58</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#74) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e69a7e1">e69a7e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d94e48f">d94e48f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#73) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/89820e1">89820e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c0afc89">c0afc89</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#72) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7b05259">7b05259</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d5dd3cb">d5dd3cb</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#68) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/42b6066">42b6066</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6c7c5e8">6c7c5e8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (#65) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0c8f8f5">0c8f8f5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b0317eb">b0317eb</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#64) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6db0e48">6db0e48</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/505abb8">505abb8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#63) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/739486e">739486e</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9b695e0">9b695e0</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (#62) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d920725">d920725</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f7c7339">f7c7339</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (#59) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f9df8fd">f9df8fd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f379fc1">f379fc1</a>)</li>
+				<li>Remove github pages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/129f946">129f946</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (#54) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/08614e0">08614e0</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/aea2554">aea2554</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (#40) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0ef6e39">0ef6e39</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ee3691a">ee3691a</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 11 updates (#38) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abdd201">abdd201</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/bade2a5">bade2a5</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (#37) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4db30b4">4db30b4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c6dd98b">c6dd98b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 7 updates (#35) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e1ab989">e1ab989</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 7 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e4b6063">e4b6063</a>)</li>
+				<li>[dependency update]: bump vite from 4.4.9 to 4.4.11 (#29) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7035944">7035944</a>)</li>
+				<li>[dependency update]: bump vite from 4.4.9 to 4.4.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9df7c36">9df7c36</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (#23) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8b21227">8b21227</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/303aab2">303aab2</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 13 updates (#20) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3cccd93">3cccd93</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 13 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/443e43a">443e43a</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 2 updates (#4) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/2e2c692">2e2c692</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d293566">d293566</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 2 updates (#3) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/bffb464">bffb464</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e387e0d">e387e0d</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
+
+	<item>
+		<title>v1.0.0</title>
+		<pubDate>2022-10-19T15:57:46-04:00</pubDate>
+		<description><![CDATA[
+			<a href="https://github.com/madcampos/fallout-walkthrough/compare/f256031af70b9d3e96b96bb2e0553297147b406c...v1.0.0">compare changes</a>
+
+
+			<h2>Enhancements</h2>
+
+			<ul>
+				<li>add readme and original files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/caaba2a">caaba2a</a>)</li>
+				<li>update styles (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ef15f8e">ef15f8e</a>)</li>
+				<li>update config files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5fef80e">5fef80e</a>)</li>
+				<li>remove dependencies and deploy to cloudflare (<a href="https://github.com/madcampos/fallout-walkthrough/commit/515caa2">515caa2</a>)</li>
+				<li>remove ids and links in favour of generated toc (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a9c074d">a9c074d</a>)</li>
+				<li>generate TOC (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abad41e">abad41e</a>)</li>
+				<li>update project config and structure (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b9397b5">b9397b5</a>)</li>
+				<li>update vite pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/2f9d2da">2f9d2da</a>)</li>
+				<li>update missing images and paths (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b310f57">b310f57</a>)</li>
+				<li>update url and small style tweaks (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3578ad6">3578ad6</a>)</li>
+				<li>update packages and build workflow (<a href="https://github.com/madcampos/fallout-walkthrough/commit/61aa1be">61aa1be</a>)</li>
+				<li>update dependabot frequency (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8cd3347">8cd3347</a>)</li>
+				<li>update build process (<a href="https://github.com/madcampos/fallout-walkthrough/commit/15eaa33">15eaa33</a>)</li>
+				<li>add security config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c42a3f9">c42a3f9</a>)</li>
+				<li>update/fix css (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4b5ffc1">4b5ffc1</a>)</li>
+				<li>block google from tracking (<a href="https://github.com/madcampos/fallout-walkthrough/commit/df52506">df52506</a>)</li>
+				<li>add manifest and service worker (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3bb8347">3bb8347</a>)</li>
+				<li>update references to be relative (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be1f1d5">be1f1d5</a>)</li>
+				<li>update build process (<a href="https://github.com/madcampos/fallout-walkthrough/commit/83a7c86">83a7c86</a>)</li>
+				<li>add missing items (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8bc8883">8bc8883</a>)</li>
+				<li>make small layout changes (<a href="https://github.com/madcampos/fallout-walkthrough/commit/2eb9deb">2eb9deb</a>)</li>
+				<li>update toc and link scripts (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d666d11">d666d11</a>)</li>
+				<li>update items, small layout changes and image locations (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e6c6476">e6c6476</a>)</li>
+				<li>move images to backgrounds folder (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7e626cf">7e626cf</a>)</li>
+				<li>implement base scripts for the document (<a href="https://github.com/madcampos/fallout-walkthrough/commit/805a60f">805a60f</a>)</li>
+				<li>implement style for the document (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ce6b8d5">ce6b8d5</a>)</li>
+				<li>update the general markup of the document (<a href="https://github.com/madcampos/fallout-walkthrough/commit/36c6392">36c6392</a>)</li>
+				<li>move table of contents to a dialog (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1e22d13">1e22d13</a>)</li>
+				<li>add old styl and js file (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6c384a2">6c384a2</a>)</li>
+				<li>add base css (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4900f87">4900f87</a>)</li>
+				<li>add fonts (<a href="https://github.com/madcampos/fallout-walkthrough/commit/58acf97">58acf97</a>)</li>
+				<li>add base walkthrough html (<a href="https://github.com/madcampos/fallout-walkthrough/commit/27adc2e">27adc2e</a>)</li>
+				<li>add other images (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb191c9">fb191c9</a>)</li>
+				<li>add item images (<a href="https://github.com/madcampos/fallout-walkthrough/commit/004380a">004380a</a>)</li>
+				<li>add icons and splash screens (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b06fdf1">b06fdf1</a>)</li>
+			</ul>
+
+			<h2>Fixes</h2>
+
+			<ul>
+				<li>table sorting (<a href="https://github.com/madcampos/fallout-walkthrough/commit/cedef16">cedef16</a>)</li>
+				<li>misc changes (<a href="https://github.com/madcampos/fallout-walkthrough/commit/90e1fb3">90e1fb3</a>)</li>
+				<li>toc generation (<a href="https://github.com/madcampos/fallout-walkthrough/commit/888d7ce">888d7ce</a>)</li>
+				<li>font issues (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c955676">c955676</a>)</li>
+				<li>resolve wrong format command (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8d9737">c8d9737</a>)</li>
+				<li>resolve ts errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9964ac5">9964ac5</a>)</li>
+				<li>small linting fix to dataset reference (<a href="https://github.com/madcampos/fallout-walkthrough/commit/20e51ee">20e51ee</a>)</li>
+				<li>resolve typescript errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/50f5185">50f5185</a>)</li>
+				<li>update typescript config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1cf9f24">1cf9f24</a>)</li>
+				<li>resolve problems with tables (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ffd99aa">ffd99aa</a>)</li>
+				<li>remove gui overlay (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fe2103c">fe2103c</a>)</li>
+				<li>update images extension (<a href="https://github.com/madcampos/fallout-walkthrough/commit/689be86">689be86</a>)</li>
+				<li>add some ignores to tsconfig (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ab8126c">ab8126c</a>)</li>
+			</ul>
+
+			<h2>Chores &amp; Tasks</h2>
+
+			<ul>
+				<li>update version (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f5cbacc">f5cbacc</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/05b025c">05b025c</a>)</li>
+				<li>rename application files (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8a7a688">8a7a688</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (#85) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/935d1bd">935d1bd</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (#86) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4a83673">4a83673</a>)</li>
+				<li>**deps-dev**: bump minimatch from 3.1.2 to 3.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b821594">b821594</a>)</li>
+				<li>**deps-dev**: bump rollup from 4.50.0 to 4.59.0 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6d817d9">6d817d9</a>)</li>
+				<li>update tsconfig (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9fc5185">9fc5185</a>)</li>
+				<li>update dependabot config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/321d4f8">321d4f8</a>)</li>
+				<li>update dependabot settings (<a href="https://github.com/madcampos/fallout-walkthrough/commit/be36ff2">be36ff2</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (#80) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4d43e88">4d43e88</a>)</li>
+				<li>**deps-dev**: bump js-yaml from 4.1.0 to 4.1.1 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b91798d">b91798d</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (#78) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15a64a">b15a64a</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.5 to 7.1.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5723549">5723549</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (#76) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c131d91">c131d91</a>)</li>
+				<li>**deps-dev**: bump vite from 7.1.4 to 7.1.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ea721a3">ea721a3</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (#71) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6e5fd0c">6e5fd0c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.3.3 to 6.3.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/50bdbc5">50bdbc5</a>)</li>
+				<li>update packages and toolsing (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6a2f292">6a2f292</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (#70) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b15f460">b15f460</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.5 to 6.2.6 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/22bec2c">22bec2c</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (#69) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0eaf9f2">0eaf9f2</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.4 to 6.2.5 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/79002b0">79002b0</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (#67) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f704e08">f704e08</a>)</li>
+				<li>**deps-dev**: bump vite from 6.2.0 to 6.2.4 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fa6144a">fa6144a</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (#61) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d13c931">d13c931</a>)</li>
+				<li>**deps-dev**: bump vite from 6.0.1 to 6.0.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6b3c040">6b3c040</a>)</li>
+				<li>update vite and pwa config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/47a6018">47a6018</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e0c7d0c">e0c7d0c</a>)</li>
+				<li>Update dependabot.yml (<a href="https://github.com/madcampos/fallout-walkthrough/commit/afbf56f">afbf56f</a>)</li>
+				<li>update missing configs (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9774a4b">9774a4b</a>)</li>
+				<li>fix linting errors (<a href="https://github.com/madcampos/fallout-walkthrough/commit/67136db">67136db</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/13eb129">13eb129</a>)</li>
+				<li>update packages and config (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dfdde76">dfdde76</a>)</li>
+				<li>update dependencies (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5640a1e">5640a1e</a>)</li>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d804230">d804230</a>)</li>
+				<li>remove old packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/547d62a">547d62a</a>)</li>
+				<li>update github actions (<a href="https://github.com/madcampos/fallout-walkthrough/commit/62f8ded">62f8ded</a>)</li>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (#41) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/534f05c">534f05c</a>)</li>
+				<li>**deps-dev**: bump vite from 5.0.10 to 5.0.12 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f0dc4ab">f0dc4ab</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (#36) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ccb3181">ccb3181</a>)</li>
+				<li>**deps-dev**: bump @babel/traverse from 7.22.8 to 7.23.2 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3cb3cc4">3cb3cc4</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.29 to 8.4.31 (#32) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9814d45">9814d45</a>)</li>
+				<li>**deps-dev**: bump postcss from 8.4.29 to 8.4.31 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7711e11">7711e11</a>)</li>
+				<li>**deps**: bump semver from 5.7.1 to 5.7.2 (#1) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/19dd06c">19dd06c</a>)</li>
+				<li>update coverage run (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8731c21">8731c21</a>)</li>
+				<li>**deps**: bump semver from 5.7.1 to 5.7.2 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6166833">6166833</a>)</li>
+				<li>update test coverage provider (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1f8f712">1f8f712</a>)</li>
+				<li>add todo comment (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0528589">0528589</a>)</li>
+			</ul>
+
+			<h2>Miscellaneous</h2>
+
+			<ul>
+				<li>update packages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/a6227cc">a6227cc</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.90.1 to 4.99.0 in the dev-dependencies group (#93) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f499eb3">f499eb3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d625674">d625674</a>)</li>
+				<li>[dependency update]: Bump wrangler from 4.81.1 to 4.90.1 in the dev-dependencies group (#92) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d720fe3">d720fe3</a>)</li>
+				<li>[dependency update]: Bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/54345ca">54345ca</a>)</li>
+				<li>[dependency update]: bump wrangler from 4.79.0 to 4.81.1 in the dev-dependencies group (#91) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/444755e">444755e</a>)</li>
+				<li>[dependency update]: bump wrangler in the dev-dependencies group (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3c726c6">3c726c6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#87) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7307abd">7307abd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb80986">fb80986</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#84) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7679398">7679398</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/77d4e37">77d4e37</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (#83) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/dcc74a6">dcc74a6</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/38940a4">38940a4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (#82) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/5ca5ed4">5ca5ed4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c8bc6f7">c8bc6f7</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#79) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0540ece">0540ece</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/1b8884e">1b8884e</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (#77) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/fb04abd">fb04abd</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4106017">4106017</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#75) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/40c23fc">40c23fc</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f401e58">f401e58</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (#74) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e69a7e1">e69a7e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 5 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d94e48f">d94e48f</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#73) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/89820e1">89820e1</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c0afc89">c0afc89</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#72) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7b05259">7b05259</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d5dd3cb">d5dd3cb</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (#68) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/42b6066">42b6066</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6c7c5e8">6c7c5e8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (#65) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0c8f8f5">0c8f8f5</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group across 1 directory with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/b0317eb">b0317eb</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (#64) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/6db0e48">6db0e48</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 6 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/505abb8">505abb8</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (#63) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/739486e">739486e</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9b695e0">9b695e0</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (#62) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d920725">d920725</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group across 1 directory with 4 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f7c7339">f7c7339</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (#59) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f9df8fd">f9df8fd</a>)</li>
+				<li>[dependency update]: Bump the dev-dependencies group with 8 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/f379fc1">f379fc1</a>)</li>
+				<li>Remove github pages (<a href="https://github.com/madcampos/fallout-walkthrough/commit/129f946">129f946</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (#54) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/08614e0">08614e0</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/aea2554">aea2554</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (#40) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/0ef6e39">0ef6e39</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 12 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/ee3691a">ee3691a</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 11 updates (#38) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/abdd201">abdd201</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 11 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/bade2a5">bade2a5</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (#37) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/4db30b4">4db30b4</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 10 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/c6dd98b">c6dd98b</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 7 updates (#35) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e1ab989">e1ab989</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 7 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e4b6063">e4b6063</a>)</li>
+				<li>[dependency update]: bump vite from 4.4.9 to 4.4.11 (#29) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/7035944">7035944</a>)</li>
+				<li>[dependency update]: bump vite from 4.4.9 to 4.4.11 (<a href="https://github.com/madcampos/fallout-walkthrough/commit/9df7c36">9df7c36</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (#23) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/8b21227">8b21227</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 3 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/303aab2">303aab2</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 13 updates (#20) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/3cccd93">3cccd93</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 13 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/443e43a">443e43a</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 2 updates (#4) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/2e2c692">2e2c692</a>)</li>
+				<li>[dependency update]: bump the dev-dependencies group with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/d293566">d293566</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 2 updates (#3) (<a href="https://github.com/madcampos/fallout-walkthrough/commit/bffb464">bffb464</a>)</li>
+				<li>[dependency update]: bump the dependencies group with 2 updates (<a href="https://github.com/madcampos/fallout-walkthrough/commit/e387e0d">e387e0d</a>)</li>
+			</ul>
+
+		]]></description>
+	</item>
 </channel>
 </rss>
