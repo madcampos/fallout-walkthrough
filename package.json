@@ -1,22 +1,54 @@
 {
 	"name": "fallout-walkthrough",
-	"private": true,
 	"version": "1.0.0",
-	"license": "MIT",
-	"type": "module",
+	"private": true,
+	"description": "Fallout 2 Walkthrough",
+	"keywords": [],
 	"engines": {
-		"node": ">=22.0.0"
+		"node": ">=26.4.0",
+		"pnpm": ">=11.11.0"
 	},
-	"volta": {
-		"node": "22.15.0"
+	"author": {
+		"name": "madcampos",
+		"url": "https://madcampos.dev/"
 	},
+	"license": "LGPL-3",
+	"homepage": "https://github.com/madcampos/fallout-walkthrough#readme",
+	"bugs": {
+		"url": "https://github.com/madcampos/fallout-walkthrough/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/madcampos/fallout-walkthrough.git"
+	},
+	"funding": [
+		{
+			"type": "Buy Me a Coffee",
+			"url": "https://buymeacoffee.com/madcampos"
+		},
+		{
+			"type": "Ko-Fi",
+			"url": "https://ko-fi.com/madcampos"
+		}
+	],
+	"type": "module",
+	"main": "public/index.html",
 	"scripts": {
 		"typecheck": "tsc --noEmit",
+		"lint:js": "oxlint --fix",
+		"lint": "npm run typecheck && npm run lint:js",
 		"format": "dprint fmt",
-		"deploy": "wrangler deploy --minify"
+		"version": "npm version --sign-git-tag --message \"chore: update package version\"",
+		"postversion": "changelog --output \"docs/changelog\" --push --create-release",
+		"update": "update",
+		"deploy": "wrangler deploy --minify --env=\"\""
 	},
 	"devDependencies": {
-		"typescript": "^6.0.2",
-		"wrangler": "4.99.0"
+		"@mad-c/config": "^3.2.0",
+		"dprint": "^0.55.2",
+		"oxlint": "^1.77.0",
+		"oxlint-tsgolint": "^7.0.2001",
+		"typescript": "^7.0.2",
+		"wrangler": "4.119.0"
 	}
 }
