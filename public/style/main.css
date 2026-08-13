@@ -2,8 +2,9 @@
 
 @import url('./vars.css');
 @import url('./base.css');
-@import url('./buttons.css');
-@import url('./tables.css');
-@import url('./nav.css');
-@import url('./maps.css');
-@import url('./notes.css');
+@import url('./components/sr-only.css');
+@import url('./components/buttons.css');
+@import url('./components/tables.css');
+@import url('./components/nav.css');
+@import url('./components/maps.css');
+@import url('./components/notes.css');
