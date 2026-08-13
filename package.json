@@ -39,12 +39,12 @@
 		"lint": "npm run typecheck && npm run lint:js",
 		"format": "dprint fmt",
 		"version": "npm version --sign-git-tag --message \"chore: update package version\"",
-		"postversion": "changelog --output \"docs/changelog\" --push --create-release",
+		"postversion": "changelog --output \"docs/changelog\" --push --create-release -l \"public/changelog.rss\"",
 		"update": "update",
 		"deploy": "wrangler deploy --minify --env=\"\""
 	},
 	"devDependencies": {
-		"@mad-c/config": "^3.2.0",
+		"@mad-c/config": "^4.1.1",
 		"dprint": "^0.55.2",
 		"oxlint": "^1.77.0",
 		"oxlint-tsgolint": "^7.0.2001",

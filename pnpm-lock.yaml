@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@mad-c/config':
-        specifier: ^3.2.0
-        version: 3.2.0
+        specifier: ^4.1.1
+        version: 4.1.1
       dprint:
         specifier: ^0.55.2
         version: 0.55.2
@@ -491,9 +491,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@mad-c/config@3.2.0':
-    resolution: {integrity: sha512-p6u5lNYauNC6BYvqwp2IPAekv8y9Sh70qqHvVehN6UF7EqpG6/a6eC9YhlGx/nEWq6hYQOU0Fw7bBOqtn64kXQ==}
-    engines: {node: '>=26.4.0', pnpm: '>=11.11.0'}
+  '@mad-c/config@4.1.1':
+    resolution: {integrity: sha512-mlXEigUCoPo81hFQmnhjPniTjnEUrEg+sym8N0trHvmjdkCI9gSH23/fg5ys1NsGpn+dVircy6BM5QD2Bum4/w==}
     hasBin: true
 
   '@oxlint-tsgolint/darwin-arm64@7.0.2001':
@@ -1176,7 +1175,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mad-c/config@3.2.0': {}
+  '@mad-c/config@4.1.1': {}
 
   '@oxlint-tsgolint/darwin-arm64@7.0.2001':
     optional: true
