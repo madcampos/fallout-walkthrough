@@ -39,8 +39,13 @@ function buildHeadingLevels(headingList, prevHeadingId = '') {
 		let curIndex = 0;
 
 		do {
-			const curHeading = /** @type {HTMLHeadingElement} */ (headingList[curIndex]);
-			const headingLabel = curHeading.textContent ?? '';
+			const curHeading = headingList[curIndex];
+
+			if (!curHeading) {
+				continue;
+			}
+
+			const headingLabel = curHeading.textContent;
 
 			setHeadingId(curHeading, prevHeadingId);
 			addHeadingLink(curHeading);
@@ -96,16 +101,18 @@ function buildHeadingLevels(headingList, prevHeadingId = '') {
 }
 
 export function buildTableOfContents() {
+	// oxlint-disable-next-line typescript/no-unsafe-type-assertion
 	const headings = /** @type {HTMLHeadingElement[]} */ ([...document.body.querySelectorAll('main :is(h2, h3, h4, h5, h6)')]);
 
 	document.querySelector('#toc nav')?.insertAdjacentHTML('beforeend', `<ol>${buildHeadingLevels(headings)}</ol>`);
 }
 
 export function handleTableOfContents() {
+	// oxlint-disable-next-line typescript/no-unsafe-type-assertion
 	const tocDialog = /** @type {HTMLDialogElement} */ (document.querySelector('#toc'));
 
-	tocDialog?.addEventListener('click', (evt) => {
-		// eslint-disable-next-line @typescript-eslint/prefer-destructuring
+	tocDialog.addEventListener('click', (evt) => {
+		// eslint-disable-next-line typescript/no-unsafe-type-assertion
 		const target = /** @type {HTMLElement} */ (evt.target);
 
 		if (target.matches('a')) {

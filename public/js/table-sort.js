@@ -19,7 +19,7 @@ function compareRowsByColumn(rowA, rowB, column, order = 'ascending') {
 
 export function registerTableSort() {
 	document.addEventListener('click', (evt) => {
-		// eslint-disable-next-line @typescript-eslint/prefer-destructuring
+		// oxlint-disable-next-line typescript/no-unsafe-type-assertion
 		const target = /** @type {HTMLElement}*/ (evt.target);
 
 		if (!target.matches('th[aria-sort]')) {
@@ -28,6 +28,7 @@ export function registerTableSort() {
 
 		evt.stopPropagation();
 
+		// oxlint-disable-next-line typescript/no-unsafe-type-assertion
 		const thCell = /** @type {HTMLTableCellElement}*/ (target);
 		const table = thCell.closest('table');
 		const tbody = table?.querySelector('tbody');
