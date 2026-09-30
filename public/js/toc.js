@@ -257,7 +257,6 @@ export class TableOfContents extends HTMLElement {
 	}
 
 	connectedCallback() {
-		// TODO: load toc styles
 		this.#appendSvgDefs();
 
 		this.#render();
