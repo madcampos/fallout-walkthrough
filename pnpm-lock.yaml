@@ -11,6 +11,9 @@ importers:
       '@mad-c/config':
         specifier: ^4.2.1
         version: 4.2.1
+      '@types/serviceworker':
+        specifier: ^0.0.202
+        version: 0.0.202
       dprint:
         specifier: ^0.57.4
         version: 0.57.4
@@ -663,6 +666,9 @@ packages:
   '@speed-highlight/core@1.2.24':
     resolution: {integrity: sha512-qeW2e1l78afw8VhRPfPQ1Gjj+KU5XFQ/OFV5ti6eTa9bruO7mJyZtA4vw0ofqmA3tKCkROE9xLk3VZoeRc98nw==}
 
+  '@types/serviceworker@0.0.202':
+    resolution: {integrity: sha512-UcPefnaRXkmc0TP6TORm+4cKi2nX3WIfpTx2kryFWfS0d243bu9xVYTpsG4n6BAHzkivxoqHmTvgVYw3RH+zeg==}
+
   '@typescript/typescript-aix-ppc64@7.0.2':
     resolution: {integrity: sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ==}
     engines: {node: '>=16.20.0'}
@@ -1272,6 +1278,8 @@ snapshots:
   '@sindresorhus/is@7.2.0': {}
 
   '@speed-highlight/core@1.2.24': {}
+
+  '@types/serviceworker@0.0.202': {}
 
   '@typescript/typescript-aix-ppc64@7.0.2':
     optional: true

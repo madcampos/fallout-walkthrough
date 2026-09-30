@@ -43,8 +43,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="mobile-web-app-capable" content="yes" />
 
-		<link rel="stylesheet" href="/style/main.css" />
-		<script type="module" src="/js/main.js"></script>
+		<link rel="stylesheet" href="./style/main.css" />
+		<script type="module" src="./js/main.js"></script>
 	</head>
 
 	<body>
@@ -52,12 +52,7 @@
 			TODO: add <dfn>, <abbr>, <var> elements to definitions of things like skills, abbreviations where needed and variables like references to numbers, skills or attributes
 		-->
 
-		<button type="button" id="toc-button" popovertarget="toc">
-			<sr-only>Table Of Contents</sr-only>
-			<svg width="1em" height="1em" viewBox="0 0 24 24">
-				<path fill="currentColor" d="M3 9h14V7H3zm0 4h14v-2H3zm0 4h14v-2H3zm16 0h2v-2h-2zm0-10v2h2V7zm0 6h2v-2h-2z" />
-			</svg>
-		</button>
+		<table-of-contents></table-of-contents>
 		<button type="button" id="top-button">
 			<sr-only>Scroll to top</sr-only>
 			<svg width="1em" height="1em" viewBox="0 0 24 24">
@@ -65,20 +60,12 @@
 			</svg>
 		</button>
 
-		<dialog id="toc" popover closedby="any">
-			<nav>
-				<h2>Table of contents</h2>
-			</nav>
-		</dialog>
+		<header>
+			<hgroup>
+				<h1>The Nearly Ultimate Fallout 2 Guide</h1>
 
-		<main>
-			<header>
-				<hgroup>
-					<h1>The Nearly Ultimate Fallout 2 Guide</h1>
-
-					<p>Version 1.3</p>
-					<p>Written by Per Jorner and coded by madcampos</p>
-				</hgroup>
+				<p>Version 1.3</p>
+				<p>Written by Per Jorner and coded by madcampos</p>
 
 				<figure>
 					<blockquote>
@@ -89,37 +76,56 @@
 							because of his low intelligence, you can.
 						</p>
 					</blockquote>
-					<figcaption>Shadowman</figcaption>
+					<figcaption><cite>Shadowman</cite></figcaption>
 				</figure>
-			</header>
+			</hgroup>
+		</header>
 
-			<hr />
+		<hr />
 
-			<article>
+		<main>
+			<section aria-labelledby="introduction">
 				<header>
-					<h2>Introduction</h2>
+					<hgroup>
+						<h2 id="introduction">Introduction</h2>
 
-					<figure>
-						<blockquote>
-							<p>Hey, stranger! Need a guide?</p>
-						</blockquote>
-						<figcaption>New Reno prostitute</figcaption>
-					</figure>
+						<figure>
+							<blockquote>
+								<p>Hey, stranger! Need a guide?</p>
+							</blockquote>
+							<figcaption><cite>New Reno prostitute</cite></figcaption>
+						</figure>
+					</hgroup>
 				</header>
 
 				<p>
-					Welcome to my <cite>Fallout 2</cite> guide/walkthrough. This guide exists because I realized that if I wanted the kind of complete <cite>Fallout 2</cite> guide
-					that I envisioned, it pretty much meant writing it myself. That turned out to be quite an undertaking, but on the other hand, as far as I'm concerned <cite
-					>Fallout 2</cite> is the best computer game ever made.
+					Welcome to my <cite><a href="https://en.wikipedia.org/wiki/Fallout_2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> guide/walkthrough. This guide exists because I realized that if I wanted the kind of complete <cite><a
+							href="https://en.wikipedia.org/wiki/Fallout_2"
+							target="_blank"
+							rel="noopener noreferrer"
+							referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> guide that I envisioned, it pretty much meant writing it myself. That turned out to be quite an undertaking, but on the other hand, as
+					far as I'm concerned <cite><a href="https://en.wikipedia.org/wiki/Fallout_2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> is the best computer game ever made.
 				</p>
 
 				<p>
-					This guide is an attempt to provide a thorough presentation of the things you can do in <cite>Fallout 2</cite>: quests to perform, places to go, people to eat.
-					It is not, on the other hand, an attempt to compile reams of game data such as documenting every karma point gained or lost, because it wouldn't be much fun.
-					For game mechanics, detailed item stats and such, consult the manual and/or available in-game information. The basic assumption is that players want to squeeze
-					as much out of their game as possible - which is another thing that makes writing this guide worthwhile, because <cite>Fallout 2</cite> is a game that just
-					keeps on giving. There are details and aspects you won't notice until your second, third or fourth game, playing different characters with different attitudes.
-					Or until you read this guide, anyway.
+					This guide is an attempt to provide a thorough presentation of the things you can do in <cite><a
+							href="https://en.wikipedia.org/wiki/Fallout_2"
+							target="_blank"
+							rel="noopener noreferrer"
+							referrerpolicy="no-referrer"
+						>Fallout 2</a></cite>: quests to perform, places to go, people to eat. It is not, on the other hand, an attempt to compile reams of game data such as
+					documenting every karma point gained or lost, because it wouldn't be much fun. For game mechanics, detailed item stats and such, consult the manual and/or
+					available in-game information. The basic assumption is that players want to squeeze as much out of their game as possible - which is another thing that makes
+					writing this guide worthwhile, because <cite><a
+							href="https://en.wikipedia.org/wiki/Fallout_2"
+							target="_blank"
+							rel="noopener noreferrer"
+							referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> is a game that just keeps on giving. There are details and aspects you won't notice until your second, third or fourth game, playing
+					different characters with different attitudes. Or until you read this guide, anyway.
 				</p>
 
 				<p>
@@ -127,9 +133,14 @@
 					single significant difference between the UK and US versions except for the children thing. I've also used <cite>Falche2 Character Editor 2.10</cite> and
 					Inventory Editor 1.01 extensively to try out situations and features; moreover I've used <cite>Fallout 2 DAT explorer v1.42</cite> to unpack game files, <cite
 					>Fallout Items Mode Editor 1.1</cite> to check out some item details, <cite>Fallout Utility for Critter tinKering 0.62</cite> to check out some critter data,
-					and the script decompilers by <cite>TeamX</cite> and <cite>Noid</cite> as well as the scripts that came with the <cite>Fallout 2</cite> Mapper to check lots of
-					things. Since trainers, utilities and mods aren't part of the game, I won't deal with them specifically. I don't recommend cheating, other than momentarily for
-					the purpose of experiencing things that you wouldn't normally see, or in a last-ditch attempt to save a doomed character.
+					and the script decompilers by <cite>TeamX</cite> and <cite>Noid</cite> as well as the scripts that came with the <cite><a
+							href="https://en.wikipedia.org/wiki/Fallout_2"
+							target="_blank"
+							rel="noopener noreferrer"
+							referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> Mapper to check lots of things. Since trainers, utilities and mods aren't part of the game, I won't deal with them specifically. I
+					don't recommend cheating, other than momentarily for the purpose of experiencing things that you wouldn't normally see, or in a last-ditch attempt to save a
+					doomed character.
 				</p>
 
 				<p>
@@ -142,9 +153,10 @@
 				</p>
 
 				<p>
-					Of other <cite>Fallout 2</cite> writings I would recommend those of <cite>Whitechocobo666</cite>, author of the <cite>Endings FAQ</cite>, the <cite>Perks
-						FAQ</cite>, the <cite>Weapon/armor FAQ</cite> and the <cite>Evil Walk-through</cite>; <cite>Steve Metzler</cite>, whose <cite>Steve's Guide to Fallout
-						2</cite> was my original source of inspiration; <cite>Chris Avellone</cite>, co-designer of the game and maker of the <cite>Fallout Bible</cite>; and also
+					Of other <cite><a href="https://en.wikipedia.org/wiki/Fallout_2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Fallout 2</a></cite>
+					writings I would recommend those of <cite>Whitechocobo666</cite>, author of the <cite>Endings FAQ</cite>, the <cite>Perks FAQ</cite>, the <cite>Weapon/armor
+						FAQ</cite> and the <cite>Evil Walk-through</cite>; <cite>Steve Metzler</cite>, whose <cite>Steve's Guide to Fallout 2</cite> was my original source of
+					inspiration; <cite>Chris Avellone</cite>, co-designer of the game and maker of the <cite>Fallout Bible</cite>; and also
 					<cite>Cristian Golumbovici</cite>. General credit goes to the people on the <cite>No Mutants Allowed message board</cite>. Special thanks to <cite>Sébastien
 						Caisse</cite> a.k.a.
 					<cite>Red!</cite> for checking scripts and stuff for guide version 1.0.
@@ -186,19 +198,23 @@
 				<wt-note type="rp">
 					<p>A purple section is used to mark content added by Restoration Project.</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Preparations</h2>
+			<section aria-labelledby="preparations">
+				<header>
+					<hgroup>
+						<h2 id="preparations">Preparations</h2>
 
-				<figure>
-					<blockquote>
-						<p>I'll get you during my next save game.</p>
-					</blockquote>
-					<figcaption>The Chosen One</figcaption>
-				</figure>
+						<figure>
+							<blockquote>
+								<p>I'll get you during my next save game.</p>
+							</blockquote>
+							<figcaption><cite>The Chosen One</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
 				<p>
 					First of all you should find out if you need to patch your game. Originally this game existed in five different versions: the US edition, two UK editions
@@ -357,19 +373,23 @@
 					corrupt save files and make the game crash. Normally you shouldn't need to worry, but if you spot the skilldex button going black while you're playing, you're
 					in the danger zone. See Addenda for more info and a way to counter this bug if the worst comes to the worst.
 				</p>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Character design</h2>
+			<section aria-labelledby="character-design">
+				<header>
+					<hgroup>
+						<h2 id="character-design">Character design</h2>
 
-				<figure>
-					<blockquote>
-						<p>You'd think there's only ten kinds of people in the world. Way I figure it, there was some big cloning accident in the past.</p>
-					</blockquote>
-					<figcaption>Mason</figcaption>
-				</figure>
+						<figure>
+							<blockquote>
+								<p>You'd think there's only ten kinds of people in the world. Way I figure it, there was some big cloning accident in the past.</p>
+							</blockquote>
+							<figcaption><cite>Mason</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
 				<p>
 					The <a href="#stats"><abbr title="Strength, Perception, Endurance, Charisma, Inteligence, Agility, Luck">SPECIAL</abbr></a> system used for <cite>Fallout
@@ -730,7 +750,14 @@
 
 				<dl>
 					<dt><dfn id="skill-Throwing">Throwing</dfn></dt>
-					<dd>Rocks and grenades simply don't play a huge role in the world of <cite>Fallout 2</cite>.</dd>
+					<dd>
+						Rocks and grenades simply don't play a huge role in the world of <cite><a
+								href="https://en.wikipedia.org/wiki/Fallout_2"
+								target="_blank"
+								rel="noopener noreferrer"
+								referrerpolicy="no-referrer"
+							>Fallout 2</a></cite>.
+					</dd>
 
 					<dt><dfn id="skill-Sneak">Sneak</dfn></dt>
 					<dd>
@@ -1306,8 +1333,12 @@
 				<wt-note type="red">
 					<p>
 						There are a few implemented perks which you cannot gain, namely Animal Friend, Flower Child, Mental Block and Scrounger. They were in the original <cite
-						>Fallout</cite>. Rumors that you can get some or all of them in <cite>Fallout 2</cite> are completely unsubstantiated, and only Flower Child has any effect
-						should you add it using a character editor.
+						>Fallout</cite>. Rumors that you can get some or all of them in <cite><a
+								href="https://en.wikipedia.org/wiki/Fallout_2"
+								target="_blank"
+								rel="noopener noreferrer"
+								referrerpolicy="no-referrer"
+							>Fallout 2</a></cite> are completely unsubstantiated, and only Flower Child has any effect should you add it using a character editor.
 					</p>
 				</wt-note>
 
@@ -2501,19 +2532,23 @@
 					laps around the Gecko reactor room or purposely hang around the Toxic waste dump. From what I can tell, there is never any permanent damage resulting from
 					radiation.
 				</p>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Area walkthrough</h2>
+			<section aria-labelledby="area-walkthrough">
+				<header>
+					<hgroup>
+						<h2 id="area-walkthrough">Area walkthrough</h2>
 
-				<figure>
-					<blockquote>
-						<p>Do I look like a cartographer? You want to scour the desert for them, you go right ahead.</p>
-					</blockquote>
-					<figcaption>Myron</figcaption>
-				</figure>
+						<figure>
+							<blockquote>
+								<p>Do I look like a cartographer? You want to scour the desert for them, you go right ahead.</p>
+							</blockquote>
+							<figcaption><cite>Myron</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
 				<p>
 					Each area walkthrough follows roughly the same pattern: first a general run-down of important people to talk to and things to do that aren't technically quests,
@@ -2607,15 +2642,17 @@
 						mode, e.g., a guard may prevent you from opening a door even if he won't attack. Experiment at your own risk...
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>World Map</h2>
+			<section aria-labelledby="world-map">
+				<header>
+					<h2 id="world-map">World Map</h2>
+				</header>
 
 				<map-wrapper>
-					<svg viewBox="0 0 1400 1500" width="1400" height="1500" id="world-map">
+					<svg viewBox="0 0 1400 1500" width="1400" height="1500" data-map="world">
 						<defs>
 							<radialGradient id="world-map-marker-fill">
 								<stop offset="0" stop-opacity="0" />
@@ -2858,26 +2895,31 @@
 						</g>
 					</svg>
 				</map-wrapper>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Temple of Trials</h2>
+			<section aria-labelledby="temple-of-trials">
+				<header>
+					<hgroup>
+						<h2 id="temple-of-trials">Temple of Trials</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/temple-of-trials.jpg" />
-				</picture>
-
-				<figure>
-					<blockquote>
-						<p>
-							It's a peaceful village. Except for the plants possessed by evil spirits... and of course, the temple of trials filled with those deadly spear traps and
-							the man-eating giant ants.
-						</p>
-					</blockquote>
-					<figcaption>The Chosen One</figcaption>
-				</figure>
+						<figure>
+							<blockquote>
+								<p>
+									It's a peaceful village. Except for the plants possessed by evil spirits... and of course, the temple of trials filled with those deadly spear
+									traps and the man-eating giant ants.
+								</p>
+							</blockquote>
+							<figcaption><cite>The Chosen One</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/temple-of-trials.jpg" />
+					</picture>
+				</aside>
 
 				<p>
 					After a cutscene with the village Elder you start outside the entrance to the temple, proudly owning a Spear. Don't attack your tribes-mate, there's nothing to
@@ -2995,24 +3037,30 @@
 						any other stage - and also serves to demonstrate the extreme range of playing experiences the game engine has to offer.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Arroyo</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Arroyo</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/arroyo.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>I wonder how my cousins in Arroyo are doing? I hope they're flourishing.</p>
+								<p>Of course they are! Unless some rat-bastard slaughters them all.</p>
+							</blockquote>
+							<figcaption><cite>Seymour and Typhoon</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>I wonder how my cousins in Arroyo are doing? I hope they're flourishing.</p>
-						<p>Of course they are! Unless some rat-bastard slaughters them all.</p>
-					</blockquote>
-					<figcaption>Seymour and Typhoon</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/arroyo.jpg" alt="Arroyo" />
+					</picture>
+				</aside>
 
 				<p>
 					It seems you're the only one around with a fashion sense, and now you have access to the Pip-Boy as well. First off go talk to the Elder to get your quests
@@ -3062,11 +3110,16 @@
 
 				<wt-note type="red">
 					<p>
-						Ever wondered why there is at least one Feargus or similarly named character in each of <cite>Fallout 2</cite>, <cite>Baldur's Gate</cite>, <cite>Baldur's
-							Gate II</cite>, <cite>Planescape: Torment</cite> and <cite>Icewind Dale</cite>? It might have something to do with Black Isle director Feargus MacRae
-						Urquhart; there are close to a dozen names in these games derived from his (including <a href="#npcs--cassidy">Cassidy</a>'s original name, which shows up
-						if you sell him to Metzger). Names of other developers abound, but none of them sticks out as much. "Smitty" is another ubiquitous cognomen - there are four
-						of those in the two <cite>Fallout</cite> games, and there might well have been a fifth...
+						Ever wondered why there is at least one Feargus or similarly named character in each of <cite><a
+								href="https://en.wikipedia.org/wiki/Fallout_2"
+								target="_blank"
+								rel="noopener noreferrer"
+								referrerpolicy="no-referrer"
+							>Fallout 2</a></cite>, <cite>Baldur's Gate</cite>, <cite>Baldur's Gate II</cite>, <cite>Planescape: Torment</cite> and <cite>Icewind Dale</cite>? It
+						might have something to do with Black Isle director Feargus MacRae Urquhart; there are close to a dozen names in these games derived from his (including <a
+							href="#npcs--cassidy"
+						>Cassidy</a>'s original name, which shows up if you sell him to Metzger). Names of other developers abound, but none of them sticks out as much. "Smitty" is
+						another ubiquitous cognomen - there are four of those in the two <cite>Fallout</cite> games, and there might well have been a fifth...
 					</p>
 				</wt-note>
 
@@ -3264,23 +3317,29 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Klamath</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Klamath</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/klamath.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Most people have evil spirits. You? You have stupid spirits. Go see shaman, get hole in head...</p>
+							</blockquote>
+							<figcaption><cite><a href="#npcs--sulik">Sulik</a></cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Most people have evil spirits. You? You have stupid spirits. Go see shaman, get hole in head...</p>
-					</blockquote>
-					<figcaption><a href="#npcs--sulik">Sulik</a></figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/klamath.jpg" alt="Klamath" />
+					</picture>
+				</aside>
 
 				<p>
 					Klamath is a quiet, out-of-the-way town, but can seem like something of a metropolis to someone who's used to huts and tents. Read the notice board to get a
@@ -3852,23 +3911,29 @@
 						</wt-note>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Toxic Caves</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Toxic Caves</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/toxic-caves.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Pipin' hot gecko pie, comin' up.</p>
+							</blockquote>
+							<figcaption><cite>Mom</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Pipin' hot gecko pie, comin' up.</p>
-					</blockquote>
-					<figcaption>Mom</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/toxic-caves.jpg" alt="Toxic Caves" />
+					</picture>
+				</aside>
 
 				<p>
 					True to their name, these tunnels contain green ooze which will hurt you if you step on it. To be safe from harm, you and each party member must be carrying a
@@ -3943,23 +4008,29 @@
 						has a very modest ST requirement and takes only half as many AP to fire as a normal Rocket Launcher, but it doesn't do nearly as much damage.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>The Den</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>The Den</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/den.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>You'll not find a greater hive of scum and villainy. Now where did I hear that?</p>
+							</blockquote>
+							<figcaption><cite>Whiskey Bob</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>You'll not find a greater hive of scum and villainy. Now where did I hear that?</p>
-					</blockquote>
-					<figcaption>Whiskey Bob</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/den.jpg" alt="The Den" />
+					</picture>
+				</aside>
 
 				<p>
 					The Den isn't that much larger than Klamath (actually, in terms of game maps, it's smaller), but somewhat closer to the harsh realities of wasteland politics
@@ -4634,16 +4705,20 @@
 						<p>Also, stop by and see how little Bobby is doing. You'll receive an extra 500xp for helping him find a better life.</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article data-rp-content>
-				<h2>Slaver's Camp</h2>
+			<section data-rp-content>
+				<header>
+					<h2>Slaver's Camp</h2>
+				</header>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/slavers.jpg" />
-				</picture>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/slavers.jpg" />
+					</picture>
+				</aside>
 
 				<p>
 					This is Metzger's slave camp, where newly arrived slaves are usually kept. <a href="#npcs--sulik">Sulik</a>'s sister Kurisu is one of them. You can get the
@@ -4671,11 +4746,11 @@
 				<p>Note that if you didn't kill the slavers they will be hostile the next time you show up at that location.</p>
 
 				<p>See the New California Republic section if you want the Rangers assistance in wiping out the camp.</p>
-			</article>
+			</section>
 
 			<hr />
 
-			<article data-rp-content>
+			<section data-rp-content>
 				<h2>Umbra Tribe</h2>
 
 				<picture>
@@ -4809,11 +4884,11 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Modoc</h2>
 
 				<picture>
@@ -4826,7 +4901,7 @@
 						<p>Woof?</p>
 						<p>Okay, okay... Maybe someplace else, then?</p>
 					</blockquote>
-					<figcaption>The Chosen One and Laddie</figcaption>
+					<figcaption><cite>The Chosen One and Laddie</cite></figcaption>
 				</figure>
 
 				<p>
@@ -5292,23 +5367,29 @@
 						</wt-note>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Ghost Farm</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Ghost Farm</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/ghost-farm.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Oh no! Don't you know Rose uses dog in her dishes!? Laddie is probably a burger by now.</p>
+							</blockquote>
+							<figcaption><cite>Jonny</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Oh no! Don't you know Rose uses dog in her dishes!? Laddie is probably a burger by now.</p>
-					</blockquote>
-					<figcaption>Jonny</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/ghost-farm.jpg" alt="Ghost Farm" />
+					</picture>
+				</aside>
 
 				<p>
 					Once you arrive you find there are patches of blood on the ground and bodies impaled on stakes. Examining the bodies with a good PE, or after several tries, you
@@ -5365,23 +5446,29 @@
 				<wt-note type="green">
 					<p>IN&lt;4: Vegeir won't know you delivered the message so you don't get any reward.</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Vault City</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Vault City</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/vault-city.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>PING! I Say!</p>
+							</blockquote>
+							<figcaption><cite>Vault City medical terminal</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>PING! I Say!</p>
-					</blockquote>
-					<figcaption>Vault City medical terminal</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/vault-city.jpg" alt="Vault City" />
+					</picture>
+				</aside>
 
 				<p>
 					Vault City is the segregated town with a shabby Courtyard and a tidy inner city. It's not really a nice place, but that's no reason to start shooting people.
@@ -5709,10 +5796,14 @@
 
 				<p>
 					McClure in the western room is the sane person in this outfit. Whenever you want something done, you go to him. The brave can take the other direction and turn
-					right down the hall... Congratulations, you have found First Bitchizen Lynette, universally hated by <cite>Fallout 2</cite> gamers. If at any time you really
-					piss her off, she's apt to ban you from Vault City permanently (like if you show her False Citizenship Papers; she'll promise you a Day Pass if you tell her who
-					gave you the papers, but she's lying). Nevertheless you should get <a href="#quest-vc4">Resolve the problem with the nearby village</a> from her. McClure and
-					Lynette can both put Gecko on your world map.
+					right down the hall... Congratulations, you have found First Bitchizen Lynette, universally hated by <cite><a
+							href="https://en.wikipedia.org/wiki/Fallout_2"
+							target="_blank"
+							rel="noopener noreferrer"
+							referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> gamers. If at any time you really piss her off, she's apt to ban you from Vault City permanently (like if you show her False
+					Citizenship Papers; she'll promise you a Day Pass if you tell her who gave you the papers, but she's lying). Nevertheless you should get <a href="#quest-vc4"
+					>Resolve the problem with the nearby village</a> from her. McClure and Lynette can both put Gecko on your world map.
 				</p>
 
 				<p>
@@ -6142,16 +6233,20 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article data-rp-content>
-				<h2>Vault Village</h2>
+			<section data-rp-content>
+				<header>
+					<h2>Vault Village</h2>
+				</header>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/village.jpg" />
-				</picture>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/village.jpg" />
+					</picture>
+				</aside>
 
 				<details class="quests" open>
 					<summary>
@@ -6235,11 +6330,11 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Gecko</h2>
 
 				<picture>
@@ -6250,7 +6345,7 @@
 					<blockquote>
 						<p>Apples rule. If it weren't for a conspiracy on the part of fruit manufacturers we'd all have apples.</p>
 					</blockquote>
-					<figcaption>Wooz</figcaption>
+					<figcaption><cite>Wooz</cite></figcaption>
 				</figure>
 
 				<p>
@@ -6595,16 +6690,20 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article data-rp-content>
-				<h2>Abbey</h2>
+			<section data-rp-content>
+				<header>
+					<h2>Abbey</h2>
+				</header>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/abbey.jpg" />
-				</picture>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/abbey.jpg" />
+					</picture>
+				</aside>
 
 				<p>
 					Father Tully in New Reno will tell you about this place and put it on your map. He'll also give you <a href="#quest-abbey5"
@@ -6767,11 +6866,11 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Raiders</h2>
 
 				<picture>
@@ -6782,7 +6881,7 @@
 					<blockquote>
 						<p>Wish I had some other map I could go to.</p>
 					</blockquote>
-					<figcaption>Mercenary</figcaption>
+					<figcaption><cite>Mercenary</cite></figcaption>
 				</figure>
 
 				<wt-note type="rp">
@@ -6942,23 +7041,29 @@
 						>Deliver Lynette's holodisk to Westin in NCR</a>. So drop the Holodisk first.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Broken Hills</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Broken Hills</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/broken-hills.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Sometimes I feel like a magic 8-ball. I just spout random sayings and walk away.</p>
+							</blockquote>
+							<figcaption><cite>Broken Hills resident</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Sometimes I feel like a magic 8-ball. I just spout random sayings and walk away.</p>
-					</blockquote>
-					<figcaption>Broken Hills resident</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/broken-hills.jpg" alt="Broken Hills" />
+					</picture>
+				</aside>
 
 				<p>
 					Broken Hills is one of the two mining towns in this game, unique when it comes to the way that humans, ghouls and mutants live together. If you put away your
@@ -7118,8 +7223,12 @@
 				<wt-note type="green">
 					<p>
 						There's an infinite money bug here... if you take the extra $500, you can talk to the ghoul over and over again, choosing the same line and gaining $1500
-						each time. Once you're satisfied, either keep the ore or give it to him (though you can't get any more xp). Real <cite>Fallout 2</cite> players don't take
-						advantage of poor stupid ghouls in this way.
+						each time. Once you're satisfied, either keep the ore or give it to him (though you can't get any more xp). Real <cite><a
+								href="https://en.wikipedia.org/wiki/Fallout_2"
+								target="_blank"
+								rel="noopener noreferrer"
+								referrerpolicy="no-referrer"
+							>Fallout 2</a></cite> players don't take advantage of poor stupid ghouls in this way.
 					</p>
 				</wt-note>
 
@@ -7164,8 +7273,13 @@
 								There is one way to avoid damage from the radon gas in the mine - wearing any kind of Power Armor, although you probably won't have it at this
 								point. Several other kinds of protection have been said to do the trick, including having the Dermal Impact Armor, carrying or using the Oxygen
 								Tank, running through the mine in combat mode, and having the Toughness perk. These do not work; staying in combat mode in fact means you'll take
-								more damage. After you read a number of <cite>Fallout 2</cite> walkthroughs you get used to the idea that sometimes you'll be fed information which
-								simply isn't true, speculation that at one point or another got written down as fact.
+								more damage. After you read a number of <cite><a
+										href="https://en.wikipedia.org/wiki/Fallout_2"
+										target="_blank"
+										rel="noopener noreferrer"
+										referrerpolicy="no-referrer"
+									>Fallout 2</a></cite> walkthroughs you get used to the idea that sometimes you'll be fed information which simply isn't true, speculation that
+								at one point or another got written down as fact.
 							</p>
 						</wt-note>
 					</details>
@@ -7356,24 +7470,30 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Redding</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Redding</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/redding.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Why, I hear that tribals eat their damn dead.</p>
+								<p>How else could we grok their essence?</p>
+							</blockquote>
+							<figcaption><cite>Josh and the Chosen One</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Why, I hear that tribals eat their damn dead.</p>
-						<p>How else could we grok their essence?</p>
-					</blockquote>
-					<figcaption>Josh and the Chosen One</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/redding.jpg" alt="Redding" />
+					</picture>
+				</aside>
 
 				<p>
 					Redding is the second of the two mining towns, or the first, depending on how you look at it. Like most of these towns, it's very loosely connected to the
@@ -7729,23 +7849,29 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>New Reno</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>New Reno</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/new-reno.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Watch out! Pink deathclaw, three o'clock!</p>
+							</blockquote>
+							<figcaption><cite>New Reno junkie</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Watch out! Pink deathclaw, three o'clock!</p>
-					</blockquote>
-					<figcaption>New Reno junkie</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/new-reno.jpg" alt="New Reno" />
+					</picture>
+				</aside>
 
 				<p>
 					New Reno can be a little daunting, since it's a big place with lots of things to do, and a lot of things to think about, such as how to make sure one doesn't
@@ -8643,8 +8769,9 @@
 								>Car</a>
 								back for my troubles, and after a while of this he blew up properly. Tvoinpyer adds on the blackout: "You can save your game at that moment although
 								you cannot see anything. Press F4 and Enter twice. That should save the game. Then exit the game (<kbd>Ctrl-Q</kbd> followed by <kbd>Y</kbd>),
-								restart <cite>Fallout 2</cite> and load the saved game. If all goes well it should load the map with T-Ray blown up." The procedure as described
-								will overwrite the first save slot; quicksaving with F6 also works.
+								restart <cite><a href="https://en.wikipedia.org/wiki/Fallout_2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"
+									>Fallout 2</a></cite> and load the saved game. If all goes well it should load the map with T-Ray blown up." The procedure as described will
+								overwrite the first save slot; quicksaving with F6 also works.
 							</p>
 						</wt-note>
 					</details>
@@ -9169,23 +9296,29 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Golgotha</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Golgotha</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/golgotha.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Nothing more boring than bein' in a coffin for months.</p>
+							</blockquote>
+							<figcaption><cite>Coffin Willie</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Nothing more boring than bein' in a coffin for months.</p>
-					</blockquote>
-					<figcaption>Coffin Willie</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/golgotha.jpg" alt="Golgotha" />
+					</picture>
+				</aside>
 
 				<p>
 					Obviously you can have great fun digging up those graves. If you only want to loot the profitable graves without taking the karma plunge from digging up every
@@ -9256,23 +9389,29 @@
 						grenades, but that shouldn't be any problem.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>The Stables</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>The Stables</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/stables.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>You should be glad I'm with you to point out all your stupid mistakes.</p>
+							</blockquote>
+							<figcaption><cite>Myron</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>You should be glad I'm with you to point out all your stupid mistakes.</p>
-					</blockquote>
-					<figcaption>Myron</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/stables.jpg" alt="The Stables" />
+					</picture>
+				</aside>
 
 				<wt-note type="rp">
 					<p>An extended way of getting to the Stables as a woman:</p>
@@ -9354,24 +9493,30 @@
 						href="#npcs--myron"
 					>Myron</a>'s room without anyone noticing.
 				</p>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Sierra Army Depot</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Sierra Army Depot</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/sad.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Is that a REAL robot?</p>
+								<p>Yeah, but don't bother it. I think it wants to destroy the human race.</p>
+							</blockquote>
+							<figcaption><cite>Wright kid and The Chosen One</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Is that a REAL robot?</p>
-						<p>Yeah, but don't bother it. I think it wants to destroy the human race.</p>
-					</blockquote>
-					<figcaption>Wright kid and The Chosen One</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/sad.jpg" alt="Sierra Army Depot" />
+					</picture>
+				</aside>
 
 				<p>
 					There's no way to get the SAD on your world map except getting the quest from Wright to break into it. As you arrive here the place is a mess, with bodies lying
@@ -9659,16 +9804,20 @@
 						(the countdown says four, but it's bugged). Even if you get out you'll die immediately if you ever come back in.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article data-rp-content>
-				<h2>EPA</h2>
+			<section data-rp-content>
+				<header>
+					<h2>EPA</h2>
+				</header>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/epa.jpg" />
-				</picture>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/epa.jpg" />
+					</picture>
+				</aside>
 
 				<p>
 					There's three ways of getting this location on your map. First is by recruiting <a href="#npcs--myron">Myron</a> and then try to dump him, he will then tell you
@@ -10055,11 +10204,11 @@
 						<p>There are lots of lockers worth checking out here, be sure to not miss any.</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>New California Republic</h2>
 
 				<picture>
@@ -10073,7 +10222,7 @@
 						<p>No?</p>
 						<p>NO! You are dumb.</p>
 					</blockquote>
-					<figcaption>The Chosen One and Gunther</figcaption>
+					<figcaption><cite>The Chosen One and Gunther</cite></figcaption>
 				</figure>
 
 				<wt-note type="rp" id="safe-houses">
@@ -10875,23 +11024,29 @@
 						</wt-note>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Vault 15</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Vault 15</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/vault-15.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>Uh... I have information that... could lead to establishing a network of... um, all the existing vaults throughout the country. That's it.</p>
+							</blockquote>
+							<figcaption><cite>The Chosen One</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>Uh... I have information that... could lead to establishing a network of... um, all the existing vaults throughout the country. That's it.</p>
-					</blockquote>
-					<figcaption>The Chosen One</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/vault-15.jpg" alt="Vault 15" />
+					</picture>
+				</aside>
 
 				<p>
 					Hmm, the layout of this place has changed a bit since the original game. I guess Zeke's house is supposed to be the shack with the manhole in it, but where did
@@ -11062,23 +11217,29 @@
 						</wt-note>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Vault 13</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Vault 13</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/vault-13.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>When I was five, my uncle was decapitated by a watermelon.</p>
+							</blockquote>
+							<figcaption><cite>Dave</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>When I was five, my uncle was decapitated by a watermelon.</p>
-					</blockquote>
-					<figcaption>Dave</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/vault-13.jpg" alt="Vault 13" />
+					</picture>
+				</aside>
 
 				<p>
 					As stated above, you can find the location of Vault 13 in Vault 15, or from Saltbeef's painting, or from following the deathclaws from the brahmin map. Once you
@@ -11213,23 +11374,29 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>Military Base</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>Military Base</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/military-base.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>I hope dad comes back soon. I miss his magic tricks.</p>
+							</blockquote>
+							<figcaption><cite>Melchior Jr.</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>I hope dad comes back soon. I miss his magic tricks.</p>
-					</blockquote>
-					<figcaption>Melchior Jr.</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/military-base.jpg" alt="Military Base" />
+					</picture>
+				</aside>
 
 				<p>
 					<a href="#npcs--goris">Goris</a> is the only one who can highlight this on your world map, though Chris in Navarro and Jimmy in Vault 13 both mention its
@@ -11315,24 +11482,30 @@
 						them to stop in the right spot.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>San Francisco</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>San Francisco</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/san-francisco.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>What sort of stupid questions?</p>
+								<p>Oh, like: 'Why can't I use a sword or a chainsaw on my monitor?'</p>
+							</blockquote>
+							<figcaption><cite>The Chosen One and Dave Handy</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>What sort of stupid questions?</p>
-						<p>Oh, like: 'Why can't I use a sword or a chainsaw on my monitor?'</p>
-					</blockquote>
-					<figcaption>The Chosen One and Dave Handy</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/san-francisco.jpg" alt="San Francisco" />
+					</picture>
+				</aside>
 
 				<p>
 					Using the Survey Map from the Military Base is the only way to find San Francisco, other than just going here, of course. This is actually a neat place, because
@@ -11724,11 +11897,15 @@
 
 				<p>
 					A note on the quest list below: You cannot be assigned to steal the Vertibird Plans from both the Shi and the Hubologists in the same game, for the simple
-					reason that you must choose one faction to give the plans to in the first place. (This is the only time in <cite>Fallout 2</cite> where two Pip-Boy quest
-					entries are mutually exclusive; <em>finishing</em> conflicting quests is of course a completely different matter.) If you get as many quests as possible in your
-					quest log (which means you have to become a Hubologist), the Hubologist fuel quest will always be quest number 6. For this reason there are two quests with the
-					number 5 in the list, so that all the quests with higher numbers in your log will match those in this list. If that seems confusing, feel free to ignore the
-					numbers altogether.
+					reason that you must choose one faction to give the plans to in the first place. (This is the only time in <cite><a
+							href="https://en.wikipedia.org/wiki/Fallout_2"
+							target="_blank"
+							rel="noopener noreferrer"
+							referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> where two Pip-Boy quest entries are mutually exclusive; <em>finishing</em> conflicting quests is of course a completely different
+					matter.) If you get as many quests as possible in your quest log (which means you have to become a Hubologist), the Hubologist fuel quest will always be quest
+					number 6. For this reason there are two quests with the number 5 in the list, so that all the quests with higher numbers in your log will match those in this
+					list. If that seems confusing, feel free to ignore the numbers altogether.
 				</p>
 
 				<wt-note type="rp">
@@ -12345,16 +12522,20 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article type="rp">
-				<h2>Shi Submarine</h2>
+			<section data-rp-content>
+				<header>
+					<h2>Shi Submarine</h2>
+				</header>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/shi-submarine.jpg" />
-				</picture>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/shi-submarine.jpg" />
+					</picture>
+				</aside>
 
 				<p>
 					Once you've got the password from the Emperor or Lao Chou, you can talk to the boat guard and go to the sub as a technician (together with the maintenance
@@ -12405,11 +12586,11 @@
 					A locker in the torpedo room contains a Command Chart that you can use on the Emperor. Go to Chinese Intelligence Network and you can read some personal logs.
 					This is just for flavor, no experience gained.
 				</p>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Navarro</h2>
 
 				<picture>
@@ -12420,7 +12601,7 @@
 					<blockquote>
 						<p>Now I suppose you're going to tell me you're just out looking for a water chip. Do I look dumb?</p>
 					</blockquote>
-					<figcaption>Enclave patrolman</figcaption>
+					<figcaption><cite>Enclave patrolman</cite></figcaption>
 				</figure>
 
 				<wt-note type="rp">
@@ -12635,23 +12816,29 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
-				<h2>The Enclave</h2>
+			<section>
+				<header>
+					<hgroup>
+						<h2>The Enclave</h2>
 
-				<picture>
-					<img width="450" height="450" src="/images/backgrounds/enclave.jpg" />
-				</picture>
+						<figure>
+							<blockquote>
+								<p>I always knew the President wanted to kill us all.</p>
+							</blockquote>
+							<figcaption><cite>New Reno townsperson</cite></figcaption>
+						</figure>
+					</hgroup>
+				</header>
 
-				<figure>
-					<blockquote>
-						<p>I always knew the President wanted to kill us all.</p>
-					</blockquote>
-					<figcaption>New Reno townsperson</figcaption>
-				</figure>
+				<aside>
+					<picture>
+						<img width="450" height="450" src="/images/backgrounds/enclave.jpg" alt="The Enclave" />
+					</picture>
+				</aside>
 
 				<p>
 					You get to the Enclave by taking the tanker from San Francisco, remember? After a freakin' beautiful cutscene you find yourself on the oil rig that is the
@@ -13243,18 +13430,18 @@
 						</p>
 					</details>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Endings</h2>
 
 				<figure>
 					<blockquote>
 						<p>I won! Fuck you! You are dumb. I have crushed you.</p>
 					</blockquote>
-					<figcaption>Wooz</figcaption>
+					<figcaption><cite>Wooz</cite></figcaption>
 				</figure>
 
 				<p>
@@ -13552,18 +13739,18 @@
 					<dt>Vagrants move on</dt>
 					<dd>You always get this (even if you kill them).</dd>
 				</dl>
-			</article>
+			</section>
 
 			<hr />
 
-			<article id="encounter">
+			<section id="encounter">
 				<h2>Encounters</h2>
 
 				<figure>
 					<blockquote>
 						<p>Radscorpions? What's so rad about them?</p>
 					</blockquote>
-					<figcaption>New Reno comedian</figcaption>
+					<figcaption><cite>New Reno comedian</cite></figcaption>
 				</figure>
 
 				<wt-note type="rp">
@@ -14284,18 +14471,18 @@
 						alone for the rest of the fight, or if you rather want him dead now.
 					</p>
 				</details>
-			</article>
+			</section>
 
 			<hr />
 
-			<article id="npc">
+			<section id="npc">
 				<h2>NPCs</h2>
 
 				<figure>
 					<blockquote>
 						<p>Wow! I feel as if I've passed some arbitrary experience value and gained more power!</p>
 					</blockquote>
-					<figcaption>Marcus</figcaption>
+					<figcaption><cite>Marcus</cite></figcaption>
 				</figure>
 
 				<p>
@@ -14675,8 +14862,12 @@
 
 					<wt-note type="red">
 						<p>
-							Joshua Jansen points out that dog NPCs cannot open doors. I don't think there are any deeper applications for this in <cite>Fallout 2</cite>, but there
-							you have it.
+							Joshua Jansen points out that dog NPCs cannot open doors. I don't think there are any deeper applications for this in <cite><a
+									href="https://en.wikipedia.org/wiki/Fallout_2"
+									target="_blank"
+									rel="noopener noreferrer"
+									referrerpolicy="no-referrer"
+								>Fallout 2</a></cite>, but there you have it.
 						</p>
 					</wt-note>
 				</details>
@@ -15255,18 +15446,18 @@
 					<dt>Xarn</dt>
 					<dd>The deathclaw captive in Navarro.</dd>
 				</dl>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Car</h2>
 
 				<figure>
 					<blockquote>
 						<p>I told 'em. 'We need traffic signs', I said. But did they listen? Noooo... let's not listen to ol' Lumpy!</p>
 					</blockquote>
-					<figcaption>Lumpy</figcaption>
+					<figcaption><cite>Lumpy</cite></figcaption>
 				</figure>
 
 				<p>
@@ -15367,18 +15558,18 @@
 						you won't necessarily see the car again at all.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Stupid</h2>
 
 				<figure>
 					<blockquote>
 						<p>Ooooh! Butunz!</p>
 					</blockquote>
-					<figcaption>The Chosen One</figcaption>
+					<figcaption><cite>The Chosen One</cite></figcaption>
 				</figure>
 
 				<p>
@@ -15505,18 +15696,18 @@
 				<strong>Enclave:</strong> You'll have to destroy the reactor using explosives and fight Horrigan on your own, otherwise nothing special.
 
 				<strong>Special encounters:</strong> You cannot talk to Arthur, otherwise nothing special. You can get <a href="#npcs--dogmeat">Dogmeat</a>.
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Combat</h2>
 
 				<figure>
 					<blockquote>
 						<p>Look, causing that much destruction wasn't easy!</p>
 					</blockquote>
-					<figcaption>The Chosen One</figcaption>
+					<figcaption><cite>The Chosen One</cite></figcaption>
 				</figure>
 
 				<p>
@@ -15702,10 +15893,11 @@
 				<h3>Suggested weapon progressions</h3>
 
 				<p>
-					There are lots of weapons in <cite>Fallout 2</cite>, many of which you'll probably never use. Whoever stormed their enemies wielding a Club or a Sawed-Off
-					Shotgun? Yet there are still enough choices that the optimal weapon progression can't be summarized in two paragraphs like in the <cite>Fallout</cite> guide. A
-					few things might be noted in advance. One is that I'm assuming you play the areas in the "proper" order. Not every weapon deserves a mention; some weapons I'll
-					just skip because they suck (Rocks), others because they appear when you already have better alternatives ("Little Jesus").
+					There are lots of weapons in <cite><a href="https://en.wikipedia.org/wiki/Fallout_2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"
+						>Fallout 2</a></cite>, many of which you'll probably never use. Whoever stormed their enemies wielding a Club or a Sawed-Off Shotgun? Yet there are still
+					enough choices that the optimal weapon progression can't be summarized in two paragraphs like in the <cite>Fallout</cite> guide. A few things might be noted in
+					advance. One is that I'm assuming you play the areas in the "proper" order. Not every weapon deserves a mention; some weapons I'll just skip because they suck
+					(Rocks), others because they appear when you already have better alternatives ("Little Jesus").
 				</p>
 
 				<p>
@@ -15926,18 +16118,18 @@
 					Flares is used on a piece of scenery or on a critter, all of them but one will turn into eternally lit Flares, which can be thrown, reused and sold. This is a
 					bug.
 				</p>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Items</h2>
 
 				<figure>
 					<blockquote>
 						<p>What do I WANT? I don't really know. Most of the time I ignore my quest and walk into the homes of others, riffling through people's shelves...</p>
 					</blockquote>
-					<figcaption>The Chosen One</figcaption>
+					<figcaption><cite>The Chosen One</cite></figcaption>
 				</figure>
 
 				<p>
@@ -17189,7 +17381,12 @@
 					<p>
 						AP cost is for the weapon's basic attack. Burst attacks cost 1 AP more for weapons with both single shot and burst capacity. Aimed attacks cost 1 AP more.
 						Sledgehammer and Super Sledge are the only HtH weapons for which thrust and swing attacks don't have the same cost. The difference between swing and thrust
-						attack modes is unclear, but the <cite>Fallout</cite> manual implies there isn't any (the <cite>Fallout 2</cite> manual is silent on the matter).
+						attack modes is unclear, but the <cite>Fallout</cite> manual implies there isn't any (the <cite><a
+								href="https://en.wikipedia.org/wiki/Fallout_2"
+								target="_blank"
+								rel="noopener noreferrer"
+								referrerpolicy="no-referrer"
+							>Fallout 2</a></cite> manual is silent on the matter).
 					</p>
 				</wt-note>
 
@@ -19372,18 +19569,18 @@
 						that touches the "Tragic" addiction variable.
 					</p>
 				</wt-note>
-			</article>
+			</section>
 
 			<hr />
 
-			<article>
+			<section>
 				<h2>Addenda</h2>
 
 				<figure>
 					<blockquote>
 						<p>Must break free. Strength fading. Must leave.</p>
 					</blockquote>
-					<figcaption>The Chosen One</figcaption>
+					<figcaption><cite>The Chosen One</cite></figcaption>
 				</figure>
 
 				<h3>The too many items bug</h3>
@@ -19437,8 +19634,9 @@
 							two games I have already beat and one I am still playing. Truly, I don't know what triggers the problem or its true cause, but if this keeps the game
 							from locking up and corrupting maps then it will have to do." Nimrod adds to this: "I tend to travel light and not hoard items, but I can say with
 							sureness that the evil number of Pip-Boy entries is twelve. I've paid close attention to this in <cite>Fallout</cite> and
-							<cite>Fallout 2</cite> and it's the same number in both - eleven is fine, twelve and you instantly hit problems. I should note that I've never had a map
-							crash on me due to this problem, but I get all the black boxes where buttons should be.
+							<cite><a href="https://en.wikipedia.org/wiki/Fallout_2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Fallout 2</a></cite> and
+							it's the same number in both - eleven is fine, twelve and you instantly hit problems. I should note that I've never had a map crash on me due to this
+							problem, but I get all the black boxes where buttons should be.
 						</q>
 					</p>
 				</wt-note>
@@ -19446,10 +19644,10 @@
 				<h3>Unfinished business</h3>
 
 				<p>
-					You may think <cite>Fallout 2</cite> is a big enough game as it is, but the designers were aiming to make it even bigger. There are lots and lots of things,
-					great and small, that didn't make it into the final product, and in many places it shows in different ways. Such things that had to be omitted may include, but
-					are probably not at all limited to the stuff listed here, some of which has been mentioned in the walkthrough. (One or two of these may just be rumours,
-					though.)
+					You may think <cite><a href="https://en.wikipedia.org/wiki/Fallout_2" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"
+						>Fallout 2</a></cite> is a big enough game as it is, but the designers were aiming to make it even bigger. There are lots and lots of things, great and
+					small, that didn't make it into the final product, and in many places it shows in different ways. Such things that had to be omitted may include, but are
+					probably not at all limited to the stuff listed here, some of which has been mentioned in the walkthrough. (One or two of these may just be rumours, though.)
 				</p>
 
 				<ul>
@@ -19502,7 +19700,7 @@
 					go-between. You'll have to direct your queries to the translators, or consult the original. Also any feedback in languages other than Swedish or English will be
 					pretty much wasted on me. 🙂
 				</p>
-			</article>
+			</section>
 
 			<hr />
 
