@@ -2,9 +2,13 @@
 
 @import url('./vars.css');
 @import url('./base.css');
+@import url('./components/character-card.css');
+@import url('./components/dialog.css');
+@import url('./components/map-wrapper.css');
+@import url('./components/note.css');
+@import url('./components/rp-content.css');
+@import url('./components/scroll-to-top.css');
 @import url('./components/sr-only.css');
-@import url('./components/buttons.css');
-@import url('./components/tables.css');
-@import url('./components/nav.css');
-@import url('./components/maps.css');
-@import url('./components/notes.css');
+@import url('./components/svg-defs.css');
+@import url('./components/table-of-contents.css');
+@import url('./components/table-wrapper.css');

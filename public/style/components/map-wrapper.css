@@ -1,0 +1,25 @@
+@layer components {
+	map-wrapper {
+		display: block;
+		contain: content;
+		width: var(--map-wrapper-size);
+		height: var(--map-wrapper-size);
+		overflow: auto;
+		overscroll-behavior: contain;
+		text-align: center;
+		content-visibility: auto;
+		margin-inline: auto;
+
+		svg {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+
+		[data-map='world'] {
+			width: var(--world-map-size);
+			max-width: revert;
+			height: var(--world-map-size);
+		}
+	}
+}

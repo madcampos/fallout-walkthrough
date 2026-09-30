@@ -1,0 +1,49 @@
+@layer components {
+	dialog {
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		inline-size: clamp(10ch, 70vw, 80ch);
+		block-size: clamp(10ch, 70vh, 80ch);
+		overscroll-behavior: contain;
+
+		&:where([open], :popover-open) { display: flex; }
+
+		&::backdrop {
+			backdrop-filter: blur(1rem);
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		& > header {
+			display: flex;
+			align-items: center;
+			inline-size: 100%;
+
+			button { flex-shrink: 0; }
+			:is(h1, h2, h3, h4, h5, h6) {
+				flex-grow: 1;
+				margin: 0;
+			}
+		}
+
+		& > footer {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			inline-size: 100%;
+
+			button { flex-shrink: 0; }
+		}
+
+		& > dialog-content {
+			flex-grow: 1;
+			overflow: auto;
+			inline-size: 100%;
+		}
+
+		@media (max-width: 40rem) {
+			inline-size: 100dvi;
+			block-size: 100dvb;
+		}
+	}
+}

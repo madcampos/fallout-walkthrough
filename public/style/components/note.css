@@ -1,0 +1,24 @@
+@layer components {
+	wt-note {
+		--icon-size: 2rem;
+
+		display: flex;
+		gap: calc(var(--margin-size) / 2);
+		margin: var(--margin-size);
+		border: solid thin var(--aside-color);
+		border-radius: var(--rounded-corners);
+		background-color: color-mix(in srgb, var(--aside-bg), var(--bg-color));
+		padding: calc(var(--margin-size) / 2);
+		color: var(--aside-color);
+
+		&::before {
+			display: block;
+			flex-shrink: 0;
+			width: var(--icon-size);
+			height: var(--icon-size);
+			content: var(--aside-icon) / 'Note ' attr(type);
+		}
+
+		/* TODO: set icon via web component */
+	}
+}

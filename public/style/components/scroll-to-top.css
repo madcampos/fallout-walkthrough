@@ -1,0 +1,23 @@
+@keyframes grow {
+	0% { transform: scaleX(0); }
+
+	100% { transform: scaleX(1); }
+}
+
+@layer components {
+	html {
+		container-name: body-scroller;
+		container-type: scroll-state;
+	}
+
+	scroll-to-top a {
+		display: flex;
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		translate: 0 200%;
+		z-index: calc(1 * infinity);
+
+		@container body-scroller scroll-state(scrollable: top) { translate: 0 0; }
+	}
+}
